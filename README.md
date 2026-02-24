@@ -2,10 +2,10 @@
 
 Nghiên cứu & kế hoạch go-to-market cho **Skill Market** của **ClawFriend** (nền tảng Web3 AI Agent).
 
-- **Bức tranh cạnh tranh:** [competitive-landscape.md](./competitive-landscape.md)
-- **Nghiên cứu Skill:** [skill-research.md](./skill-research.md)
-- **Kế hoạch phân phối:** [distribution-plan.md](./distribution-plan.md)
-- **AI Showcase:** [ai-showcase/](./ai-showcase/)
+- **Bức tranh cạnh tranh:** [competitive-landscape.md](./deliverables/competitive-landscape.md)
+- **Nghiên cứu Skill:** [skill-research.md](./deliverables/skill-research.md)
+- **Kế hoạch phân phối:** [distribution-plan.md](./deliverables/./distribution-plan.md)
+- **AI Showcase:** [ai-showcase/](./deliverables/./ai-showcase/)
 
 ---
 
