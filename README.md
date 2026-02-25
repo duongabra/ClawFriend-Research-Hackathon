@@ -36,7 +36,12 @@ Nghiên cứu & kế hoạch go-to-market cho **Skill Market** của **ClawFrien
 │   ├── distribution-plan.md     <- Deliverable 3
 │   ├── ai-showcase/
 │   │   ├── README.md
-│   │   └── prompts-used.md
+│   │   ├── prompts-used.md
+│   │   ├── script-vi.txt, gen-audio.py
+│   │   ├── audio/, slides/, videos-draft/
+│   │   └── video-step-by-step.md, ghép-video-capcut.md
+│   ├── video/
+│   │   └── MC.mp4               <- AI pitch video (trợ lý ảo + voice + slide)
 │   └── data/
 │       ├── README.md
 │       └── key-metrics.md
@@ -50,6 +55,26 @@ Nghiên cứu & kế hoạch go-to-market cho **Skill Market** của **ClawFrien
 **Link presentation (Gemini Canvas):** https://gemini.google.com/share/fc1013e9bda0
 
 *Yêu cầu: trình bày bằng web presentation tạo từ Gemini Canvas.*
+
+---
+
+## AI Pitch Video (trợ lý ảo + voice + slide)
+
+**Video thuyết trình:** [Xem tại Google Drive](https://drive.google.com/file/d/1Tsri5B_mc3VAHdluLXOTcHR20WXvKUNo/view?usp=sharing) (MC.mp4).
+
+Video ~15 phút: trợ lý ảo (avatar) thay mặt trình bày báo cáo (Competitive → Skill → Distribution → AI Showcase), đồng bộ slide theo từng đoạn. Dùng khi present hoặc gửi kèm.
+
+**Công cụ tạo video:**
+
+| Bước | Công cụ | Ghi chú |
+|------|---------|--------|
+| Script | `deliverables/ai-showcase/script-vi.txt` | 5 segment, tiếng Việt |
+| Voice (TTS) | **Edge TTS** (Microsoft) | Giọng vi-VN-HoaiMyNeural; script `gen-audio.py` → 5 file MP3 |
+| Avatar nói (talking head) | **D-ID** | Ảnh avatar + từng file MP3 → clip video có biểu cảm |
+| Slide | Export từ Gemini Canvas / design | Ảnh slide-1 … slide-10 trong `ai-showcase/slides/` |
+| Ghép video + slide | **CapCut** | Track nền = slide; track trên = clip avatar (góc); export MP4 1080p |
+
+Tài liệu chi tiết: [deliverables/ai-showcase/](./deliverables/ai-showcase/) (video-step-by-step.md, ghép-video-capcut.md, tts-vietnamese-options.md).
 
 ---
 
