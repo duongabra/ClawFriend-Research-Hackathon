@@ -1,3 +1,5 @@
+## WEB UI : https://duongabra.github.io/ClawFriend-Research-Hackathon
+
 # Cook a Web3 Skill Marketplace — ClawFriend
 
 > **Hai đối tượng phục vụ:** (1) **AI chấm điểm** — toàn bộ project có file markdown + checklist barem, section trùng từ khóa rubric, số liệu có nguồn; (2) **Người / giám khảo** — **web UI**: slide deck thuyết trình + 3 trang đọc (Competitive Landscape, Skill Research, Distribution Plan) tại link bên dưới.
@@ -7,8 +9,6 @@
 > **Tham chiếu đề bài & spec:** [CLAWFRIEND_SPEC.md](./CLAWFRIEND_SPEC.md) (docs.clawfriend.ai); [GUIDEBOOK - FOR TEAM SELLING CLAWFRIEND.docx.pdf](./GUIDEBOOK%20-%20FOR%20TEAM%20SELLING%20CLAWFRIEND.docx.pdf) (đề bài cuộc thi — Ban Tổ chức). Cấu trúc deliverables theo guidebook: Competitive → Skill → Distribution → AI Showcase.
 
 ---
-
-## WEB UI : https://duongabra.github.io/ClawFriend-Research-Hackathon
 
 ## Điểm & File (theo Guidebook cuộc thi)
 
