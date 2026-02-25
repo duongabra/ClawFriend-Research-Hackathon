@@ -49,22 +49,43 @@ Nghiên cứu & kế hoạch go-to-market cho **Skill Market** của **ClawFrien
 ```
 .
 ├── README.md                    <- Bắt đầu đọc tại đây (AI grading map)
-├── deliverables/
-│   ├── competitive-landscape.md <- Deliverable 1 (25%)
-│   ├── skill-research.md        <- Deliverable 2
-│   ├── distribution-plan.md     <- Deliverable 3
-│   ├── ai-showcase/
-│   │   ├── README.md
-│   │   ├── prompts-used.md
-│   │   ├── script-vi.txt, gen-audio.py
-│   │   ├── audio/, slides/, videos-draft/
-│   │   └── video-step-by-step.md, ghép-video-capcut.md
-│   ├── video/
-│   │   └── MC.mp4               <- AI pitch video (trợ lý ảo + voice + slide)
-│   └── data/
-│       ├── README.md
-│       └── key-metrics.md
-└── presentation-outline.md       <- Gợi ý nội dung slide Gemini Canvas
+├── .gitignore
+├── package.json                 <- npm run dev / build:slides (từ gốc repo)
+├── package-lock.json
+├── tsconfig.json
+├── plan.ini
+├── CLAWFRIEND_SPEC.md           <- Tham chiếu spec (docs.clawfriend.ai)
+├── presentation-outline.md      <- Gợi ý nội dung slide
+├── .github/workflows/
+│   └── deploy-slides.yml        <- Deploy web UI lên GitHub Pages
+└── deliverables/
+    ├── competitive-landscape.md <- Deliverable 1 (25%)
+    ├── skill-research.md        <- Deliverable 2
+    ├── distribution-plan.md     <- Deliverable 3
+    ├── slide.tsx, slide.d.ts    <- Nguồn slide (dùng cho slides-app)
+    ├── slides-app/              <- Web UI: slide deck + 3 trang đọc (header chung)
+    │   ├── index.html
+    │   ├── package.json, package-lock.json
+    │   ├── vite.config.ts, tsconfig.json, tailwind.config.js, postcss.config.js
+    │   ├── README.md
+    │   ├── public/content/      <- competitive-landscape.md, skill-research.md, distribution-plan.md (copy để serve)
+    │   └── src/
+    │       ├── main.tsx, index.css, vite-env.d.ts
+    │       ├── App.tsx           <- Slide deck
+    │       ├── Layout.tsx       <- Header chung (nav Slide | Landscape | Skills | Distribution)
+    │       ├── RouterApp.tsx    <- Routes /, /landscape, /skills, /distribution
+    │       └── ReaderPage.tsx   <- Trang đọc markdown
+    ├── ai-showcase/
+    │   ├── README.md
+    │   ├── prompts-used.md
+    │   ├── script-vi.txt, script.txt, gen-audio.py
+    │   ├── video-step-by-step.md, ghép-video-capcut.md, tts-vietnamese-options.md, ai-presentation-idea.md
+    │   ├── audio/, slides/, videos-draft/
+    │   └── mc.png, pikachu-mc.png  <- Avatar cho video
+    ├── video/                   <- MC.mp4 không đẩy repo (.gitignore, >100MB); xem link Google Drive trong README
+    └── data/
+        ├── README.md
+        └── key-metrics.md
 ```
 
 ---
