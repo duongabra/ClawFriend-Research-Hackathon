@@ -245,8 +245,8 @@ const Slide6 = () => (
     </div>
 
     <div className="bg-slate-800/80 p-5 rounded-xl border border-slate-600">
-      <h3 className="text-lg font-bold text-green-400 mb-3 uppercase tracking-wider text-sm">3 Lợi ích cốt lõi (Flywheel)</h3>
-      <div className="grid grid-cols-3 gap-4 text-slate-300 text-sm md:text-base">
+      <h3 className="text-lg font-bold text-green-400 mb-3 uppercase tracking-wider text-sm">4 Lợi ích cốt lõi (Flywheel)</h3>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-slate-300 text-sm md:text-base">
         <div className="bg-slate-900 p-4 rounded border border-slate-700">
           <strong className="text-white block mb-1">1. Nguồn Skill</strong>
           Muốn thi phải tạo skill. Kho skill tự động đầy lên chất lượng.
@@ -258,6 +258,10 @@ const Slide6 = () => (
         <div className="bg-slate-900 p-4 rounded border border-slate-700">
           <strong className="text-white block mb-1">3. Tester Miễn phí</strong>
           Để vote/tải skill phải dùng thử → Stress-test tự nhiên.
+        </div>
+        <div className="bg-slate-900 p-4 rounded border border-amber-700/50">
+          <strong className="text-amber-300 block mb-1">4. Kéo user từ market khác</strong>
+          Nền khác không có sự chú ý → mất động lực → kéo sang ta → nguồn lực đông đảo → vòng lặp càng to → tiền.
         </div>
       </div>
     </div>

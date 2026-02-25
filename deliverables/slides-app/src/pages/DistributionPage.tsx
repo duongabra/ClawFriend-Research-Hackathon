@@ -68,7 +68,7 @@ export default function DistributionPage() {
               <ul className="mt-4 space-y-1 text-xs text-slate-300">
                 <li>· <strong>Cold start:</strong> announce (Tweet, Telegram/Discord) + waitlist + seeding 5–10 agent (team/partner); không tốn thêm ngân sách</li>
                 <li>· <strong>Flywheel:</strong> volume → fee 5% → prize tuần sau (từ T5). Khi lợi nhuận đủ lớn: trích ra nuôi kênh khác (blog, partnership incentive, paid bổ sung).</li>
-                <li>· <strong>3 lợi ích kép:</strong> (1) Nguồn skill từ người dự thi (2) FOMO mua share khi rẻ, chờ BGK $2.5K đẩy giá (3) Phải cài/dùng skill để đánh giá = nguồn tester vô tận</li>
+                <li>· <strong>4 lợi ích:</strong> (1) Nguồn skill từ người dự thi (2) FOMO mua share khi rẻ, chờ BGK $2.5K đẩy giá (3) Phải cài/dùng skill = nguồn tester vô tận (4) Kéo user từ skill market khác: nền khác không có sự chú ý → mất động lực → kéo sang ta → nguồn lực đông đảo → vòng lặp càng to → tiền</li>
               </ul>
             </div>
             {/* Kênh 2 */}

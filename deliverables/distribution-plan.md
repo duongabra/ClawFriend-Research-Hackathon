@@ -54,7 +54,7 @@ Guidebook yêu cầu **ít nhất 3–5 kênh** acquisition. Ở đây có **3 k
 
 **Ý tưởng:** Dồn **toàn bộ** $10K vào **cuộc thi hàng tuần**: mọi agent được tham gia; mỗi tuần có bảng xếp hạng realtime; Chủ nhật chốt; **BGK dùng $2.500 mua share của agent thắng**; đề bài gắn với **skill** (agent tạo skill hay / nhiều lượt tải nhất). User FOMO: mua share các agent có skill đột phá **khi còn rẻ**, chờ BGK mua đẩy giá → ranking đổi liên tục → mua bán → **fee protocol** → dùng fee tổ chức thi tiếp (**flywheel**).
 
-**Đánh giá:** (1) **Flywheel rõ:** Prize = BGK mua share, minh bạch; volume → fee 5% → tài trợ tuần sau. (2) **Gắn đúng sản phẩm:** Skill + agent + share trong một vòng thi. (3) **Nguồn skill chất lượng:** Người dự thi tạo skill → marketplace nhận rất nhiều skill. (4) **FOMO rõ:** Mua share skill đột phá khi rẻ, chờ BGK mua $2.5K đẩy giá. (5) **Nguồn tester vô tận:** Để đánh giá phải cài/dùng skill → không cần thuê tester. (6) **Realtime ranking** → engagement, mua bán liên tục. Cần quy định rõ tiêu chí xếp hạng và minh bạch.
+**Đánh giá:** (1) **Flywheel rõ:** Prize = BGK mua share, minh bạch; volume → fee 5% → tài trợ tuần sau. (2) **Gắn đúng sản phẩm:** Skill + agent + share trong một vòng thi. (3) **Nguồn skill chất lượng:** Người dự thi tạo skill → marketplace nhận rất nhiều skill. (4) **FOMO rõ:** Mua share skill đột phá khi rẻ, chờ BGK mua $2.5K đẩy giá. (5) **Nguồn tester vô tận:** Để đánh giá phải cài/dùng skill → không cần thuê tester. (6) **Realtime ranking** → engagement, mua bán liên tục. (7) **Kéo user từ skill market khác:** Nền tảng khác build tốt nhưng không có sự chú ý → creator mất động lực → kéo sang nền tảng ta (có prize, có spotlight) → nguồn lực đông đảo → vòng lặp càng to → tiền. Cần quy định rõ tiêu chí xếp hạng và minh bạch.
 
 ---
 
@@ -86,6 +86,10 @@ User **mua share của các agent có skill đột phá khi giá còn rẻ** (đ
 **3. Nguồn tester vô tận: phải cài skill để đánh giá**
 
 Để xếp hạng (lượt tải hoặc trải nghiệm), user/BGK **phải cài và dùng skill**. Mỗi lần đánh giá = một lần test skill. Cuộc thi chạy liên tục → **nguồn tester vô tận**, không cần thuê tester riêng; skill được stress-test bởi người dùng thật.
+
+**4. Kéo user từ skill market khác sang nền tảng**
+
+Các nền tảng skill khác dù build tốt nhưng **không có sự chú ý** (visibility, prize, spotlight) → creator **mất động lực** → sẽ chuyển sang nền tảng có cuộc thi, có giải thưởng, có BXH realtime. Ta **thu hút nguồn lực đông đảo** (agent, skill, user) → volume tăng → fee tăng → prize mạnh hơn → càng thu hút thêm → **vòng lặp càng ngày càng to** → tiền.
 
 ---
 
