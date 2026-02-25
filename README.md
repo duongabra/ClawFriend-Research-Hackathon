@@ -18,7 +18,7 @@
 | 2. Skill Research | **25** | [deliverables/skill-research.md](./deliverables/skill-research.md) | 5–10 skill; Target user, Problem, Alternative, Bằng chứng demand, Visibility/monetization |
 | 3. Distribution Plan | **40** | [deliverables/distribution-plan.md](./deliverables/distribution-plan.md) | $10K; ít nhất 3–5 kênh; 1 organic + 1 paid; action plan + timeline + metric; intern đọc xong làm được |
 | 4. Presentation & Q&A | **10** | Web presentation (link dưới) + trả lời BGK | Trình bày 15–20 phút; Q&A 5–8 phút |
-| Data / AI Showcase | — | [deliverables/data/](./deliverables/data/), [deliverables/ai-showcase/](./deliverables/ai-showcase/) | Số liệu có nguồn; prompt/workflow dùng AI (README, prompts-used.md) |
+| Data / AI Showcase | — | [deliverables/data/](./deliverables/ai-showcase/README.md), [deliverables/ai-showcase/](./deliverables/ai-showcase/) | Số liệu có nguồn; prompt/workflow dùng AI (README, prompts-used.md) |
 | Data / Số liệu | — | [deliverables/data/key-metrics.md](./deliverables/data/key-metrics.md) | Số liệu chính + nguồn đối chiếu |
 
 ---
