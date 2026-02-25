@@ -1,7 +1,9 @@
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import Layout from './Layout';
 import App from './App';
-import ReaderPage from './ReaderPage';
+import LandscapePage from './pages/LandscapePage';
+import SkillsPage from './pages/SkillsPage';
+import DistributionPage from './pages/DistributionPage';
 
 export default function RouterApp() {
   return (
@@ -9,33 +11,9 @@ export default function RouterApp() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<App />} />
-          <Route
-            path="/landscape"
-            element={
-              <ReaderPage
-                title="Competitive Landscape"
-                mdPath="competitive-landscape.md"
-              />
-            }
-          />
-          <Route
-            path="/skills"
-            element={
-              <ReaderPage
-                title="Skill Research"
-                mdPath="skill-research.md"
-              />
-            }
-          />
-          <Route
-            path="/distribution"
-            element={
-              <ReaderPage
-                title="Distribution Plan"
-                mdPath="distribution-plan.md"
-              />
-            }
-          />
+          <Route path="/landscape" element={<LandscapePage />} />
+          <Route path="/skills" element={<SkillsPage />} />
+          <Route path="/distribution" element={<DistributionPage />} />
         </Route>
       </Routes>
     </HashRouter>

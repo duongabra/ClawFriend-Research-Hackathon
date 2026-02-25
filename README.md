@@ -34,7 +34,7 @@ Chúng ta phục vụ **cả AI lẫn UI**: ngoài file markdown cho AI chấm, 
 | **Skill Research** | [https://duongabra.github.io/ClawFriend-Research-Hackathon/#/skills](https://duongabra.github.io/ClawFriend-Research-Hackathon/#/skills) |
 | **Distribution Plan** | [https://duongabra.github.io/ClawFriend-Research-Hackathon/#/distribution](https://duongabra.github.io/ClawFriend-Research-Hackathon/#/distribution) |
 
-*Trang gốc `/` là slide; `#/landscape`, `#/skills`, `#/distribution` là 3 trang đọc deliverable dạng web.*
+*Trang gốc `/` là slide; `#/landscape`, `#/skills`, `#/distribution` là 3 trang UI riêng (không render markdown): Competitive Landscape, Skill Research, Distribution Plan.*
 
 ---
 
@@ -74,7 +74,11 @@ Nghiên cứu & kế hoạch go-to-market cho **Skill Market** của **ClawFrien
     │       ├── App.tsx           <- Slide deck
     │       ├── Layout.tsx       <- Header chung (nav Slide | Landscape | Skills | Distribution)
     │       ├── RouterApp.tsx    <- Routes /, /landscape, /skills, /distribution
-    │       └── ReaderPage.tsx   <- Trang đọc markdown
+    │       ├── ReaderPage.tsx   <- Trang đọc markdown (tùy chọn)
+    │       └── pages/
+    │           ├── LandscapePage.tsx   <- UI Competitive Landscape (data từ competitive-landscape.md)
+    │           ├── SkillsPage.tsx      <- UI Skill Research (data từ skill-research.md)
+    │           └── DistributionPage.tsx<- UI Distribution Plan (data từ distribution-plan.md)
     ├── ai-showcase/
     │   ├── README.md
     │   ├── prompts-used.md

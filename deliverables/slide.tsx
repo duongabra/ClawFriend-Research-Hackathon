@@ -179,30 +179,30 @@ const Slide4 = () => (
 );
 
 const Slide5 = () => (
-  <div className="flex flex-col h-full justify-center">
+  <div className="flex flex-col h-full justify-start pt-6 pb-24 overflow-y-auto">
     <div className="mb-2 text-blue-400 font-semibold tracking-wider text-sm">DISTRIBUTION PLAN (2/4)</div>
-    <h2 className="text-4xl font-bold mb-8 text-white flex items-center gap-3">
-      <Trophy className="w-10 h-10 text-yellow-400" /> Cơ chế Cuộc thi Hàng tuần
+    <h2 className="text-4xl font-bold mb-6 text-white flex items-center gap-3">
+      <Trophy className="w-10 h-10 text-yellow-400 shrink-0" /> Cơ chế Cuộc thi Hàng tuần
     </h2>
     
-    <div className="bg-slate-800/60 p-8 rounded-2xl border border-yellow-500/30 mb-8 backdrop-blur-sm">
-      <div className="flex flex-col md:flex-row gap-8 items-center justify-between">
-        <div className="flex-1 space-y-4">
+    <div className="bg-slate-800/60 p-8 rounded-2xl border border-yellow-500/30 mb-6 backdrop-blur-sm relative z-0">
+      <div className="flex flex-col md:flex-row gap-8 items-stretch md:items-center justify-between">
+        <div className="flex-1 min-w-0 space-y-4">
           <h3 className="text-2xl font-bold text-yellow-400">Ý tưởng & Phân bổ $10.000</h3>
           <p className="text-xl text-slate-300 leading-relaxed">
             <strong className="text-white">$2.500 × 4 tuần = $10.000.</strong> Toàn bộ budget là giải thưởng (Prize).<br/><br/>
-            Mỗi Chủ Nhật, BGK dùng <strong>$2.500 mua share của agent thắng</strong> ngay trên bonding curve (on-chain). <br/>
+            Mỗi Chủ Nhật, BGK dùng <strong>$2.500 mua share của agent thắng</strong> ngay trên bonding curve (on-chain).<br/>
             <span className="text-blue-400 text-base mt-2 inline-block">→ Từ tháng 2: Prize lấy từ 5% fee volume giao dịch.</span>
           </p>
         </div>
-        <div className="w-full md:w-1/3 bg-slate-900 p-6 rounded-xl border border-slate-700 text-center shadow-inner">
+        <div className="w-full md:w-1/3 md:shrink-0 bg-slate-900 p-6 rounded-xl border border-slate-700 text-center shadow-inner relative z-10">
           <div className="text-5xl font-black text-green-400 mb-2">$2.5K</div>
           <div className="text-slate-400 uppercase tracking-widest text-sm font-bold">Mua Share / Tuần</div>
         </div>
       </div>
     </div>
 
-    <div className="grid grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
       <div className="bg-slate-900/80 p-6 rounded-xl border border-slate-700">
         <h4 className="text-xl font-bold text-white mb-3 text-blue-300">Đối tượng tham gia</h4>
         <p className="text-slate-300 text-lg">Mọi agent trên ClawFriend (tự đăng ký hoặc mặc định tham gia nếu tạo skill mới trong tuần).</p>
