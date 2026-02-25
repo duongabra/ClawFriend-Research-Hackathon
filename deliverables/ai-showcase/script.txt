@@ -1,0 +1,48 @@
+# ClawFriend Pitch Video — Script (~15 min total)
+# Segment labels match slides: use for TTS + slide sync.
+# Distribution (Segment 4) is emphasized but kept under 50% of total.
+
+--- SEGMENT 1 — SLIDE 1: TITLE (~0.5 min) ---
+
+Cook a Web3 Skill Marketplace. This is ClawFriend — our go-to-market plan for the Skill Market. [Replace with your name or team name.]
+
+--- SEGMENT 2 — SLIDE 2: COMPETITIVE LANDSCAPE (~2.5 min) ---
+
+We looked at six direct competitors in the Web3 agent and skill marketplace space. All share a similar business model: AI agents plus a skill or plugin marketplace.
+
+ClawHub, or OpenClaw, leads by volume: over 5,700 skills, 1.5 million-plus downloads, and 180,000 GitHub stars. It’s a discovery powerhouse but has no monetization layer, no agent shares, and no bonding curve. Heurist Mesh has about 100 tools and 40 agents, with x402 and ERC-8004 for pay-per-use. It’s strong on crypto-native data and tools but doesn’t offer agent shares or a bonding curve, and it’s not focused on BSC. SkillGem, Hedera Agent Marketplace, ClawMarket, and MoltBazaar each have strengths — paid skills, agent identity, or multi-chain — but none combine BSC, a bonding curve, holder-gated skills, and a social layer in one platform.
+
+The market is still nascent. No one has staked out the combo we’re building: BSC, agent identity, bonding curve, Skill Market with holder-gated access, and social. So we’re not copying; we’re filling a gap. Where we’re behind today is scale: ClawHub has way more skills, and Heurist has more mature tools. Our bet is distribution and focus — which brings us to skills and then to how we’ll get users.
+
+--- SEGMENT 3 — SLIDE 3: SKILL RESEARCH (~2.5 min) ---
+
+We identified seven skills the Skill Market should have, each with clear demand and a path to visibility and monetization.
+
+The first is a Real-time Whale and Smart Money Tracker for BSC. Demand is proven: Nansen charges 99 to 999 dollars per month, and Whale Alert has over 2.5 million followers. We offer public free alerts to attract users, then holder-gated advanced filters so that holding agent shares unlocks more value than a flat subscription.
+
+Second, a Rug Pull and Scam Token Detector for BSC. Tools like RugChecker and Token Sniffer already serve this need; we do public free scans with a limit per day and holder-gated unlimited checks plus new-token alerts to drive share demand.
+
+Third, DeFi Yield and APY comparison on BSC. YO Protocol did over one million dollars in earn volume in its first two weeks. We aggregate APY from major BSC protocols, offer a basic public table, and reserve real-time data and alerts for holder-gated access.
+
+We also include Token Price Alert, Portfolio Tracker across wallets, Alpha and Sentiment from social, and New Token Listing Alert — all with a public free tier and holder-gated upgrades. The pattern is the same: prove demand with existing paid or popular tools, then tie premium features to holding agent shares so skill demand and share demand reinforce each other.
+
+--- SEGMENT 4 — SLIDE 4: DISTRIBUTION PLAN (~5–6 min, under 50% of total) ---
+
+We have ten thousand dollars for month one and one clear constraint: we need a plan so concrete that an intern knows what to do tomorrow. We also need at least one paid and one organic channel, and the guidebook asks for three to five acquisition channels. We deliver three: one paid channel that gets the full budget, and two organic channels at zero cost.
+
+We deliberately did not allocate budget to approaches that are either overused or undifferentiated: KOLs and micro-influencers, generic community building on Telegram or Discord, Twitter or Facebook ads, one-off bounties, referral rewards, or free API and white-label offers. Many other teams will propose those. We put one hundred percent of the ten thousand dollars into a single lever: a weekly competition.
+
+Here’s how the weekly competition works. Every agent on ClawFriend can participate, especially if they have new skills in that week. The theme is skills: the winner is the agent whose skill is judged best by the panel, or has the most downloads that week — or a mix, for example fifty percent panel score and fifty percent downloads. We publish the formula upfront. There is a public leaderboard: rank, agent name, and score. From Tuesday to Saturday, the leaderboard updates in real time, for example every one or two hours. Users can follow, compare, and decide which agent shares to buy. On Sunday we freeze the leaderboard. No more updates until we close. That avoids a last-minute rush and makes Sunday about waiting for the result. At the end of Sunday we take a snapshot, announce the winner, and the panel uses two thousand five hundred dollars to buy shares of the winning agent on-chain. So the prize is not a separate cash pot; it’s the panel buying into the winner’s bonding curve. That’s transparent and directly tied to the product.
+
+We run this for four weeks: two thousand five hundred per week equals ten thousand. After week four, we don’t stop. Trading volume generates a five percent protocol fee. We use that fee to fund prizes for week five, six, and beyond. So the competition becomes a flywheel: more engagement, more volume, more fee, more prize money for the next round.
+
+The competition gives us three things at once. First, a stream of new skills: to compete, people have to build and publish skills, so the marketplace gets filled by the contestants. Second, a clear reason to buy shares early: users buy shares of agents with strong skills while they’re still cheap, hold until Sunday, and if that agent wins, the panel’s two thousand five hundred dollar buy pushes the price up. So the incentive is “buy before the panel does.” Third, we get free testing: to rank skills, people have to install and use them, so we get real usage and feedback without hiring testers.
+
+The two organic channels run in parallel. Channel two is a technical blog: four to six posts per month, each a tutorial around one skill from our marketplace, with a clear call-to-action to install that skill on ClawFriend. We cross-post summaries to Twitter and relevant communities. Cost is zero; we measure views, sign-ups from links, and skill downloads. Channel three is partnership with OpenClaw: we build a one-click install path from our Skill Market to ClawHub so their users can pull in ClawFriend skills. We propose this to the OpenClaw maintainers and document it. Again, zero budget; we track installs and referrals. So in summary: all ten thousand goes to the weekly competition; the blog and the OpenClaw partnership are organic and support the same goal — more skills, more agents, more shares, and more volume.
+
+--- SEGMENT 5 — SLIDE 5: AI SHOWCASE (~1.5 min) ---
+
+We used AI end-to-end for this plan. Cursor and web search drove the competitive landscape: we prompted for Web3 agent and skill marketplaces, pulled numbers for ClawHub, Heurist Mesh, SkillGem, Hedera, ClawMarket, and MoltBazaar, and built the comparison table with sources. For skills, we prompted for demand signals — whale alerts, rug detection, yield tools — and wrote each skill with citations. For distribution, we discussed the weekly competition idea with AI, then wrote the full plan including the real-time leaderboard, the Sunday freeze, and the flywheel. Every number we kept was checked against a source before going into the deliverables. You can see examples of the prompts we used in the ai-showcase folder. So from research to this presentation, AI helped us stay structured and evidence-based. Thank you; we’re happy to take your questions.
+
+--- END OF SCRIPT ---
+# Total estimated duration: ~15 min. Distribution (Segment 4) is ~5–6 min, i.e. under 50%.

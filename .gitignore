@@ -1,2 +1,5 @@
 # Local plan — do not push
 # plan.ini
+
+# Python venv (ai-showcase)
+.venv/

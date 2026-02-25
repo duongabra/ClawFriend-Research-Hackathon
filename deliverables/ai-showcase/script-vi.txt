@@ -1,0 +1,50 @@
+# ClawFriend Pitch Video — Script tiếng Việt (~15 phút)
+# Nhãn segment khớp slide: dùng cho TTS + đồng bộ slide.
+# Phần Distribution (Segment 4) nhấn mạnh nhưng dưới 50% tổng thời lượng.
+# Gợi ý TTS: Edge TTS giọng vi-VN-HoaiMyNeural hoặc vi-VN-NamMinhNeural — nghe khá tự nhiên.
+
+--- SEGMENT 1 — SLIDE 1: TITLE (~0.5 phút) ---
+
+Em xin kính chào quý công ty Lab3 và ban giám khảo. Em là trợ lý của anh Dương; hôm nay em xin được thay mặt anh Dương trình bày báo cáo của nhóm. Đề tài của chúng em là Cook a Web3 Skill Marketplace — ClawFriend, kế hoạch go-to-market cho Skill Market. Em xin phép được bắt đầu ạ.
+
+--- SEGMENT 2 — SLIDE 2: COMPETITIVE LANDSCAPE (~2.5 phút) ---
+
+Chúng em xem xét sáu đối thủ trực tiếp trong không gian marketplace agent và skill Web3. Tất cả đều có mô hình kinh doanh tương tự: AI agent cộng marketplace skill hoặc plugin.
+
+ClawHub, hay OpenClaw, dẫn đầu về lượng: hơn 5.700 skill, hơn 1,5 triệu lượt tải và 180 nghìn sao GitHub. Họ mạnh về discovery nhưng không có lớp kiếm tiền, không có share agent, không có bonding curve. Heurist Mesh có khoảng 100 tool và 40 agent, dùng x402 và ERC-8004 trả theo lượt dùng. Họ mạnh về data và tool crypto nhưng không có share agent hay bonding curve, và không tập trung BSC. SkillGem, Hedera Agent Marketplace, ClawMarket và MoltBazaar mỗi bên có điểm mạnh riêng — skill trả phí, identity agent, đa chain — nhưng không ai gom đủ BSC, bonding curve, skill holder-gated và lớp social trong một nền tảng.
+
+Thị trường vẫn đang nascent. Chưa ai chiếm combo mà chúng em đang xây: BSC, identity agent, bonding curve, Skill Market với truy cập holder-gated và social. Vì vậy chúng em không copy; chúng em lấp gap. Điểm chúng em đang thua hiện tại là quy mô: ClawHub có nhiều skill hơn hẳn, Heurist có tool trưởng thành hơn. Cược của chúng em là distribution và focus — dẫn tới phần skill và sau đó là cách chúng em sẽ kéo user.
+
+--- SEGMENT 3 — SLIDE 3: SKILL RESEARCH (~2.5 phút) ---
+
+Chúng em xác định bảy skill mà Skill Market nên có, mỗi skill đều có bằng chứng demand rõ và lộ trình visibility cùng monetization.
+
+Thứ nhất là Real-time Whale và Smart Money Tracker cho BSC. Demand đã được chứng minh: Nansen thu phí 99 đến 999 đô mỗi tháng, Whale Alert có hơn 2,5 triệu follower. Chúng em làm bản public miễn phí để kéo user, sau đó bản holder-gated với filter nâng cao — giữ share agent mới mở khóa được, thay vì trả subscription cố định.
+
+Thứ hai, Rug Pull và Scam Token Detector cho BSC. Các tool như RugChecker và Token Sniffer đã phục vụ nhu cầu này; chúng em làm public free với giới hạn số lần mỗi ngày, holder-gated thì unlimited cộng alert token mới để đẩy demand mua share.
+
+Thứ ba, so sánh DeFi Yield và APY trên BSC. YO Protocol đạt hơn một triệu đô volume earn trong hai tuần đầu. Chúng em tổng hợp APY từ các protocol BSC chính, có bảng public cơ bản, và dành data real-time cùng alert cho holder-gated.
+
+Chúng em còn có Token Price Alert, Portfolio Tracker đa ví, Alpha và Sentiment từ social, và New Token Listing Alert — đều theo mô hình public free và nâng cấp holder-gated. Cách làm giống nhau: chứng minh demand bằng tool trả phí hoặc phổ biến sẵn có, rồi gắn tính năng cao cấp với việc giữ share agent để demand skill và demand share bổ trợ nhau.
+
+--- SEGMENT 4 — SLIDE 4: DISTRIBUTION PLAN (~5–6 phút, dưới 50% tổng) ---
+
+Chúng em có mười nghìn đô cho tháng đầu và một ràng buộc rõ: cần kế hoạch đủ cụ thể để intern đọc xong biết ngày mai làm gì. Guidebook yêu cầu ít nhất một kênh paid và một organic, và từ ba đến năm kênh acquisition. Chúng em làm đủ ba kênh: một kênh paid nhận toàn bộ ngân sách, hai kênh organic không tốn tiền.
+
+Chúng em cố ý không phân bổ ngân sách cho các hướng đã quen hoặc không khác biệt: thuê KOL hay micro-influencer, xây cộng đồng chung chung trên Telegram hay Discord, quảng cáo Twitter hay Facebook, bounty một lần, referral, free API hay white-label. Nhiều team khác sẽ đề xuất những thứ đó. Chúng em dồn một trăm phần trăm mười nghìn đô vào một đòn bẩy duy nhất: cuộc thi hàng tuần.
+
+Cơ chế cuộc thi hàng tuần như sau. Mọi agent trên ClawFriend đều có thể tham gia, đặc biệt nếu có skill mới trong tuần đó. Chủ đề là skill: agent thắng là agent có skill được BGK chấm cao nhất hoặc có nhiều lượt tải nhất trong tuần — hoặc kết hợp, ví dụ năm mươi phần trăm điểm BGK và năm mươi phần trăm lượt tải. Chúng em công bố công thức từ đầu. Có bảng xếp hạng công khai: hạng, tên agent, điểm. Từ thứ Hai đến thứ Bảy, bảng xếp hạng cập nhật realtime, ví dụ mỗi một đến hai giờ. User theo dõi, so sánh và quyết định mua share agent nào. Chủ nhật chúng em đóng băng bảng xếp hạng. Không cập nhật nữa cho đến khi chốt. Như vậy tránh đổ xô mua gần cuối và làm ngày Chủ nhật là lúc hồi hộp chờ kết quả. Cuối Chủ nhật chúng em chốt snapshot, công bố winner, và BGK dùng hai nghìn năm trăm đô để mua share của agent thắng on-chain. Vậy giải thưởng không phải một khoản tiền mặt riêng mà là BGK mua vào bonding curve của winner — minh bạch và gắn trực tiếp với sản phẩm.
+
+Chúng em chạy bốn tuần: hai nghìn năm trăm mỗi tuần bằng mười nghìn. Sau tuần bốn không dừng. Volume giao dịch tạo ra phí protocol năm phần trăm. Chúng em dùng phí đó để tài trợ giải cho tuần năm, sáu và tiếp theo. Cuộc thi trở thành flywheel: càng engagement, càng volume, càng fee, càng có tiền giải vòng sau.
+
+Cuộc thi cho chúng em ba thứ cùng lúc. Một, nguồn skill mới liên tục: để thi thì phải build và publish skill, nên marketplace được lấp đầy bởi chính người dự thi. Hai, lý do rõ để mua share sớm: user mua share agent có skill mạnh khi giá còn rẻ, giữ đến Chủ nhật, nếu agent đó thắng thì BGK mua hai nghìn năm trăm đô đẩy giá lên — incentive là mua trước khi BGK mua. Ba, tester miễn phí: để xếp hạng skill thì phải cài và dùng, nên chúng em có usage và feedback thật mà không cần thuê tester.
+
+Hai kênh organic chạy song song. Kênh hai là technical blog: bốn đến sáu bài mỗi tháng, mỗi bài là tutorial xoay quanh một skill trên marketplace, có call-to-action rõ là cài skill đó trên ClawFriend. Chúng em cross-post tóm tắt lên Twitter và cộng đồng liên quan. Chi phí bằng không; đo views, sign-up từ link và lượt tải skill. Kênh ba là partnership với OpenClaw: chúng em xây luồng cài một chạm từ Skill Market của mình sang ClawHub để user của họ có thể kéo skill ClawFriend vào. Chúng em đề xuất với maintainer OpenClaw và ghi tài liệu. Cũng không tốn ngân sách; theo dõi lượt cài và referral. Tóm lại: toàn bộ mười nghìn đô dồn vào cuộc thi hàng tuần; blog và partnership OpenClaw là organic và cùng hướng tới một mục tiêu — nhiều skill hơn, nhiều agent hơn, nhiều share và volume hơn.
+
+--- SEGMENT 5 — SLIDE 5: AI SHOWCASE (~1.5 phút) ---
+
+Chúng em dùng AI xuyên suốt cho kế hoạch này. Cursor và web search làm competitive landscape: prompt tìm marketplace agent và skill Web3, lấy số liệu ClawHub, Heurist Mesh, SkillGem, Hedera, ClawMarket, MoltBazaar và dựng bảng so sánh có nguồn. Phần skill thì prompt tìm tín hiệu demand — whale alert, rug detection, yield tool — và viết từng skill có trích dẫn. Phần distribution thì thảo luận ý tưởng cuộc thi hàng tuần với AI rồi viết full plan gồm bảng xếp hạng realtime, đóng băng Chủ nhật và flywheel. Mọi con số giữ lại đều đối chiếu nguồn trước khi đưa vào deliverables. Các bạn có thể xem ví dụ prompt trong folder ai-showcase. Từ research đến bài thuyết trình này, AI giúp chúng em có cấu trúc và dựa trên bằng chứng. Cảm ơn; chúng em sẵn sàng nhận câu hỏi.
+
+--- END OF SCRIPT ---
+# Tổng ước lượng ~15 phút. Phần Distribution (Segment 4) ~5–6 phút, tức dưới 50%.
+# Voice tiếng Việt: Edge TTS (vi-VN-*) hoặc CapCut giọng Việt — thử vài giọng rồi chọn.

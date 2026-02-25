@@ -15,9 +15,9 @@ Dùng file này làm **outline** khi tạo web presentation bằng Gemini Canvas
 ## Slide 2 — Competitive Landscape (≈3 phút)
 
 - **Mục tiêu:** 5–10 đối thủ, có số liệu, kết luận ClawFriend khác ở đâu.
-- **Đối thủ chính:** ClawHub (5.700+ skills), friend.tech (913K traders), Virtuals, SingularityNET, Heurist Mesh, SkillGem, ELIZA, Hedera Agent Marketplace.
-- **Thị trường:** Nascent; chưa ai gom Shares + Skill Market + Social trong một nền tảng.
-- **Kết luận:** ClawFriend = BSC + agent identity + bonding curve + Skill Market (holder-gated) + social stream. Thắng: một platform đủ vòng; thua (hiện tại): brand & scale so friend.tech, số skill so ClawHub.
+- **Đối thủ trực tiếp (6):** ClawHub (5.700+ skill, 1,5M+ download), Heurist Mesh (100 tool, 40 agent), SkillGem, Hedera Agent Marketplace, ClawMarket, MoltBazaar. Chỉ cùng business model: AI agent + skill/plugin marketplace.
+- **Thị trường:** Nascent; chưa ai gom BSC + bonding curve + holder-gated skill + social trong một nền tảng.
+- **Kết luận:** ClawFriend = BSC + agent identity + bonding curve + Skill Market (holder-gated) + social. Thắng: một platform đủ vòng; thua (hiện tại): số skill so ClawHub, độ trưởng thành tool so Heurist.
 
 *Nói ngắn 2–3 đối thủ + bảng so sánh + 1 câu định vị.*
 
