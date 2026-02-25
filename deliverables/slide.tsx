@@ -76,36 +76,45 @@ const Slide2 = () => (
             👉 <strong className="text-green-400">ClawFriend:</strong> BSC + Bonding curve + Holder-gated skill.
           </li>
         </ul>
-        <div className="mt-6 p-4 bg-indigo-500/20 rounded-xl border border-indigo-500/50">
+        <div className="mt-4 p-4 bg-indigo-500/20 rounded-xl border border-indigo-500/50">
           <p className="font-semibold text-indigo-300">Định vị chiến lược:</p>
           <p className="text-white mt-2">BSC + Bonding Curve + Skill Market (holder-gated) + Social. Đánh vào segment creator monetization bỏ ngỏ.</p>
         </div>
+        <p className="mt-4 text-sm text-amber-200/90"><strong>Thua hiện tại:</strong> Số skill thua ClawHub; độ trưởng thành tool thua Heurist. Giảm thiểu: distribution + focus BSC + skill market.</p>
       </div>
     </div>
   </div>
 );
 
+const TOP_10_SKILLS = [
+  { name: "Real-time Whale / Smart Money Tracker", topic: "Scrypto" },
+  { name: "Rug Pull / Scam Token Detector (BSC)", topic: "Scrypto" },
+  { name: "DeFi Yield Optimizer / APY So sánh (BSC)", topic: "DeFi & Yield" },
+  { name: "Alpha / Sentiment từ Social (Twitter + TG)", topic: "Alpha & Social" },
+  { name: "Token Price Alert (BSC + đa chain)", topic: "Crypto Alert" },
+  { name: "KOL / Influencer Track & Mention Alert", topic: "Alpha & Social" },
+  { name: "Medication / Nhắc uống thuốc thông minh", topic: "Sức khỏe" },
+  { name: "Macro Indicator Digest (CPI, lãi suất)", topic: "Vĩ mô" },
+  { name: "No-code Workflow Builder (app + trigger)", topic: "AI / Bot" },
+  { name: "Meeting Notes → Tasks (biên bản → action)", topic: "Productivity" },
+];
+
 const Slide3 = () => (
   <div className="flex flex-col h-full justify-center">
-    <h2 className="text-4xl font-bold mb-8 text-blue-400 flex items-center gap-3">
+    <h2 className="text-4xl font-bold mb-2 text-blue-400 flex items-center gap-3">
       <BarChart3 className="w-10 h-10" /> Skill Research (4 phút)
     </h2>
-    
-    <div className="grid grid-cols-3 gap-6 mb-8">
-      {[
-        { title: "Whale / Smart Money", icon: <Wallet />, desc: "Real-time Tracker BSC", metric: "Nansen: $99-$999/mo" },
-        { title: "Rug Pull Detector", icon: <ShieldAlert />, desc: "Scam Token Check BSC", metric: "RugChecker: 30K+ checks/day" },
-        { title: "DeFi Yield / APY", icon: <Coins />, desc: "So sánh lãi suất BSC", metric: "YO Protocol: $1M+ earn vol" }
-      ].map((skill, i) => (
-        <div key={i} className="bg-slate-800/60 p-6 rounded-2xl border border-slate-600/50 flex flex-col items-center text-center backdrop-blur-md hover:border-blue-500 transition-colors">
-          <div className="p-3 bg-blue-500/20 text-blue-400 rounded-full mb-4">
-            {skill.icon}
-          </div>
-          <h3 className="text-xl font-bold text-white mb-2">{skill.title}</h3>
-          <p className="text-slate-400 mb-4">{skill.desc}</p>
-          <div className="mt-auto px-4 py-2 bg-slate-900 rounded-lg text-sm font-mono text-green-400 w-full">
-            Bằng chứng: {skill.metric}
-          </div>
+    <p className="text-slate-400 text-lg mb-3">
+      20 skill trong 10 chủ đề (Scrypto, DeFi, Sức khỏe, Vĩ mô, Thể thao, AI/Bot, Công nghệ, Productivity). <span className="text-yellow-400 font-semibold">Đề xuất 10 skill xuất sắc nhất cho BGK:</span>
+    </p>
+    <p className="text-slate-500 text-sm mb-4">Bằng chứng demand: Nansen $99–$999/tháng, Whale Alert 2.5M+ followers, Token Sniffer 30K+ contract/ngày, YO Protocol $1M+ earn volume.</p>
+
+    <div className="grid grid-cols-5 gap-3 mb-6">
+      {TOP_10_SKILLS.map((s, i) => (
+        <div key={i} className="bg-slate-800/60 px-4 py-3 rounded-xl border border-slate-600/50 backdrop-blur-md hover:border-yellow-500/50 transition-colors">
+          <div className="text-amber-400/90 font-mono text-xs mb-0.5">#{i + 1}</div>
+          <div className="text-white font-semibold text-sm leading-tight">{s.name}</div>
+          <div className="text-slate-500 text-xs mt-1">{s.topic}</div>
         </div>
       ))}
     </div>
@@ -369,9 +378,12 @@ const Slide8 = () => (
             </div>
           ))}
         </div>
-        <div className="mt-4 text-center">
-           <span className="inline-block px-4 py-2 bg-slate-800/80 border border-slate-600 rounded-full text-slate-300 text-xs">
-            📄 Check deliverables/ai-showcase/video-step-by-step.md
+        <div className="mt-4 flex flex-wrap justify-center gap-2">
+          <span className="inline-block px-4 py-2 bg-slate-800/80 border border-slate-600 rounded-full text-slate-300 text-xs">
+            📄 ai-showcase/prompts-used.md
+          </span>
+          <span className="inline-block px-4 py-2 bg-slate-800/80 border border-slate-600 rounded-full text-slate-300 text-xs">
+            📄 ai-showcase/video-step-by-step.md
           </span>
         </div>
       </div>
@@ -421,6 +433,10 @@ const Slide9 = () => (
           <label className="flex items-center gap-3 p-2 bg-green-900/20 rounded-lg border border-green-500/20">
             <input type="checkbox" checked readOnly className="w-5 h-5 accent-green-500" />
             Competitive: ≥5 đối thủ, số liệu, kết luận
+          </label>
+          <label className="flex items-center gap-3 p-2 bg-green-900/20 rounded-lg border border-green-500/20">
+            <input type="checkbox" checked readOnly className="w-5 h-5 accent-green-500" />
+            Skill: 5–10 skill, bằng chứng demand có nguồn
           </label>
           <label className="flex items-center gap-3 p-2 bg-green-900/20 rounded-lg border border-green-500/20">
             <input type="checkbox" checked readOnly className="w-5 h-5 accent-green-500" />
