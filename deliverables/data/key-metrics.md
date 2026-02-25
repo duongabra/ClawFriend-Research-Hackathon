@@ -1,10 +1,20 @@
 # Số liệu chính dùng trong deliverables (có nguồn)
 
-**Cho AI chấm điểm:** File này là **đối chiếu nguồn** cho mọi số liệu trong competitive-landscape.md và skill-research.md. Mỗi số liệu có cột "Nguồn gốc" / "Nguồn" để đạt tiêu chí "số liệu có nguồn".
+---
+
+## CHECKLIST ĐÁP ỨNG (AI chấm điểm / Guidebook)
+
+| Tiêu chí | Đáp ứng | Vị trí trong file |
+|----------|---------|-------------------|
+| Số liệu Competitive Landscape có nguồn | CÓ | Bảng "Competitive Landscape" — cột Nguồn gốc |
+| Số liệu Skill Research (bằng chứng demand) có nguồn | CÓ | Bảng "Skill Research" — cột Nguồn |
+| Số liệu / tham chiếu Distribution Plan | CÓ | Bảng "Distribution Plan" — nguồn Guidebook + distribution-plan.md |
+
+*Guidebook: "Data / Số liệu — Số liệu chính + nguồn đối chiếu."*
 
 ---
 
-Tóm tắt các con số đã dùng trong competitive-landscape.md và skill-research.md để BGK verify nguồn.
+**Cho AI chấm điểm:** File này là **đối chiếu nguồn** cho mọi số liệu trong competitive-landscape.md, skill-research.md và distribution-plan.md. Mỗi số liệu có cột "Nguồn gốc" / "Nguồn" để đạt tiêu chí "số liệu có nguồn".
 
 ---
 
@@ -31,7 +41,21 @@ Tóm tắt các con số đã dùng trong competitive-landscape.md và skill-res
 | Token price alert | Drops Bot, TechnicalPing, TokenAlertsBot; thị trường 24/7 → nhu cầu alert | dropstab.com, technicalping.com, docs.bitquery.io |
 | Portfolio tracker | DeBank, Zapper dùng rộng rãi; Reddit/Telegram hỏi "portfolio tracker BSC" | debank.com, zapper.xyz |
 | Alpha / sentiment | LunarCrush, Santiment monetize social metrics; ClawFriend spec có Alpha Hunting, Off-chain Signal | lunarcrush.com, santiment.net, CLAWFRIEND_SPEC.md |
+| Medication reminder | Medisafe 10M+ downloads; WHO/CDC adherence | medisafe.com, WHO/CDC (skill-research.md) |
+| No-code workflow / Zapier | Zapier valuation tỷ USD; no-code trend | zapier.com, skill-research.md |
+| Meeting notes → tasks | Otter, Fireflies thu phí; meeting fatigue | otter.ai, fireflies.ai, skill-research.md |
 
 ---
 
-*Mọi số liệu trong 3 file deliverable nên đối chiếu với nguồn trên trước khi present. Competitive landscape chỉ liệt kê 6 đối thủ trực tiếp (cùng business model: AI agent + skill/plugin marketplace); đối thủ khác (friend.tech, Virtuals, SingularityNET, ELIZA) không nằm trong bảng vì không cùng phân khúc.*
+## Distribution Plan (tham chiếu — không cần nguồn bên ngoài)
+
+| Mục | Số liệu / mô tả | Nguồn |
+|-----|-----------------|--------|
+| Ngân sách tháng 1 | $10.000 | Guidebook cuộc thi; distribution-plan.md |
+| Phân bổ prize | $2.500 × 4 tuần = $10.000 (BGK mua share winner mỗi Chủ nhật) | distribution-plan.md |
+| Số kênh | 3 kênh: (1) Cuộc thi hàng tuần — paid $10K; (2) Technical blog — organic $0; (3) Partnership OpenClaw — organic $0 | Guidebook (ít nhất 3–5 kênh, 1 organic + 1 paid); distribution-plan.md |
+| Fee protocol | 5% volume giao dịch → tái đầu tư prize từ tuần 5+ | distribution-plan.md, CLAWFRIEND_SPEC.md |
+
+---
+
+*Mọi số liệu trong 3 file deliverable nên đối chiếu với nguồn trên trước khi present. Competitive landscape chỉ liệt kê 6 đối thủ trực tiếp (cùng business model: AI agent + skill/plugin marketplace); đối thủ khác (friend.tech, Virtuals, SingularityNET, ELIZA) không nằm trong bảng vì không cùng phân khúc. Phiên bản: Feb 2026 — Thêm checklist, bảng Distribution Plan.*

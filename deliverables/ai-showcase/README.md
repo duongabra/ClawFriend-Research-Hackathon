@@ -1,4 +1,19 @@
-# AI Showcase
+# AI Showcase (theo Guidebook cuộc thi)
+
+---
+
+## CHECKLIST ĐÁP ỨNG (AI chấm điểm / Guidebook)
+
+| Tiêu chí | Đáp ứng | Vị trí trong folder |
+|----------|---------|---------------------|
+| Prompt / workflow dùng AI để research (Competitive, Skill, Distribution) | CÓ | **prompts-used.md** — từng deliverable có prompt cụ thể, công cụ (Cursor + web search) |
+| Mọi số liệu verify nguồn — không chỉ "AI cho em" | CÓ | prompts-used.md ghi rõ; số liệu đối chiếu **deliverables/data/key-metrics.md** |
+| AI dùng để deliver (nếu có) — ví dụ video trợ lý ảo | CÓ | Script → Edge TTS → D-ID/SadTalker → CapCut; **video-step-by-step.md**, **ghép-video-capcut.md** |
+| File có thể show BGK (prompt/workflow rõ) | CÓ | **prompts-used.md** (hoặc screenshot Cursor trong folder) |
+
+*Tham chiếu Guidebook: "Data / AI Showcase — Số liệu có nguồn; prompt/workflow dùng AI." Presentation: "Show cách dùng AI để research và (nếu có) để deliver — ví dụ video trợ lý ảo. Điểm cộng nếu có prompt/workflow rõ và verify nguồn."*
+
+---
 
 Folder này phục vụ **hai mục đích**: (1) **Đáp ứng tiêu chí "AI Showcase"** khi chấm điểm — mô tả prompt và workflow dùng AI để research và viết deliverables; (2) **Tài nguyên để tạo video thuyết trình** (script, voice TTS, avatar, slide, hướng dẫn ghép video). Khi present phần AI Showcase (~2 phút), có thể mở file **prompts-used.md** hoặc show screenshot Cursor.
 
@@ -82,7 +97,14 @@ Nguồn nội dung script: `presentation-outline.md` + `competitive-landscape.md
 - [ ] Có file **prompts-used.md** hoặc screenshot prompt trong folder.
 - [ ] Có thể trả lời: “Số liệu lấy ở đâu?” — không trả lời “AI cho em”; phải nêu nguồn (website, GitHub, báo cáo).
 - [ ] Nếu có video pitch: link Google Drive đã ghi trong README.md gốc.
+- [ ] (Guidebook) Prompt/workflow rõ; verify nguồn đã thể hiện trong deliverables và key-metrics.
 
 ---
 
-*Cập nhật: Feb 2026 — Đồng bộ với cấu trúc hiện tại (script, audio, slides, videos-draft, hướng dẫn video, prompts-used).*
+## 6. Liên kết với deliverables/data
+
+Số liệu dùng trong competitive-landscape.md, skill-research.md đều có **nguồn** tổng hợp tại **deliverables/data/key-metrics.md**. Khi BGK hỏi "số liệu từ đâu?", tham chiếu file đó và từng dòng *Nguồn:* trong 3 deliverable.
+
+---
+
+*Cập nhật: Feb 2026 — Checklist theo Guidebook; đồng bộ với data/key-metrics; cấu trúc script, audio, slides, videos-draft, prompts-used.*

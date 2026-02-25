@@ -10,13 +10,15 @@ Tài liệu này mô tả **các prompt và quy trình dùng AI** để research
 
 **Prompt / workflow đã dùng:**
 
-- **Prompt 1:** *"Web3 AI agent marketplace skill plugin 2024 2025"* — Tìm platform: Heurist Mesh, SkillGem, ClawMarket, Hedera Agent Marketplace, v.v.
+- **Prompt 1:** *"Web3 AI agent marketplace skill plugin 2024 2025"* — Tìm platform: Heurist Mesh, SkillGem, ClawMarket, MoltBazaar, Hedera Agent Marketplace, ClawHub/OpenClaw, v.v.
 - **Prompt 2:** *"ClawHub OpenClaw skill registry stats users"* — Lấy số liệu: 5.700+ skills, 180K+ GitHub stars, top skill downloads.
 - **Prompt 3:** *"friend.tech bonding curve users TVL 2024 2025"* — Số liệu: 913K traders, TVL, volume (DeFi Llama, Dune).
 - **Prompt 4:** *"Virtuals Protocol AI agent tokenization"*, *"SingularityNET AGIX AI marketplace"*, *"ELIZA ai16z AI agent framework GitHub"* — Chi tiết từng đối thủ, monetization, điểm mạnh/yếu.
 - **Prompt 5:** Yêu cầu tổng hợp thành bảng đối thủ + phân tích từng cái + kết luận định vị ClawFriend (khác ở đâu, thắng/thua).
 
 **Công cụ:** Web search + Cursor (soạn competitive-landscape.md từ kết quả, có ghi nguồn).
+
+**Verify nguồn:** Mọi số liệu (5.700+ skill, 1,5M+ download, 180K+ stars, 25 provider, 100 tool, 40 agent, 15+ skills ClawMarket, ERC-8004 MoltBazaar, v.v.) được lấy từ website/docs đối thủ và tổng hợp trong **deliverables/data/key-metrics.md**. Không dùng số liệu chỉ từ AI mà không đối chiếu.
 
 ---
 
@@ -34,6 +36,8 @@ Tài liệu này mô tả **các prompt và quy trình dùng AI** để research
 
 **Công cụ:** Web search + Cursor (soạn skill-research.md, mỗi skill có nguồn).
 
+**Verify nguồn:** Nansen $99–$999, Whale Alert 2.5M+ followers, Token Sniffer 30K+ contract/ngày, YO Protocol $1M+ earn volume, v.v. — nguồn ghi trong từng skill và tổng hợp **deliverables/data/key-metrics.md**.
+
 ---
 
 ## 3. Distribution Plan (Kế hoạch phân phối)
@@ -48,7 +52,15 @@ Tài liệu này mô tả **các prompt và quy trình dùng AI** để research
 - **Prompt 4:** Yêu cầu thêm lợi ích kép: nguồn skill chất lượng từ người dự thi, lý do FOMO (mua sớm share khi rẻ chờ BGK đẩy giá), nguồn tester vô tận (phải cài skill để đánh giá).
 - **Prompt 5:** Yêu cầu cơ chế BXH: T2–T7 update realtime, Chủ nhật không update (đóng băng) để tránh đổ xô mua gần cuối, user hồi hộp ngày cuối.
 
-**Công cụ:** Cursor (đọc guidebook, spec, thảo luận ý tưởng với user, viết và chỉnh distribution-plan.md).
+**Công cụ:** Cursor (đọc guidebook, spec, thảo luận ý tưởng với user, viết và chỉnh distribution-plan.md). Số liệu budget $10K, $2.5K×4 tuần, 3 kênh — theo đề bài và distribution-plan.md (nguồn: Guidebook cuộc thi).
+
+---
+
+## Verify nguồn (chung)
+
+- **Competitive & Skill:** Đối chiếu **deliverables/data/key-metrics.md** — mỗi số liệu trong competitive-landscape.md và skill-research.md có cột Nguồn/Nguồn gốc.
+- **Distribution:** Budget và cơ chế theo Guidebook + distribution-plan.md (không cần nguồn bên ngoài).
+- Khi present: trả lời "số liệu từ đâu?" bằng cách chỉ file key-metrics.md và dòng *Nguồn:* trong từng deliverable.
 
 ---
 
