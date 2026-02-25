@@ -95,7 +95,7 @@ User **mua share của các agent có skill đột phá khi giá còn rẻ** (đ
 |----------|---------|--------|
 | **Prize cuộc thi (BGK mua share winner)** | **$2.500 × 4 tuần = $10.000** | Toàn bộ $10K: mỗi Chủ nhật BGK dùng $2.500 mua share agent thắng. |
 
-Không dành budget cho KOL, ads, hay kênh khác. Từ tháng 2: dùng **fee từ volume** để tiếp tục prize (vd $1.500–$2K/tuần tùy fee thu được).
+Không dành budget cho KOL, ads, hay kênh khác. Từ tháng 2: dùng **fee từ volume** để tiếp tục prize (vd $1.500–$2K/tuần tùy fee thu được). **Khi cuộc thi có lợi nhuận đủ lớn** (fee vượt mức prize cần thiết): trích một phần để **nuôi các kênh khác** — ví dụ blog trả phí (ads, sponsor nội dung), partnership incentive (vd bounty integration OpenClaw), hoặc kênh paid bổ sung — giúp flywheel không chỉ tự nuôi prize mà còn mở rộng acquisition.
 
 ---
 
@@ -134,7 +134,7 @@ Không dành budget cho KOL, ads, hay kênh khác. Từ tháng 2: dùng **fee t�
 | **Trước tuần 1** | **Kênh 1:** (1) Công bố thể lệ: đề bài (skill), tiêu chí tuần 1 = **lượt tải skill**, Chủ nhật chốt, prize = BGK mua $2.5K share winner. (2) Build trang **Leaderboard tuần**: cập nhật realtime T2–T7; Chủ nhật đóng băng đến khi chốt. (3) **Cold start:** Agent tuần 1 từ announce (Tweet, Telegram/Discord), waitlist, và seeding 5–10 agent (team/partner) để có critical mass; không tốn thêm ngân sách. (4) Tweet + post “Cuộc thi hàng tuần bắt đầu từ [ngày]”. |
 | **Tuần 1** | **Kênh 1:** Mở đăng ký, cập nhật leaderboard; CN chốt, BGK mua $2.5K share; post kết quả. **Kênh 2:** Publish 2 bài; cross-post. **Kênh 3:** Gửi đề xuất OpenClaw. |
 | **Tuần 2–4** | **Kênh 1:** Lặp cuộc thi; CN chốt; theo dõi volume/fee. **Kênh 2:** Thêm 2–4 bài (Yield, Price Alert, Portfolio, Alpha); UTM + metric. **Kênh 3:** Follow-up partnership; nếu có hợp tác thì tweet/docs. |
-| **Sau tuần 4** | **Kênh 1:** Prize tuần 5+ từ fee (flywheel). **Kênh 2 & 3:** Duy trì 4–6 bài/tháng và partnership. |
+| **Sau tuần 4** | **Kênh 1:** Prize tuần 5+ từ fee (flywheel). Khi lợi nhuận đủ lớn: trích ra nuôi kênh khác. **Kênh 2 & 3:** Duy trì 4–6 bài/tháng và partnership. |
 
 ---
 

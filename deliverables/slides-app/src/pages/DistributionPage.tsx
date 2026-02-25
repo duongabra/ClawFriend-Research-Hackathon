@@ -1,5 +1,6 @@
-import { TrendingUp, Trophy, BookOpen, Handshake, XCircle, CheckCircle2, Calendar, BarChart2 } from 'lucide-react';
+import { TrendingUp, Trophy, BookOpen, Handshake, XCircle, CheckCircle2, Calendar, BarChart2, AlertTriangle, Table2 } from 'lucide-react';
 
+// Synced with distribution-plan.md v5.2
 export default function DistributionPage() {
   return (
     <div className="min-h-0 flex-1 overflow-auto bg-slate-950">
@@ -13,28 +14,39 @@ export default function DistributionPage() {
             Distribution Plan
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-slate-400">
-            Mục tiêu: user biết đến ClawFriend và dùng Skill Market tháng đầu. Ngân sách $10.000 — 3 kênh: Cuộc thi (paid), Technical blog + OpenClaw (organic).
+            Mục tiêu: <strong className="text-white">làm thế nào để user biết đến ClawFriend và dùng Skill Market trong tháng đầu</strong>, với ngân sách $10.000. 3 kênh: Cuộc thi (paid $10K), Technical blog + Partnership OpenClaw (organic $0).
           </p>
-          <div className="mt-6 inline-flex items-center gap-2 rounded-xl border border-slate-600 bg-slate-800/60 px-6 py-3">
-            <span className="text-slate-400">Ràng buộc:</span>
-            <span className="font-semibold text-white">$10K · 1 organic + 1 paid · Plan cụ thể (intern làm được)</span>
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <div className="inline-flex items-center gap-2 rounded-xl border border-slate-600 bg-slate-800/60 px-4 py-2 text-sm">
+              <span className="text-slate-400">Ràng buộc:</span>
+              <span className="font-semibold text-white">$10K tháng 1 · 1 organic + 1 paid · Plan cụ thể (intern đọc xong biết ngày mai làm gì)</span>
+            </div>
           </div>
         </section>
 
-        {/* What we DON'T do */}
+        {/* Các hướng không chọn — synced with md */}
         <section className="mb-12">
           <h2 className="mb-4 flex items-center gap-2 text-xl font-semibold text-red-400">
             <XCircle className="h-5 w-5" /> Các hướng không chọn
           </h2>
           <div className="rounded-xl border border-red-900/50 bg-red-950/20 p-4">
-            <p className="mb-3 text-sm text-slate-400">Đã cũ, thí sinh khác làm, không đột phá — không phân bổ ngân sách.</p>
+            <p className="mb-3 text-sm text-slate-400">Đã cũ, nhiều thí sinh khác làm, không đột phá — không phân bổ ngân sách.</p>
             <ul className="grid gap-2 text-sm text-slate-300 md:grid-cols-2">
-              {['Thuê KOL / micro-influencer', 'Cộng đồng chung (Telegram, Discord)', 'Twitter / Facebook Ads', 'Bounty 1 lần, referral', 'Creator = agent owner (guarantee fee)'].map((item, i) => (
+              {[
+                'Thuê KOL / micro-influencer — cách làm quen thuộc',
+                'Làm cộng đồng (Telegram, Reddit, Discord share link) — dễ thành spam',
+                'Twitter Ads / Facebook Ads — reach thuần, không gắn cơ chế sản phẩm',
+                'Bounty "best skill" 1 lần, referral BNB, free API, white-label',
+                'Creator = agent owner (guarantee fee) — trả tiền đổi reach, không phải cơ chế nội tại',
+              ].map((item, i) => (
                 <li key={i} className="flex items-center gap-2">
                   <span className="text-red-500">×</span> {item}
                 </li>
               ))}
             </ul>
+            <p className="mt-4 rounded-lg bg-amber-950/30 border border-amber-800/40 px-3 py-2 text-xs text-amber-300/90">
+              <strong>Kết luận:</strong> Toàn bộ $10K và sự tập trung dồn vào <strong>một thứ duy nhất: cuộc thi hàng tuần</strong>. Hai kênh organic không chia budget; trụ chính là cuộc thi.
+            </p>
           </div>
         </section>
 
@@ -52,11 +64,11 @@ export default function DistributionPage() {
               </div>
               <h3 className="text-lg font-bold text-white">Cuộc thi hàng tuần</h3>
               <p className="mt-2 text-2xl font-black text-amber-400">$10.000</p>
-              <p className="mt-2 text-sm text-slate-400">$2.500 × 4 tuần = BGK mua share agent thắng mỗi Chủ nhật. Đề bài gắn skill. <strong className="text-amber-300">Tuần 1: xếp hạng = lượt tải skill</strong> (on-chain); T2+ có thể thêm BGK. BXH realtime T2–T7, đóng băng CN.</p>
+              <p className="mt-2 text-sm text-slate-400">$2.500 × 4 tuần = BGK mua share agent thắng mỗi Chủ nhật (on-chain). Đề bài gắn <strong className="text-amber-300">skill</strong> (agent tạo skill hay / nhiều lượt tải). <strong className="text-amber-300">Tuần 1: xếp hạng = lượt tải skill</strong> (on-chain, công bố trong thể lệ); T2+ có thể thêm BGK/LLM. Đối tượng: mọi agent trên ClawFriend (tự đăng ký hoặc mặc định nếu có skill mới).</p>
               <ul className="mt-4 space-y-1 text-xs text-slate-300">
-                <li>· Cold start: announce + waitlist + seeding 5–10 agent (team/partner)</li>
-                <li>· Flywheel: volume → fee 5% → prize tuần sau</li>
-                <li>· Nguồn skill từ người dự thi; FOMO mua share khi rẻ, chờ BGK đẩy giá</li>
+                <li>· <strong>Cold start:</strong> announce (Tweet, Telegram/Discord) + waitlist + seeding 5–10 agent (team/partner); không tốn thêm ngân sách</li>
+                <li>· <strong>Flywheel:</strong> volume → fee 5% → prize tuần sau (từ T5). Khi lợi nhuận đủ lớn: trích ra nuôi kênh khác (blog, partnership incentive, paid bổ sung).</li>
+                <li>· <strong>3 lợi ích kép:</strong> (1) Nguồn skill từ người dự thi (2) FOMO mua share khi rẻ, chờ BGK $2.5K đẩy giá (3) Phải cài/dùng skill để đánh giá = nguồn tester vô tận</li>
               </ul>
             </div>
             {/* Kênh 2 */}
@@ -67,8 +79,9 @@ export default function DistributionPage() {
               </div>
               <h3 className="text-lg font-bold text-white">Technical blog</h3>
               <p className="mt-2 text-2xl font-black text-green-400">$0</p>
-              <p className="mt-2 text-sm text-slate-400">Owner: Content/Marketing lead. 4–6 bài/tháng (Mirror / blog). Mỗi bài = tutorial 1 skill. CTA: Install skill ClawFriend. Cross-post Twitter, r/crypto, Telegram BSC.</p>
-              <p className="mt-4 text-xs text-slate-500">Metric: page views, sign-up UTM, skill downloads · <strong className="text-green-400/90">Target T1:</strong> ≥500 views, ≥30 sign-up từ blog</p>
+              <p className="mt-2 text-sm text-slate-400"><strong className="text-slate-300">Tại sao chọn:</strong> DeFi/crypto dev đọc tutorial; blog dẫn về skill cụ thể = traffic có intent. SEO, credibility. <strong className="text-slate-300">Owner:</strong> Content/Marketing lead.</p>
+              <p className="mt-2 text-xs text-slate-500">Action: 4–6 bài/tháng (Mirror / clawfriend.ai). Mỗi bài = tutorial 1 skill (vd Whale Alert, Rug Check). CTA "Install skill", link skill detail. Cross-post Twitter, r/cryptocurrency, Telegram BSC/DeFi. Timeline: T1–2 → Whale + Rug; T3–4 → Yield, Price Alert.</p>
+              <p className="mt-4 text-xs text-slate-500">Metric: page views, sign-up UTM, skill downloads · <strong className="text-green-400/90">Target T1:</strong> ≥500 organic views (4 bài), ≥30 sign-up từ UTM blog</p>
             </div>
             {/* Kênh 3 */}
             <div className="rounded-2xl border border-slate-600 bg-slate-900/40 p-6">
@@ -78,8 +91,9 @@ export default function DistributionPage() {
               </div>
               <h3 className="text-lg font-bold text-white">Partnership OpenClaw</h3>
               <p className="mt-2 text-2xl font-black text-green-400">$0</p>
-              <p className="mt-2 text-sm text-slate-400">Owner: BD/Partnership lead. Flow: ClawFriend Skill Market → "Install với ClawHub". Đề xuất PR/docs với maintainer OpenClaw. Win-win: họ thêm nguồn skill, mình có user.</p>
-              <p className="mt-4 text-xs text-slate-500">Metric: install qua flow, referral UTM · <strong className="text-green-400/90">Target T1:</strong> ≥1 response maintainer; nếu hợp tác ≥50 install/referral</p>
+              <p className="mt-2 text-sm text-slate-400"><strong className="text-slate-300">Tại sao chọn:</strong> OpenClaw/ClawHub 5.700+ skill, 180K+ stars; user đã dùng npx clawhub install. Integration 1-click = họ thêm nguồn skill, mình có user. Win-win. <strong className="text-slate-300">Owner:</strong> BD/Partnership lead.</p>
+              <p className="mt-2 text-xs text-slate-500">Action: (1) Build flow ClawFriend Skill Market → "Install với ClawHub". (2) Liên hệ maintainer (Twitter, GitHub issue/PR). (3) PR/docs thêm ClawFriend trong docs OpenClaw. (4) Tweet + post community khi có integration. Timeline: T1 flow + draft; T2–3 gửi đề xuất, follow-up.</p>
+              <p className="mt-4 text-xs text-slate-500">Metric: install qua flow, referral UTM, response maintainer · <strong className="text-green-400/90">Target T1:</strong> ≥1 response từ maintainer; nếu hợp tác ≥50 install/referral (UTM)</p>
             </div>
           </div>
         </section>
@@ -90,49 +104,119 @@ export default function DistributionPage() {
             <h3 className="mb-3 font-semibold text-blue-300">Bảng xếp hạng (BXH)</h3>
             <div className="space-y-3 text-sm">
               <div className="rounded-lg bg-slate-800/60 p-3">
-                <span className="text-amber-400/90 font-medium">Tuần 1: xếp hạng = lượt tải skill</span> (on-chain); tuần 2+ có thể thêm BGK.
+                <span className="text-amber-400/90 font-medium">Tiêu chí tuần 1:</span> xếp hạng = <strong>lượt tải skill trong tuần</strong> (on-chain / platform verifiable). Công thức công bố trong thể lệ. T2+ có thể thêm BGK/LLM (vd 50% lượt tải + 50% BGK).
               </div>
               <div className="flex justify-between rounded-lg bg-slate-800/60 p-3">
                 <span className="text-slate-400">T2 → T7</span>
-                <span className="font-medium text-green-400">Realtime (1–2h)</span>
+                <span className="font-medium text-green-400">BXH cập nhật realtime (1–2h)</span>
               </div>
               <div className="flex justify-between rounded-lg bg-slate-800/60 p-3">
                 <span className="text-slate-400">Chủ nhật</span>
-                <span className="font-medium text-amber-400">Đóng băng → 23:59 chốt</span>
+                <span className="font-medium text-amber-400">BXH đóng băng → 23:59 chốt</span>
               </div>
-              <p className="text-slate-500 text-xs">BGK dùng $2.500 mua share winner on-chain. Prize tuần 5+ từ fee.</p>
+              <p className="text-slate-500 text-xs">Đóng băng CN tránh đổ xô mua gần cuối; user hồi hộp chờ kết quả. Chốt snapshot → công bố winner. BGK dùng $2.500 mua share winner on-chain. Prize tuần 5+ từ fee (flywheel). Khi lợi nhuận đủ lớn: trích ra nuôi các kênh khác.</p>
             </div>
           </div>
           <div className="rounded-2xl border border-slate-600 bg-slate-900/40 p-6">
             <h3 className="mb-3 flex items-center gap-2 font-semibold text-slate-200">
-              <Calendar className="h-5 w-5" /> Timeline
+              <Calendar className="h-5 w-5" /> Action plan & timeline (3 kênh)
             </h3>
             <ul className="space-y-2 text-sm text-slate-400">
-              <li><strong className="text-slate-300">Trước T1:</strong> Thể lệ (tuần 1 = lượt tải), Leaderboard, cold start (announce + seeding 5–10 agent)</li>
-              <li><strong className="text-slate-300">T1–T4:</strong> Cuộc thi mỗi tuần; blog 2+ bài; gửi đề xuất OpenClaw</li>
-              <li><strong className="text-slate-300">T5+:</strong> Prize từ fee (flywheel); duy trì blog 4–6 bài/tháng</li>
+              <li><strong className="text-slate-300">Trước T1:</strong> (1) Công bố thể lệ: đề bài skill, tiêu chí tuần 1 = lượt tải, CN chốt, prize = BGK mua $2.5K share. (2) Build Leaderboard tuần (realtime T2–T7, đóng băng CN). (3) Cold start: announce + waitlist + seeding 5–10 agent. (4) Tweet/post "Cuộc thi bắt đầu từ [ngày]".</li>
+              <li><strong className="text-slate-300">T1:</strong> Kênh 1: mở đăng ký, BXH; CN chốt, BGK mua share, post kết quả. Kênh 2: publish 2 bài; cross-post. Kênh 3: gửi đề xuất OpenClaw.</li>
+              <li><strong className="text-slate-300">T2–4:</strong> Kênh 1: lặp cuộc thi; theo dõi volume/fee. Kênh 2: thêm 2–4 bài (Yield, Price Alert, Portfolio, Alpha); UTM. Kênh 3: follow-up; nếu hợp tác thì tweet/docs.</li>
+              <li><strong className="text-slate-300">Sau T4:</strong> Prize T5+ từ fee (flywheel). Khi fee đủ lớn → trích phần nuôi kênh khác (blog, partnership, paid). Kênh 2 & 3: duy trì 4–6 bài/tháng và partnership.</li>
             </ul>
           </div>
         </section>
 
-        {/* Targets & Metrics */}
-        <section className="rounded-2xl border border-slate-600 bg-slate-900/40 p-6">
+        {/* Mục tiêu tháng 1 & Metric (cuộc thi) — synced with md */}
+        <section className="mb-12 rounded-2xl border border-slate-600 bg-slate-900/40 p-6">
           <h3 className="mb-4 flex items-center gap-2 font-semibold text-slate-200">
-            <BarChart2 className="h-5 w-5" /> Mục tiêu tháng 1 & Metric
+            <BarChart2 className="h-5 w-5" /> Mục tiêu tháng 1 (định nghĩa thành công) & Metric
           </h3>
           <div className="mb-4 rounded-xl border border-green-800/50 bg-green-950/20 p-4">
-            <p className="text-xs font-semibold text-green-400/90 uppercase tracking-wide">Target tháng 1 (thành công)</p>
+            <p className="text-xs font-semibold text-green-400/90 uppercase tracking-wide">Target tháng 1 — nếu đạt 3 chỉ tiêu → thành công; chưa đạt → kích hoạt kế hoạch dự phòng</p>
             <ul className="mt-2 space-y-1 text-sm text-slate-300">
-              <li>· <strong>≥15 agent</strong> tuần 1</li>
-              <li>· <strong>≥$8K</strong> volume 4 tuần (≈ 20 agent × $400/agent: 10–20 holder × 1–2 giao dịch × ~$20)</li>
-              <li>· <strong>≥20 skill</strong> mới 4 tuần</li>
+              <li>· <strong>≥15 agent</strong> tuần 1 — đủ để leaderboard có ý nghĩa, FOMO hoạt động</li>
+              <li>· <strong>≥$8.000</strong> volume 4 tuần — ~$2K/tuần; fee 5% ≈ $400/tuần → từ T5 dùng fee cho prize. Cơ sở $400/agent: giai đoạn sớm bonding curve, 10–20 holder × 1–2 giao dịch × ~$20/giao dịch trong 4 tuần</li>
+              <li>· <strong>≥20 skill</strong> mới 4 tuần — marketplace nhận đủ skill từ cuộc thi</li>
             </ul>
           </div>
-          <p className="mb-3 text-xs text-slate-500">Metric cuộc thi: agent/tuần, skill mới/tuần, volume, fee 5%, sign-up, engagement BXH. Contingency: ít agent → kéo dài T1 hoặc gộp prize; volume thấp → prize theo fee hoặc 20% reserve <em>nếu đã reserve từ đầu</em>.</p>
-          <div className="grid gap-3 text-sm md:grid-cols-2">
-            {['Số agent tham gia / tuần', 'Số skill mới / tuần', 'Volume giao dịch share', 'Fee protocol 5%', 'Sign-up mới', 'Engagement leaderboard'].map((m, i) => (
-              <div key={i} className="rounded-lg bg-slate-800/60 px-4 py-2 text-slate-300">{m}</div>
+          <p className="mb-3 text-xs font-medium text-slate-400">Metric cuộc thi (cách đo)</p>
+          <div className="grid gap-2 text-sm md:grid-cols-2">
+            {[
+              { m: 'Số agent tham gia mỗi tuần', how: 'Đếm agent có ≥1 skill mới / đăng ký thi' },
+              { m: 'Số skill mới mỗi tuần', how: 'Skill publish trong kỳ thi' },
+              { m: 'Volume giao dịch share (mua bán)', how: 'On-chain / dashboard' },
+              { m: 'Fee protocol thu được', how: '5% volume → tái đầu tư prize tuần sau' },
+              { m: 'Số user mới (sign-up)', how: 'Tăng do FOMO vào platform mua share' },
+              { m: 'Engagement leaderboard', how: 'Lượt xem trang BXH, thời gian trên trang' },
+            ].map((row, i) => (
+              <div key={i} className="rounded-lg bg-slate-800/60 px-4 py-2">
+                <span className="font-medium text-slate-200">{row.m}</span>
+                <span className="block text-xs text-slate-500 mt-0.5">{row.how}</span>
+              </div>
             ))}
+          </div>
+        </section>
+
+        {/* Rủi ro & kế hoạch dự phòng — synced with md */}
+        <section className="mb-12 rounded-2xl border border-amber-800/50 bg-amber-950/20 p-6">
+          <h3 className="mb-4 flex items-center gap-2 font-semibold text-amber-400/90">
+            <AlertTriangle className="h-5 w-5" /> Rủi ro & kế hoạch dự phòng
+          </h3>
+          <div className="overflow-x-auto rounded-xl border border-slate-700/60 bg-slate-900/50">
+            <table className="w-full text-left text-sm">
+              <thead>
+                <tr className="border-b border-slate-700 bg-slate-800/80">
+                  <th className="px-3 py-2 font-semibold text-slate-200">Rủi ro</th>
+                  <th className="px-3 py-2 font-semibold text-slate-200">Trigger</th>
+                  <th className="px-3 py-2 font-semibold text-slate-200">Hành động dự phòng</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-400">
+                <tr className="border-b border-slate-800">
+                  <td className="px-3 py-2 font-medium text-amber-300/90">Tuần 1 quá ít agent (&lt; 10)</td>
+                  <td className="px-3 py-2">EOD CN tuần 1, đếm agent tham gia</td>
+                  <td className="px-3 py-2">(1) Kéo dài tuần 1 thêm 3–5 ngày, tăng announce. (2) Gộp 1–2 tuần prize ($5K một lần) tạo buzz. (3) Giữ 100% budget cho prize.</td>
+                </tr>
+                <tr className="border-b border-slate-800">
+                  <td className="px-3 py-2 font-medium text-amber-300/90">Volume tháng 1 thấp (fee không đủ prize T5)</td>
+                  <td className="px-3 py-2">Sau T4, tổng fee &lt; $1.500</td>
+                  <td className="px-3 py-2">(1) Giảm prize T5–6 xuống mức fee thực thu ($800–$1K/tuần), công bố "prize từ fee". (2) Chỉ nếu từ đầu đã reserve 20% ($2K): dùng $2K cho 1–2 tuần bridge; nếu 100% $10K vào prize thì bỏ qua (2). (3) Tăng blog + OpenClaw.</td>
+                </tr>
+                <tr>
+                  <td className="px-3 py-2 font-medium text-amber-300/90">OpenClaw không phản hồi / từ chối</td>
+                  <td className="px-3 py-2">Hết T1 không có hợp tác</td>
+                  <td className="px-3 py-2">Giữ blog làm kênh organic chính; tìm 1 partnership thay thế (community BSC/DeFi, dev tool) trong T2.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* So sánh nhanh: 3 kênh vs Các hướng không làm */}
+        <section className="rounded-2xl border border-slate-600 bg-slate-900/40 p-6">
+          <h3 className="mb-4 flex items-center gap-2 font-semibold text-slate-200">
+            <Table2 className="h-5 w-5" /> So sánh nhanh: 3 kênh vs Các hướng không chọn
+          </h3>
+          <div className="overflow-x-auto rounded-xl border border-slate-700/60">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-slate-700 bg-slate-800/80">
+                  <th className="px-3 py-2 text-left font-semibold text-slate-200">Kênh</th>
+                  <th className="px-3 py-2 text-left font-semibold text-red-400/90">Không chọn</th>
+                  <th className="px-3 py-2 text-left font-semibold text-green-400/90">3 kênh của chúng ta</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-400">
+                <tr className="border-b border-slate-800"><td className="px-3 py-2 font-medium text-slate-300">Kênh 1 (paid)</td><td className="px-3 py-2">KOL, Twitter Ads rải tiền</td><td className="px-3 py-2 text-green-400/90">Cuộc thi hàng tuần — 100% $10K = prize 4 tuần (BGK mua share winner); flywheel fee; khi lãi đủ lớn trích nuôi kênh khác</td></tr>
+                <tr className="border-b border-slate-800"><td className="px-3 py-2 font-medium text-slate-300">Kênh 2 (organic)</td><td className="px-3 py-2">"Làm content" không rõ</td><td className="px-3 py-2 text-green-400/90">Technical blog — 4–6 bài/tháng, tutorial skill, CTA install; target T1: ≥500 views, ≥30 sign-up</td></tr>
+                <tr className="border-b border-slate-800"><td className="px-3 py-2 font-medium text-slate-300">Kênh 3 (organic)</td><td className="px-3 py-2">"Partnership" chung chung</td><td className="px-3 py-2 text-green-400/90">Partnership OpenClaw — 1-click install, đề xuất cụ thể; target T1: ≥1 response, nếu hợp tác ≥50 install/referral</td></tr>
+                <tr><td className="px-3 py-2 font-medium text-slate-300">Gắn sản phẩm</td><td className="px-3 py-2">Reach thuần</td><td className="px-3 py-2 text-green-400/90">Skill + agent + share trong từng kênh (thi = skill; blog = feature skill; OpenClaw = distribution skill)</td></tr>
+              </tbody>
+            </table>
           </div>
         </section>
       </div>

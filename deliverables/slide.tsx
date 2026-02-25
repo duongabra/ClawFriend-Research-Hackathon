@@ -51,41 +51,31 @@ const Slide2 = () => (
     <div className="grid grid-cols-2 gap-8">
       <div className="bg-slate-800/50 p-6 rounded-2xl border border-slate-700/50 backdrop-blur-sm">
         <h3 className="text-2xl font-semibold mb-4 text-white">Thị trường & Đối thủ</h3>
-        <ul className="space-y-4 text-slate-300 text-lg">
-          <li><strong className="text-indigo-400">6 đối thủ:</strong> ClawHub (OpenClaw), Heurist Mesh, SkillGem, Hedera, ClawMarket, MoltBazaar.</li>
-          <li><strong className="text-indigo-400">Số liệu nổi bật:</strong> 
-            <ul className="list-disc ml-6 mt-2 text-base text-slate-400">
-              <li>ClawHub: 5.7K+ skill, 1.5M+ tải, 180K+ GitHub stars.</li>
-              <li>Heurist Mesh: 100 tool, 40 agent.</li>
-              <li>ClawMarket: 15+ skills, USDC escrow.</li>
-            </ul>
-          </li>
-          <li><strong className="text-indigo-400">Thực trạng:</strong> Nascent (sơ khai). Chưa ai gom đủ: identity agent + bonding curve + skill market (holder-gated) + social.</li>
+        <ul className="space-y-3 text-slate-300 text-base">
+          <li><strong className="text-indigo-400">6 đối thủ:</strong> ClawHub, Heurist Mesh, SkillGem, Hedera, ClawMarket, MoltBazaar.</li>
+          <li><strong className="text-indigo-400">Số liệu:</strong> ClawHub 5.7K+ skill, 1.5M+ tải, 180K+ stars. Heurist 100 tool, 40 agent. Hedera 3 plugin, GitHub 4 stars/1 fork. SkillGem/ClawMarket/MoltBazaar: feature/capacity (chưa công bố user/GMV) — note minh bạch trong báo cáo.</li>
+          <li><strong className="text-indigo-400">TAM:</strong> AI agents ~$50B/2030, ~$183B/2033 (CAGR ~45–50%) — Grand View Research.</li>
+          <li><strong className="text-indigo-400">Thực trạng:</strong> Nascent. Chưa ai gom đủ identity + bonding curve + skill market (holder-gated) + social. <strong className="text-amber-400">Không ai focus BSC.</strong></li>
         </ul>
       </div>
-      
       <div className="bg-blue-900/20 p-6 rounded-2xl border border-blue-500/30 backdrop-blur-sm">
         <h3 className="text-2xl font-semibold mb-4 text-blue-300">ClawFriend Khác Ở Đâu?</h3>
-        <ul className="space-y-4 text-slate-300 text-lg">
-          <li>
-            <span className="text-red-400 line-through mr-2">ClawHub: Không monetization</span> <br/>
-            👉 <strong className="text-green-400">ClawFriend:</strong> Discovery + 5% fee + Social.
-          </li>
-          <li>
-            <span className="text-red-400 line-through mr-2">Heurist: Không Bonding curve, không BSC</span> <br/>
-            👉 <strong className="text-green-400">ClawFriend:</strong> BSC + Bonding curve + Holder-gated skill.
-          </li>
+        <ul className="space-y-3 text-slate-300 text-base">
+          <li>ClawHub chỉ discovery → <strong className="text-green-400">ClawFriend:</strong> + 5% fee + share agent + social.</li>
+          <li>Heurist không BSC/bonding curve → <strong className="text-green-400">ClawFriend:</strong> BSC + bonding curve + holder-gated skill.</li>
+          <li>ClawMarket 15+ skill, không share agent → <strong className="text-green-400">ClawFriend:</strong> BSC + shares + holder-gated.</li>
         </ul>
         <div className="mt-4 p-4 bg-indigo-500/20 rounded-xl border border-indigo-500/50">
-          <p className="font-semibold text-indigo-300">Định vị chiến lược:</p>
-          <p className="text-white mt-2">BSC + Bonding Curve + Skill Market (holder-gated) + Social. Đánh vào segment creator monetization bỏ ngỏ.</p>
+          <p className="font-semibold text-indigo-300">Định vị:</p>
+          <p className="text-white mt-1 text-sm">BSC + Bonding Curve + Skill Market (holder-gated) + Social. Segment creator monetization bỏ ngỏ.</p>
         </div>
-        <p className="mt-4 text-sm text-amber-200/90"><strong>Thua hiện tại:</strong> Số skill thua ClawHub; độ trưởng thành tool thua Heurist. Giảm thiểu: distribution + focus BSC + skill market.</p>
+        <p className="mt-4 text-sm text-amber-200/90"><strong>Thua hiện tại:</strong> Số skill thua ClawHub (5.7K vs mới build); tool thua Heurist (100 tool, 40 agent). Giảm thiểu: agent-first + skill market + BSC + distribution (D3).</p>
       </div>
     </div>
   </div>
 );
 
+// Synced with skill-research.md v3 — 10 skill xuất sắc nhất
 const TOP_10_SKILLS = [
   { name: "Real-time Whale / Smart Money Tracker", topic: "Scrypto" },
   { name: "Rug Pull / Scam Token Detector (BSC)", topic: "Scrypto" },
@@ -96,7 +86,7 @@ const TOP_10_SKILLS = [
   { name: "Medication / Nhắc uống thuốc thông minh", topic: "Sức khỏe" },
   { name: "Macro Indicator Digest (CPI, lãi suất)", topic: "Vĩ mô" },
   { name: "No-code Workflow Builder (app + trigger)", topic: "AI / Bot" },
-  { name: "Meeting Notes → Tasks (biên bản → action)", topic: "Productivity" },
+  { name: "Meeting Notes → Tasks (biên bản → action)", topic: "Tin tức & Productivity" },
 ];
 
 const Slide3 = () => (
@@ -107,7 +97,7 @@ const Slide3 = () => (
     <p className="text-slate-400 text-lg mb-3">
       20 skill trong 10 chủ đề (Scrypto, DeFi, Sức khỏe, Vĩ mô, Thể thao, AI/Bot, Công nghệ, Productivity). <span className="text-yellow-400 font-semibold">Đề xuất 10 skill xuất sắc nhất cho BGK:</span>
     </p>
-    <p className="text-slate-500 text-sm mb-4">Bằng chứng demand: Nansen $99–$999/tháng, Whale Alert 2.5M+ followers, Token Sniffer 30K+ contract/ngày, YO Protocol $1M+ earn volume.</p>
+    <p className="text-slate-500 text-sm mb-4">Mỗi skill có: Target user, Vấn đề, Alternative, Giải pháp, Visibility, <strong className="text-amber-400/90">Tính khả thi Tech/API</strong> (vd 4.1/4.2 X API $100–$5K + Plan; 8.1 OAuth/quota risk), Bằng chứng demand có nguồn. Demand: Nansen $99–$999, Whale Alert 2.5M+, Token Sniffer 30K+/ngày, DeBank 15M+ users, DexScreener $9B+ 24H, YO $1M+ earn, Medisafe 10M+.</p>
 
     <div className="grid grid-cols-5 gap-3 mb-6">
       {TOP_10_SKILLS.map((s, i) => (
@@ -154,13 +144,14 @@ const Slide4 = () => (
           <XCircle className="w-6 h-6" /> Các hướng KHÔNG CHỌN
         </h3>
         <p className="text-slate-400 mb-4 italic">Không phân bổ ngân sách cho các hướng đã cũ, thiếu đột phá:</p>
-        <ul className="space-y-4 text-slate-300 text-lg">
-          <li className="flex gap-3"><span className="text-red-500">×</span> Thuê KOL / micro-influencer</li>
-          <li className="flex gap-3"><span className="text-red-500">×</span> Cộng đồng chung chung (Telegram, Discord)</li>
-          <li className="flex gap-3"><span className="text-red-500">×</span> Twitter / Facebook Ads</li>
-          <li className="flex gap-3"><span className="text-red-500">×</span> Bounty 1 lần, referral truyền thống</li>
-          <li className="flex gap-3"><span className="text-red-500">×</span> Guarantee fee cho Creator = agent owner</li>
+        <ul className="space-y-3 text-slate-300 text-base">
+          <li className="flex gap-3"><span className="text-red-500">×</span> Thuê KOL / micro-influencer — đã cũ, không đột phá</li>
+          <li className="flex gap-3"><span className="text-red-500">×</span> Làm cộng đồng (Telegram, Reddit, Discord share link)</li>
+          <li className="flex gap-3"><span className="text-red-500">×</span> Twitter / Facebook Ads — reach thuần</li>
+          <li className="flex gap-3"><span className="text-red-500">×</span> Bounty 1 lần, referral BNB, free API, white-label</li>
+          <li className="flex gap-3"><span className="text-red-500">×</span> Creator = agent owner (guarantee fee) — không phải cơ chế nội tại</li>
         </ul>
+        <p className="mt-4 text-amber-300/90 text-sm rounded-lg bg-amber-950/30 px-3 py-2">Toàn bộ $10K dồn vào <strong>một thứ duy nhất: cuộc thi hàng tuần</strong>. Blog + OpenClaw organic $0.</p>
       </div>
 
       <div className="bg-blue-900/20 p-8 rounded-2xl border border-blue-500/50 shadow-[0_0_30px_rgba(59,130,246,0.15)] relative overflow-hidden">
@@ -201,7 +192,7 @@ const Slide5 = () => (
           <p className="text-xl text-slate-300 leading-relaxed">
             <strong className="text-white">$2.500 × 4 tuần = $10.000.</strong> Toàn bộ budget là giải thưởng (Prize).<br/><br/>
             Mỗi Chủ Nhật, BGK dùng <strong>$2.500 mua share của agent thắng</strong> ngay trên bonding curve (on-chain).<br/>
-            <span className="text-blue-400 text-base mt-2 inline-block">→ Từ tháng 2: Prize lấy từ 5% fee volume giao dịch.</span>
+            <span className="text-blue-400 text-base mt-2 inline-block">→ Từ tháng 2: Prize lấy từ 5% fee volume. Khi lợi nhuận đủ lớn: trích ra nuôi các kênh khác (blog, partnership, paid).</span>
           </p>
         </div>
         <div className="w-full md:w-1/3 md:shrink-0 bg-slate-900 p-6 rounded-xl border border-slate-700 text-center shadow-inner relative z-10">
@@ -217,8 +208,8 @@ const Slide5 = () => (
         <p className="text-slate-300 text-lg">Mọi agent trên ClawFriend (tự đăng ký hoặc mặc định tham gia nếu tạo skill mới trong tuần).</p>
       </div>
       <div className="bg-slate-900/80 p-6 rounded-xl border border-slate-700">
-        <h4 className="text-xl font-bold text-white mb-3 text-blue-300">Tiêu chí chiến thắng</h4>
-        <p className="text-slate-300 text-lg">Agent có skill được BGK đánh giá cao nhất HOẶC nhiều lượt tải nhất (50% BGK, 50% Lượt tải).</p>
+        <h4 className="text-xl font-bold text-white mb-3 text-blue-300">Tiêu chí chiến thắng (chốt)</h4>
+        <p className="text-slate-300 text-lg"><strong className="text-amber-400">Tuần 1: xếp hạng = lượt tải skill trong tuần</strong> (on-chain, công bố trong thể lệ). Tuần 2+ có thể thêm BGK/LLM (vd 50% lượt tải + 50% BGK). Cold start: announce + waitlist + seeding 5–10 agent (team/partner).</p>
       </div>
     </div>
   </div>
@@ -280,43 +271,42 @@ const Slide7 = () => (
       <TrendingUp className="w-10 h-10 text-green-400" /> Organic Channels & Timeline
     </h2>
 
-    <div className="grid grid-cols-2 gap-8 mb-8">
+    <div className="grid grid-cols-2 gap-8 mb-6">
       <div className="bg-slate-800/60 p-6 rounded-xl border border-slate-600/50">
         <h3 className="text-2xl font-bold text-white mb-4 text-blue-300">Kênh 2: Technical Blog ($0)</h3>
-        <ul className="space-y-2 text-slate-300 text-lg">
-          <li><strong>Tần suất:</strong> 4-6 bài/tháng (Mirror.xyz / blog nội bộ).</li>
-          <li><strong>Nội dung:</strong> Tutorial 1 skill cụ thể (Whale Tracker, Rug Check...).</li>
-          <li><strong>CTA:</strong> Cài skill trên ClawFriend.</li>
-          <li><strong>Cross-post:</strong> Twitter, r/crypto, Telegram BSC.</li>
+        <p className="text-slate-400 text-sm mb-2"><strong>Owner:</strong> Content/Marketing lead. <strong>Tại sao:</strong> DeFi/crypto dev đọc tutorial = traffic có intent.</p>
+        <ul className="space-y-1 text-slate-300 text-base">
+          <li>4–6 bài/tháng (Mirror / clawfriend.ai). Mỗi bài = tutorial 1 skill (Whale, Rug, Yield, Price Alert). CTA Install skill. Cross-post Twitter, r/crypto, Telegram BSC.</li>
+          <li className="text-green-400/90 font-medium mt-2">Target T1: ≥500 organic views (4 bài), ≥30 sign-up UTM</li>
         </ul>
       </div>
-
       <div className="bg-slate-800/60 p-6 rounded-xl border border-slate-600/50">
-        <h3 className="text-2xl font-bold text-white mb-4 text-blue-300">Kênh 3: OpenClaw Partner ($0)</h3>
-        <ul className="space-y-2 text-slate-300 text-lg">
-          <li><strong>Flow:</strong> Nút "1-click install" tương thích <code>clawhub install</code>.</li>
-          <li><strong>Liên hệ:</strong> Đề xuất PR/Docs với maintainer OpenClaw.</li>
-          <li><strong>Lợi ích:</strong> ClawFriend trở thành nguồn cung cấp skill mới cho hệ sinh thái.</li>
+        <h3 className="text-2xl font-bold text-white mb-4 text-blue-300">Kênh 3: Partnership OpenClaw ($0)</h3>
+        <p className="text-slate-400 text-sm mb-2"><strong>Owner:</strong> BD/Partnership lead. <strong>Tại sao:</strong> 5.700+ skill, 180K+ stars; npx clawhub install — win-win.</p>
+        <ul className="space-y-1 text-slate-300 text-base">
+          <li>Flow ClawFriend Skill Market → "Install với ClawHub". Liên hệ maintainer, PR/docs. Tweet khi có integration.</li>
+          <li className="text-green-400/90 font-medium mt-2">Target T1: ≥1 response maintainer; nếu hợp tác ≥50 install/referral</li>
         </ul>
       </div>
     </div>
 
     <div className="bg-blue-950/40 p-6 rounded-2xl border border-indigo-500/30">
-      <h3 className="text-xl font-bold text-indigo-300 mb-4">Timeline Triển khai</h3>
-      <div className="flex gap-4">
+      <h3 className="text-xl font-bold text-indigo-300 mb-4">Timeline & Mục tiêu tháng 1</h3>
+      <div className="flex gap-4 mb-4">
         <div className="flex-1 bg-slate-900 p-4 rounded border border-slate-700">
           <div className="text-blue-400 font-bold mb-1">Trước T1</div>
-          <div className="text-sm text-slate-300">Công bố thể lệ, setup Leaderboard, chuẩn bị pipeline AI/chấm tay.</div>
+          <div className="text-sm text-slate-300">Thể lệ (tuần 1 = lượt tải), Leaderboard (realtime T2–T7, đóng băng CN), cold start (announce + seeding 5–10 agent), tweet.</div>
         </div>
-        <div className="flex-1 bg-slate-900 p-4 rounded border border-blue-700/50 shadow-[0_0_10px_rgba(37,99,235,0.2)]">
-          <div className="text-blue-400 font-bold mb-1">T1 - T4 (Paid $10K)</div>
-          <div className="text-sm text-slate-300">Mở đăng ký, T2-T7 chạy BXH, CN chốt & BGK mua $2.5K share.</div>
+        <div className="flex-1 bg-slate-900 p-4 rounded border border-blue-700/50">
+          <div className="text-blue-400 font-bold mb-1">T1–T4</div>
+          <div className="text-sm text-slate-300">Cuộc thi mỗi tuần; blog 2+ bài; gửi đề xuất OpenClaw.</div>
         </div>
         <div className="flex-1 bg-slate-900 p-4 rounded border border-slate-700">
-          <div className="text-green-400 font-bold mb-1">T5+ (Tự nuôi)</div>
-          <div className="text-sm text-slate-300">Duy trì Prize từ 5% Fee volume giao dịch. Tối ưu Organic channels.</div>
+          <div className="text-green-400 font-bold mb-1">T5+</div>
+          <div className="text-sm text-slate-300">Prize từ fee (flywheel). Khi fee đủ lớn → trích nuôi kênh khác. Duy trì blog 4–6 bài/tháng.</div>
         </div>
       </div>
+      <p className="text-sm text-amber-300/90"><strong>Target tháng 1 (thành công):</strong> ≥15 agent tuần 1 · ≥$8K volume 4 tuần (≈ 20 agent × $400/agent) · ≥20 skill. Contingency: ít agent → kéo dài T1/gộp prize; volume thấp → prize theo fee hoặc 20% reserve nếu đã reserve.</p>
     </div>
   </div>
 );
@@ -432,15 +422,15 @@ const Slide9 = () => (
           </label>
           <label className="flex items-center gap-3 p-2 bg-green-900/20 rounded-lg border border-green-500/20">
             <input type="checkbox" checked readOnly className="w-5 h-5 accent-green-500" />
-            Competitive: ≥5 đối thủ, số liệu, kết luận
+            Competitive: 6 đối thủ, số liệu có nguồn, TAM/CAGR (Grand View Research), kết luận & thua
           </label>
           <label className="flex items-center gap-3 p-2 bg-green-900/20 rounded-lg border border-green-500/20">
             <input type="checkbox" checked readOnly className="w-5 h-5 accent-green-500" />
-            Skill: 5–10 skill, bằng chứng demand có nguồn
+            Skill: 20 skill (10 chủ đề), Tech/API + Fit ClawFriend, demand có nguồn, top 10 + lý do
           </label>
           <label className="flex items-center gap-3 p-2 bg-green-900/20 rounded-lg border border-green-500/20">
             <input type="checkbox" checked readOnly className="w-5 h-5 accent-green-500" />
-            Distribution: organic + paid, $10K budget plan, BXH
+            Distribution: 3 kênh (thi $10K + blog + OpenClaw), tuần 1 = lượt tải, target T1, contingency
           </label>
           <label className="flex items-center gap-3 p-2 bg-green-900/20 rounded-lg border border-green-500/20">
             <input type="checkbox" checked readOnly className="w-5 h-5 accent-green-500" />
