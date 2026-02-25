@@ -2,13 +2,15 @@
 
 ---
 
-## CHECKLIST ĐÁP ỨNG (AI chấm điểm)
+## CHECKLIST ĐÁP ỨNG (theo Guidebook cuộc thi)
 
 | Tiêu chí | Đáp ứng | Vị trí trong file |
 |----------|---------|-------------------|
-| Ngân sách rõ: $10.000 | CÓ | Ràng buộc + bảng "Phân bổ $10.000" |
-| Ít nhất 1 kênh organic + 1 kênh paid | CÓ | Organic: cuộc thi (leaderboard, FOMO, community engagement). Paid: prize = BGK mua share ($2.500/tuần) = chi tiêu có trả phí minh bạch |
-| Plan cụ thể — intern đọc xong biết ngày mai làm gì | CÓ | Bảng "Action plan & timeline" + "Cơ chế cuộc thi hàng tuần" |
+| Ngân sách $10.000 tháng đầu | CÓ | Ràng buộc + bảng "Phân bổ $10.000" |
+| Ít nhất 3–5 kênh acquisition cụ thể | CÓ | 3 kênh: (1) Cuộc thi hàng tuần — paid $10K; (2) Technical blog — organic $0; (3) Partnership OpenClaw — organic $0 |
+| Ít nhất 1 kênh organic + 1 kênh paid | CÓ | Paid: Cuộc thi (prize BGK mua share). Organic: Blog + Partnership (không tốn budget) |
+| Mỗi kênh: Tại sao chọn, Action plan, Timeline, Cost, Metric | CÓ | Bảng cơ chế cuộc thi + bảng 2 kênh organic bên dưới |
+| Plan cụ thể — intern đọc xong biết ngày mai làm gì | CÓ | Bảng "Action plan & timeline" + từng kênh có action rõ |
 | Metric đo lường | CÓ | Bảng "Metric (cuộc thi)" |
 
 ---
@@ -42,7 +44,11 @@ Chúng ta **không** tập trung vào các hướng sau — vì **đã cũ**, **
 
 ---
 
-## Kế hoạch chính: Cuộc thi hàng tuần (toàn bộ $10K)
+Guidebook yêu cầu **ít nhất 3–5 kênh** acquisition. Ở đây có **3 kênh**: (1) **Cuộc thi hàng tuần** — kênh chính, paid $10K; (2) **Technical blog** — organic $0; (3) **Partnership OpenClaw** — organic $0. Hai kênh organic không chia budget; trụ chính là cuộc thi.
+
+---
+
+## Kênh 1 (chính): Cuộc thi hàng tuần — toàn bộ $10K
 
 ### Đánh giá ý tưởng
 
@@ -92,14 +98,38 @@ Không dành budget cho KOL, ads, hay kênh khác. Từ tháng 2: dùng **fee t�
 
 ---
 
-### Action plan & timeline (cuộc thi)
+## Kênh 2: Technical blog / content (organic, $0)
+
+| Mục | Nội dung |
+|-----|----------|
+| **Tại sao chọn** | DeFi/crypto dev và power user đọc tutorial; blog dẫn về skill cụ thể trên marketplace = traffic có intent. Không tốn tiền, bổ trợ SEO và credibility. |
+| **Action plan** | Viết 4–6 bài/tháng (Mirror.xyz hoặc blog trên clawfriend.ai): mỗi bài = tutorial dùng **1 skill cụ thể** từ marketplace (vd "Cách dùng Whale Alert Skill theo dõi smart money trên BSC"). Mỗi bài có CTA: "Install skill trên ClawFriend", link thẳng tới skill detail. Cross-post tóm tắt lên Twitter, r/cryptocurrency, Telegram nhóm BSC/DeFi (không spam, chỉ khi có giá trị). |
+| **Timeline** | Tuần 1–2: 2 bài đầu (skill Whale Tracker + Rug Check). Tuần 3–4: 2 bài (Yield/APY + Price Alert). Duy trì 4–6 bài/tháng từ tháng 2. |
+| **Cost** | $0 (chỉ thời gian viết). |
+| **Metric** | Page views; sign-up từ UTM link trong bài; số download skill được feature trong bài. |
+
+---
+
+## Kênh 3: Partnership OpenClaw (organic, $0)
+
+| Mục | Nội dung |
+|-----|----------|
+| **Tại sao chọn** | OpenClaw/ClawHub có 5.700+ skill, 180K+ stars; user đã dùng `npx clawhub install`. Integration "1-click install skill từ ClawFriend" = họ có thêm nguồn skill, mình có user từ community họ. Win-win, không tốn tiền. |
+| **Action plan** | (1) Build flow: từ ClawFriend Skill Market → "Install với ClawHub" (link hoặc script tương thích `clawhub install`). (2) Liên hệ maintainer ClawHub/OpenClaw (Twitter, GitHub issue/PR): đề xuất integration, "skill trên ClawFriend có thể install qua clawhub". (3) Đề xuất PR/docs: thêm ClawFriend như một nguồn skill trong docs OpenClaw. (4) Tweet + post trong community OpenClaw khi có integration. |
+| **Timeline** | Tháng 1: hoàn thành flow kỹ thuật + draft đề xuất. Tuần 2–3: gửi đề xuất, 1–2 follow-up. Tháng 2 trở đi: duy trì nếu đạt hợp tác. |
+| **Cost** | $0. |
+| **Metric** | Số install qua flow ClawHub → ClawFriend; số referral từ OpenClaw community (UTM); response từ maintainer (có hợp tác hay không). |
+
+---
+
+### Action plan & timeline (tổng hợp — 3 kênh)
 
 | Tuần | Việc cụ thể |
 |------|--------------|
-| **Trước tuần 1** | (1) Công bố thể lệ: đề bài (skill), tiêu chí xếp hạng, Chủ nhật chốt, prize = BGK mua $2.5K share winner. (2) Build trang **Leaderboard tuần**: cập nhật realtime T2–T7; Chủ nhật không cập nhật (đóng băng) đến khi chốt. (3) Quyết định pipeline chấm: BGK tay, LLM rubric, hoặc chỉ lượt tải. (4) Tweet + post announce “Cuộc thi hàng tuần bắt đầu từ [ngày]”. |
-| **Tuần 1** | Mở đăng ký / theo dõi agent có skill mới. Cập nhật leaderboard. Chủ nhật: chốt, công bố winner, BGK mua $2.500 share (on-chain). Tweet + post kết quả. |
-| **Tuần 2–4** | Lặp lại; có thể đổi đề nhẹ. Chủ nhật chốt, BGK mua share winner. Theo dõi volume, fee. |
-| **Sau tuần 4** | Tổng kết volume & fee; quyết định prize tuần 5+ từ fee (flywheel). |
+| **Trước tuần 1** | **Kênh 1:** Công bố thể lệ: đề bài (skill), tiêu chí xếp hạng, Chủ nhật chốt, prize = BGK mua $2.5K share winner. (2) Build trang **Leaderboard tuần**: cập nhật realtime T2–T7; Chủ nhật không cập nhật (đóng băng) đến khi chốt. (3) Quyết định pipeline chấm: BGK tay, LLM rubric, hoặc chỉ lượt tải. (4) Tweet + post announce “Cuộc thi hàng tuần bắt đầu từ [ngày]”. |
+| **Tuần 1** | **Kênh 1:** Mở đăng ký, cập nhật leaderboard; CN chốt, BGK mua $2.5K share; post kết quả. **Kênh 2:** Publish 2 bài; cross-post. **Kênh 3:** Gửi đề xuất OpenClaw. |
+| **Tuần 2–4** | **Kênh 1:** Lặp cuộc thi; CN chốt; theo dõi volume/fee. **Kênh 2:** Thêm 2–4 bài (Yield, Price Alert, Portfolio, Alpha); UTM + metric. **Kênh 3:** Follow-up partnership; nếu có hợp tác thì tweet/docs. |
+| **Sau tuần 4** | **Kênh 1:** Prize tuần 5+ từ fee (flywheel). **Kênh 2 & 3:** Duy trì 4–6 bài/tháng và partnership. |
 
 ---
 
@@ -116,15 +146,15 @@ Không dành budget cho KOL, ads, hay kênh khác. Từ tháng 2: dùng **fee t�
 
 ---
 
-## So sánh nhanh: Các hướng cũ vs Cuộc thi
+## So sánh nhanh: 3 kênh vs Các hướng không làm
 
-| | Các hướng khác (KOL, community, ads, bot, v.v.) | Kế hoạch của chúng ta |
-|---|--------------------------------------------------|------------------------|
-| **Đánh giá** | Đã cũ; thí sinh khác làm rồi; không đột phá | **Chỉ tập trung cuộc thi hàng tuần** |
-| **Trụ chính** | Nhiều kênh rải ngân sách | **100% $10K = prize 4 tuần (BGK mua share winner)** |
-| **Cơ chế** | Mua reach, làm cộng đồng | **Leaderboard realtime + FOMO mua bán → fee → flywheel** |
-| **Gắn sản phẩm** | Skill trojan, bot, content | **Đề bài = skill; winner = agent; prize = mua share; skill + tester từ thi** |
+| | Các hướng không chọn (KOL, ads, community chung chung, v.v.) | 3 kênh của chúng ta |
+|---|---------------------------------------------------------------|----------------------|
+| **Kênh 1 (paid)** | KOL, Twitter Ads rải tiền | **Cuộc thi hàng tuần** — 100% $10K = prize 4 tuần (BGK mua share winner); flywheel fee |
+| **Kênh 2 (organic)** | "Làm content" không rõ | **Technical blog** — 4–6 bài/tháng, tutorial skill cụ thể, CTA install, metric: views, sign-up, download |
+| **Kênh 3 (organic)** | "Partnership" chung chung | **Partnership OpenClaw** — integration 1-click install, đề xuất cụ thể, metric: install qua flow, referral |
+| **Gắn sản phẩm** | Reach thuần | **Skill + agent + share** trong từng kênh (thi = skill; blog = feature skill; OpenClaw = distribution skill) |
 
 ---
 
-*Phiên bản: 4.1 — Thiết kế cho AI chấm: checklist đáp ứng (ngân sách, organic+paid, plan cụ thể, metric) ở đầu file. Tập trung duy nhất cuộc thi hàng tuần; không phân bổ ngân sách cho KOL, ads, v.v.*
+*Phiên bản: 4.2 — Bám Guidebook: ít nhất 3 kênh (Cuộc thi $10K + Blog $0 + Partnership OpenClaw $0), mỗi kênh có action/timeline/cost/metric. Trụ chính vẫn là cuộc thi; 2 kênh organic bổ trợ, không phân bổ ngân sách.*
