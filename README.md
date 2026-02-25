@@ -52,7 +52,7 @@ Nghiên cứu & kế hoạch go-to-market cho **Skill Market** của **ClawFrien
 
 ## Web Presentation
 
-**Link presentation (Gemini Canvas):** https://gemini.google.com/share/fc1013e9bda0
+**Link presentation (Gemini Canvas):** https://gemini.google.com/app/594bd392160f41ac
 
 *Yêu cầu: trình bày bằng web presentation tạo từ Gemini Canvas.*
 
