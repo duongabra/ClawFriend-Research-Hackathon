@@ -91,7 +91,7 @@ Dùng file này làm **outline** khi tạo web presentation bằng Gemini Canvas
 ## Slide 5 — AI Showcase (≈2 phút)
 
 - **Cách dùng AI:** Cursor + web search.
-- **Competitive:** Prompt tìm đối thủ Web3 agent/skill marketplace, lấy số liệu (ClawHub, friend.tech, Virtuals, …), tổng hợp bảng + kết luận.
+- **Competitive:** Prompt tìm đối thủ Web3 agent/skill marketplace, lấy số liệu (ClawHub, Heurist Mesh, SkillGem, Hedera, ClawMarket, MoltBazaar), tổng hợp bảng + kết luận có nguồn.
 - **Skill:** Prompt tìm demand (whale alert, rug pull, yield, …), viết từng skill có nguồn.
 - **Distribution:** Thảo luận ý tưởng cuộc thi với AI → viết distribution plan, cơ chế BXH T2–T7 / CN đóng băng.
 - **Verify:** Mọi số liệu đối chiếu nguồn trước khi giữ trong bài.

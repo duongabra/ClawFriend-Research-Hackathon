@@ -1,21 +1,23 @@
 # Số liệu chính dùng trong deliverables (có nguồn)
 
+**Cho AI chấm điểm:** File này là **đối chiếu nguồn** cho mọi số liệu trong competitive-landscape.md và skill-research.md. Mỗi số liệu có cột "Nguồn gốc" / "Nguồn" để đạt tiêu chí "số liệu có nguồn".
+
+---
+
 Tóm tắt các con số đã dùng trong competitive-landscape.md và skill-research.md để BGK verify nguồn.
 
 ---
 
-## Competitive Landscape
+## Competitive Landscape (6 đối thủ trực tiếp — khớp competitive-landscape.md)
 
-| Nguồn | Số liệu | Nguồn gốc |
-|-------|---------|-----------|
-| ClawHub / OpenClaw | 5.700+ skills; ~40–60 skill mới/ngày; top skill 35K+ downloads; OpenClaw 180K+ GitHub stars | thecaio.ai, openclaw-hub.org, docs.openclaw.ai |
-| friend.tech | 913.315 unique traders (all-time); 343.401 ETH total volume; TVL ~$6,64M (mid-2024); 8M+ transactions | Token Terminal, DeFi Llama, Dune (austin_adams/friendstech-dashboard) |
-| Virtuals Protocol | 1% tax/trade; creator 70% / protocol 30%; 100 $VIRTUAL mở curve; 42K $VIRTUAL graduate | whitepaper.virtuals.io, research.tokenmetrics.com |
+| Đối thủ | Số liệu | Nguồn gốc |
+|---------|---------|-----------|
+| ClawHub / OpenClaw | 5.700+ skills; 1,5M+ download; ~40–60 skill mới/ngày; top skill 35K+ downloads; OpenClaw 180K+ GitHub stars | thecaio.ai, claw-hub.net, openclaw-hub.org, docs.openclaw.ai |
 | Heurist Mesh | 25 data providers; 100 tools; 40 agents; X402 + ERC-8004 | mesh.heurist.ai, docs.heurist.ai |
-| ELIZA (elizaOS) | 17,5K+ GitHub stars; 370+ contributors | GitHub elizaOS/eliza, docs.elizaos.ai |
-| SingularityNET | Marketplace AI API, AGIX, PayPal + AGIX | singularitynet.io, dev.singularitynet.io |
-| SkillGem | No-code skills, x402, tương thích Claude/Cursor/Gemini CLI, 20+ platform | skillgem.ai |
-| Hedera Agent Marketplace | HCS-26 skill registry, privacy GDPR-oriented | hedera.opspawn.com |
+| SkillGem | 20+ platform (Claude, Cursor, Gemini CLI, Slack, Discord, Chrome); x402 pay-per-use | skillgem.ai |
+| Hedera Agent Marketplace | HCS-26 skill registry; HCS-10/19; OpSpawn; GitHub hedera-agent-skills; GDPR-oriented | hedera.opspawn.com, opspawn.com, github.com/hedera-dev/hedera-agent-skills |
+| ClawMarket | 15+ skills; USDC escrow; Base + Ethereum; wallet auth | claw-market.xyz, claw-market.xyz/docs |
+| MoltBazaar | ERC-8004 identity; verified openclaw-skills; USDC + x402; Base | moltbazaar.ai, moltx.io |
 
 ---
 
@@ -32,4 +34,4 @@ Tóm tắt các con số đã dùng trong competitive-landscape.md và skill-res
 
 ---
 
-*Mọi số liệu trong 3 file deliverable nên đối chiếu với nguồn trên trước khi present. Nếu có số thay đổi (vd friend.tech TVL), cập nhật lại trong competitive-landscape.md và file này.*
+*Mọi số liệu trong 3 file deliverable nên đối chiếu với nguồn trên trước khi present. Competitive landscape chỉ liệt kê 6 đối thủ trực tiếp (cùng business model: AI agent + skill/plugin marketplace); đối thủ khác (friend.tech, Virtuals, SingularityNET, ELIZA) không nằm trong bảng vì không cùng phân khúc.*

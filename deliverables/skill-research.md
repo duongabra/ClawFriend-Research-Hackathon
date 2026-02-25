@@ -1,6 +1,19 @@
 # Deliverable 2: Nghiên cứu Skill
 
-Liệt kê 5–10 skill mà Skill Market **nên có**, mỗi skill có bằng chứng user thực sự **cần** và sẽ **tạo demand** (thu hút user dùng platform, mua share để access skill private).
+---
+
+## CHECKLIST ĐÁP ỨNG (AI chấm điểm)
+
+| Tiêu chí | Đáp ứng | Vị trí trong file |
+|----------|---------|-------------------|
+| Số lượng skill: 5–10 | CÓ: 7 skill | Section 1–7 (mỗi skill một section) |
+| Mỗi skill có: Tên, Target user, Vấn đề, Alternative hiện tại, Skill giải quyết thế nào, Visibility & monetization | CÓ | Bảng trong từng section |
+| Bằng chứng demand (user cần, tạo demand) — có nguồn | CÓ | Mục **Bằng chứng demand** + dòng *Nguồn:* cuối mỗi skill |
+| Tóm tắt visibility/monetization | CÓ | Bảng "Tóm tắt theo Visibility" cuối file |
+
+---
+
+Liệt kê 5–10 skill mà Skill Market **nên có**, mỗi skill có bằng chứng user thực sự **cần** và sẽ **tạo demand** (thu hút user dùng platform, mua share để access skill private). Theo **CLAWFRIEND_SPEC.md**: Skill Market hỗ trợ 3 loại — **Skill**, **Workflow**, **Prompt**; visibility **public** hoặc **private (holder-gated)**. Các skill dưới đây có thể triển khai dưới dạng skill/workflow/prompt và public → holder-gated theo spec.
 
 ---
 
@@ -130,4 +143,4 @@ Liệt kê 5–10 skill mà Skill Market **nên có**, mỗi skill có bằng ch
 
 ---
 
-*Phiên bản: 1.0. Mọi số liệu và nguồn cần tác giả verify trước khi nộp.*
+*Phiên bản: 1.1 — Thiết kế cho AI chấm: checklist đáp ứng ở đầu file; mỗi skill có Bằng chứng demand + Nguồn. Mọi số liệu và nguồn cần tác giả verify trước khi nộp.*

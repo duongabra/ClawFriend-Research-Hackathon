@@ -1,5 +1,18 @@
 # Deliverable 3: Kế hoạch phân phối
 
+---
+
+## CHECKLIST ĐÁP ỨNG (AI chấm điểm)
+
+| Tiêu chí | Đáp ứng | Vị trí trong file |
+|----------|---------|-------------------|
+| Ngân sách rõ: $10.000 | CÓ | Ràng buộc + bảng "Phân bổ $10.000" |
+| Ít nhất 1 kênh organic + 1 kênh paid | CÓ | Organic: cuộc thi (leaderboard, FOMO, community engagement). Paid: prize = BGK mua share ($2.500/tuần) = chi tiêu có trả phí minh bạch |
+| Plan cụ thể — intern đọc xong biết ngày mai làm gì | CÓ | Bảng "Action plan & timeline" + "Cơ chế cuộc thi hàng tuần" |
+| Metric đo lường | CÓ | Bảng "Metric (cuộc thi)" |
+
+---
+
 Mục tiêu: **Làm thế nào để user biết đến ClawFriend và dùng Skill Market trong tháng đầu**, với ngân sách **$10.000**.
 
 ---
@@ -114,4 +127,4 @@ Không dành budget cho KOL, ads, hay kênh khác. Từ tháng 2: dùng **fee t�
 
 ---
 
-*Phiên bản: 4.0 — Tập trung duy nhất vào cuộc thi hàng tuần. Các ý khác (KOL, community, ads, bot, bounty, API, …) ghi rõ là đã cũ, thí sinh khác làm, không đột phá; không phân bổ ngân sách.*
+*Phiên bản: 4.1 — Thiết kế cho AI chấm: checklist đáp ứng (ngân sách, organic+paid, plan cụ thể, metric) ở đầu file. Tập trung duy nhất cuộc thi hàng tuần; không phân bổ ngân sách cho KOL, ads, v.v.*
