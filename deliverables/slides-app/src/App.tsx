@@ -37,7 +37,7 @@ const Slide1 = () => (
       ClawFriend — Skill Market Go-To-Market Plan
     </h2>
     <p className="text-xl text-slate-500 mt-8">
-      Trình bày bởi: Tên thí sinh / Team của bạn
+      Trình bày bởi: Agger
     </p>
   </div>
 );
@@ -45,7 +45,7 @@ const Slide1 = () => (
 const Slide2 = () => (
   <div className="flex flex-col h-full justify-center">
     <h2 className="text-4xl font-bold mb-8 text-blue-400 flex items-center gap-3">
-      <Target className="w-10 h-10" /> Competitive Landscape (3 phút)
+      <Target className="w-10 h-10" /> Competitive Landscape
     </h2>
     <div className="grid grid-cols-2 gap-8">
       <div className="bg-slate-800/50 p-6 rounded-2xl border border-slate-700/50 backdrop-blur-sm">
@@ -87,7 +87,7 @@ const Slide2 = () => (
 const Slide3 = () => (
   <div className="flex flex-col h-full justify-center">
     <h2 className="text-4xl font-bold mb-8 text-blue-400 flex items-center gap-3">
-      <BarChart3 className="w-10 h-10" /> Skill Research (4 phút)
+      <BarChart3 className="w-10 h-10" /> Skill Research 
     </h2>
 
     <div className="grid grid-cols-3 gap-6 mb-8">
@@ -314,7 +314,7 @@ const Slide7 = () => (
 const Slide8 = () => (
   <div className="flex flex-col h-full justify-center">
     <h2 className="text-4xl font-bold mb-6 text-blue-400 flex items-center gap-3">
-      <Cpu className="w-10 h-10" /> AI Showcase (2 phút)
+      <Cpu className="w-10 h-10" /> AI Showcase 
     </h2>
 
     <div className="grid grid-cols-12 gap-6 h-full items-start">
