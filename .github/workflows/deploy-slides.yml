@@ -26,6 +26,13 @@ jobs:
           cache: 'npm'
           cache-dependency-path: deliverables/slides-app/package-lock.json
 
+      - name: Copy deliverable markdown for reader pages
+        run: |
+          mkdir -p deliverables/slides-app/public/content
+          cp deliverables/competitive-landscape.md deliverables/slides-app/public/content/
+          cp deliverables/skill-research.md deliverables/slides-app/public/content/
+          cp deliverables/distribution-plan.md deliverables/slides-app/public/content/
+
       - name: Install and build
         run: |
           cd deliverables/slides-app

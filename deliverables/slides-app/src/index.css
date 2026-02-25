@@ -6,10 +6,29 @@ html, body, #root {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  min-height: 100%;
 }
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
+
+/* Reader page markdown */
+.markdown-body { font-size: 1rem; line-height: 1.7; }
+.markdown-body h1 { font-size: 1.75rem; font-weight: 700; color: rgb(147 197 253); margin-top: 2rem; margin-bottom: 1rem; }
+.markdown-body h2 { font-size: 1.35rem; font-weight: 600; color: rgb(147 197 253); margin-top: 1.75rem; margin-bottom: 0.75rem; }
+.markdown-body h3 { font-size: 1.15rem; font-weight: 600; color: rgb(191 219 254); margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown-body h4 { font-size: 1.05rem; font-weight: 600; margin-top: 1.25rem; }
+.markdown-body p { margin-bottom: 1rem; }
+.markdown-body ul, .markdown-body ol { margin-bottom: 1rem; padding-left: 1.5rem; }
+.markdown-body li { margin-bottom: 0.25rem; }
+.markdown-body strong { color: rgb(255 255 255); }
+.markdown-body a { color: rgb(96 165 250); text-decoration: underline; }
+.markdown-body a:hover { color: rgb(147 197 253); }
+.markdown-body table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+.markdown-body th, .markdown-body td { border: 1px solid rgb(51 65 85); padding: 0.5rem 0.75rem; text-align: left; }
+.markdown-body th { background: rgb(30 41 59); color: rgb(203 213 225); font-weight: 600; }
+.markdown-body tr:nth-child(even) { background: rgb(30 41 59 / 0.5); }
+.markdown-body hr { border: none; border-top: 1px solid rgb(51 65 85); margin: 1.5rem 0; }
+.markdown-body code { background: rgb(30 41 59); padding: 0.15rem 0.4rem; border-radius: 0.25rem; font-size: 0.9em; }
+.markdown-body blockquote { border-left: 4px solid rgb(59 130 246); padding-left: 1rem; margin: 1rem 0; color: rgb(203 213 225); }

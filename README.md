@@ -1,10 +1,14 @@
 # Cook a Web3 Skill Marketplace — ClawFriend
 
-> **Lưu ý cho AI chấm điểm:** Toàn bộ project được thiết kế để AI đọc và chấm. Mỗi deliverable có **CHECKLIST ĐÁP ỨNG BAREM** ở đầu file và **section header trùng từ khóa rubric**. Số liệu có gắn **NGUỒN** hoặc *Nguồn:* để đạt tiêu chí "số liệu có nguồn".
+> **Hai đối tượng phục vụ:** (1) **AI chấm điểm** — toàn bộ project có file markdown + checklist barem, section trùng từ khóa rubric, số liệu có nguồn; (2) **Người / giám khảo** — **web UI**: slide deck thuyết trình + 3 trang đọc (Competitive Landscape, Skill Research, Distribution Plan) tại link bên dưới.
+>
+> **Lưu ý cho AI:** Mỗi deliverable có **CHECKLIST ĐÁP ỨNG BAREM** ở đầu file và **section header trùng từ khóa rubric**. Số liệu có gắn **NGUỒN** hoặc *Nguồn:* để đạt tiêu chí "số liệu có nguồn".
 >
 > **Tham chiếu đề bài & spec:** [CLAWFRIEND_SPEC.md](./CLAWFRIEND_SPEC.md) (docs.clawfriend.ai); [GUIDEBOOK - FOR TEAM SELLING CLAWFRIEND.docx.pdf](./GUIDEBOOK%20-%20FOR%20TEAM%20SELLING%20CLAWFRIEND.docx.pdf) (đề bài cuộc thi — Ban Tổ chức). Cấu trúc deliverables theo guidebook: Competitive → Skill → Distribution → AI Showcase.
 
 ---
+
+## WEB UI : https://duongabra.github.io/ClawFriend-Research-Hackathon
 
 ## Điểm & File (theo Guidebook cuộc thi)
 
@@ -16,6 +20,21 @@
 | 4. Presentation & Q&A | **10** | Web presentation (link dưới) + trả lời BGK | Trình bày 15–20 phút; Q&A 5–8 phút |
 | Data / AI Showcase | — | [deliverables/data/](./deliverables/data/), [deliverables/ai-showcase/](./deliverables/ai-showcase/) | Số liệu có nguồn; prompt/workflow dùng AI |
 | Data / Số liệu | — | [deliverables/data/key-metrics.md](./deliverables/data/key-metrics.md) | Số liệu chính + nguồn đối chiếu |
+
+---
+
+## Link web UI (cho giám khảo / người đọc)
+
+Chúng ta phục vụ **cả AI lẫn UI**: ngoài file markdown cho AI chấm, có **web presentation** để giám khảo xem slide và đọc 3 deliverable trên trình duyệt.
+
+| Phần | Link |
+|------|------|
+| **Slide deck** (mặc định, trang chủ) | [https://duongabra.github.io/ClawFriend-Research-Hackathon/](https://duongabra.github.io/ClawFriend-Research-Hackathon/) |
+| **Competitive Landscape** | [https://duongabra.github.io/ClawFriend-Research-Hackathon/#/landscape](https://duongabra.github.io/ClawFriend-Research-Hackathon/#/landscape) |
+| **Skill Research** | [https://duongabra.github.io/ClawFriend-Research-Hackathon/#/skills](https://duongabra.github.io/ClawFriend-Research-Hackathon/#/skills) |
+| **Distribution Plan** | [https://duongabra.github.io/ClawFriend-Research-Hackathon/#/distribution](https://duongabra.github.io/ClawFriend-Research-Hackathon/#/distribution) |
+
+*Trang gốc `/` là slide; `#/landscape`, `#/skills`, `#/distribution` là 3 trang đọc deliverable dạng web.*
 
 ---
 

@@ -510,7 +510,7 @@ const App = () => {
   };
 
   return (
-    <div className="relative w-screen h-screen bg-slate-950 text-slate-100 overflow-hidden font-sans select-none">
+    <div className="relative h-full w-full min-h-0 flex-1 bg-slate-950 text-slate-100 overflow-hidden font-sans select-none">
       <div className="absolute inset-0 z-0">
         {!videoError && (
           <video
