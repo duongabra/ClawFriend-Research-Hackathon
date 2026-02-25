@@ -1,0 +1,16 @@
+{
+  "name": "clawfriend-hackathon",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix deliverables/slides-app",
+    "slides": "npm run dev --prefix deliverables/slides-app",
+    "build:slides": "npm run build --prefix deliverables/slides-app"
+  },
+  "devDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "lucide-react": "^0.460.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1"
+  }
+}

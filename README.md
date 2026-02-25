@@ -52,9 +52,19 @@ Nghiên cứu & kế hoạch go-to-market cho **Skill Market** của **ClawFrien
 
 ## Web Presentation
 
-**Link presentation (Gemini Canvas):** https://gemini.google.com/app/594bd392160f41ac
+- **Slide deck (React):** [Xem slide tại đây](https://duongabra.github.io/ClawFriend-Research-Hackathon/) — nếu thấy README thay vì slide, xem [Cách sửa](#cách-hiện-slide-trên-github-pages) bên dưới.
+- **Link presentation (Gemini Canvas):** https://gemini.google.com/app/594bd392160f41ac
 
 *Yêu cầu: trình bày bằng web presentation tạo từ Gemini Canvas.*
+
+### Cách hiện slide trên GitHub Pages
+
+Trang đang dùng **Deploy from a branch** thì sẽ hiện README. Để hiện **slide** (app React):
+
+1. Vào repo **Settings** → **Pages**.
+2. Ở **Build and deployment** → **Source:** đổi từ **"Deploy from a branch"** sang **"GitHub Actions"**.
+3. Vào tab **Actions** → workflow **"Deploy slides to GitHub Pages"** → **Run workflow** (chọn branch `main`) → đợi chạy xong (dấu xanh).
+4. Mở lại: **https://duongabra.github.io/ClawFriend-Research-Hackathon/** (có thể cần vài phút hoặc hard refresh Ctrl+F5).
 
 ---
 
