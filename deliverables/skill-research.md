@@ -7,7 +7,7 @@
 | Tiêu chí | Đáp ứng | Vị trí trong file |
 |----------|---------|-------------------|
 | Số lượng skill: 5–10 (mở rộng: 20 skill) | CÓ: 20 skill | 10 chủ đề, mỗi chủ đề 2 skill (Section theo chủ đề) |
-| Mỗi skill có: Tên, Target user, Vấn đề, Alternative hiện tại, Skill giải quyết thế nào, Visibility & monetization | CÓ | Bảng trong từng skill |
+| Mỗi skill có: Tên, Target user, Vấn đề, Alternative, Giải pháp, Visibility & monetization, **Tính khả thi kỹ thuật (Tech/API)** | CÓ | Bảng trong từng skill + bảng tổng hợp cuối file |
 | Bằng chứng demand (user cần, tạo demand) — có nguồn | CÓ | Mục **Bằng chứng demand** + dòng *Nguồn:* cuối mỗi skill |
 | Tóm tắt visibility/monetization | CÓ | Bảng "Tóm tắt theo Visibility" cuối file |
 | 10 skill xuất sắc nhất (đề xuất ưu tiên) | CÓ | Section "10 skill xuất sắc nhất" trước bảng Visibility |
@@ -30,6 +30,7 @@ Liệt kê **20 skill** trong **10 chủ đề** (Scrypto, Sức khỏe, Vĩ mô
 | **Alternative hiện tại** | Nansen $99–$999/tháng; Arkham (free tier giới hạn); Whale Alert Twitter (2.5M+ followers). |
 | **Skill giải quyết thế nào** | Agent theo dõi 500+ ví whale/smart money trên BSC; alert qua Telegram/Twitter trong 30–60s khi whale move > ngưỡng (vd $50K); hiển thị địa chỉ ví, token, khối lượng, nguồn/đích. |
 | **Visibility & monetization** | **Public free** kéo user; **private/holder-gated** cho bộ filter nâng cao (theo token, pool). Nansen $99+/tháng; mình dùng share model. |
+| **Tính khả thi kỹ thuật (Tech/API)** | BSC RPC; BSCScan hoặc indexer (list ví whale, on-chain tx); backend cache + pipeline alert (Telegram/DM). Có thể dùng subgraph hoặc API bên thứ 3 (vd Moralis) cho real-time. |
 | **Bằng chứng demand** | (1) Nansen $99–$999/tháng — user trả = demand. (2) Whale Alert 2.5M+ followers, ~500K retweet/tháng. (3) Nansen "Whale Watching: Top Tools..." — nhu cầu rõ. |
 
 *Nguồn: nansen.ai, whale-alert.io, blockchainmagazine.com.*
@@ -46,6 +47,7 @@ Liệt kê **20 skill** trong **10 chủ đề** (Scrypto, Sức khỏe, Vĩ mô
 | **Alternative hiện tại** | RugChecker, TokenSpy, Token Sniffer, RugProofAI — trả phí hoặc freemium. |
 | **Skill giải quyết thế nào** | Agent quét contract token BSC: liquidity lock, mint authority, holder concentration, pattern rug; trả về risk score + giải thích ngắn. User gửi contract address → kết quả trong vài chục giây. |
 | **Visibility & monetization** | **Public free** 5 lần quét/ngày; **holder-gated** unlimited + alert token mới đạt ngưỡng risk. |
+| **Tính khả thi kỹ thuật (Tech/API)** | BSC RPC; đọc contract (liquidity lock, mint, holder distribution); có thể dùng RugChecker/Token Sniffer API hoặc tự build logic từ bytecode. Backend cache kết quả theo contract. |
 | **Bằng chứng demand** | (1) Nhiều tool rug detection = thị trường validate. (2) Token Sniffer: 30K+ contract/ngày, 50–75% scam. (3) Reddit/Telegram "rug check", "is this token safe". |
 
 *Nguồn: rugchecker.cc, tokenspy.org, tokensniffer readme, rugproofai.com.*
@@ -64,6 +66,7 @@ Liệt kê **20 skill** trong **10 chủ đề** (Scrypto, Sức khỏe, Vĩ mô
 | **Alternative hiện tại** | YO Protocol ($1M+ earn volume 2 tuần đầu); maxAPY (9 chain); DefiLlama (free, không auto). |
 | **Skill giải quyết thế nào** | Agent aggregate APY từ pool BSC (PancakeSwap, Venus, Alpaca…); chuẩn hóa APY; gợi ý top 3–5 strategy theo risk; có thể alert khi APY thay đổi mạnh. |
 | **Visibility & monetization** | **Public free** bảng APY cơ bản (1 lần/ngày); **holder-gated** real-time + alert + rebalance. |
+| **Tính khả thi kỹ thuật (Tech/API)** | BSC RPC; DefiLlama API hoặc PancakeSwap/Venus/Alpaca subgraph (APR/APY theo pool); chuẩn hóa + so sánh trong backend; optional alert pipeline. |
 | **Bằng chứng demand** | (1) YO Protocol $1M+ earn volume 2 tuần đầu. (2) maxAPY 9 chain, hàng nghìn strategy. (3) MOSS "DeFi APY Comparison Tool". |
 
 *Nguồn: yo.xyz, docs.maxapy.io, moss.sh.*
@@ -80,9 +83,10 @@ Liệt kê **20 skill** trong **10 chủ đề** (Scrypto, Sức khỏe, Vĩ mô
 | **Alternative hiện tại** | DeBank, Zapper, Arkham, Nansen (portfolio). |
 | **Skill giải quyết thế nào** | Agent aggregate balance + PnL theo list địa chỉ BSC: token, LP, vault; báo cáo tổng USD, % allocation, 24h/7d thay đổi. Output bảng hoặc message định kỳ. |
 | **Visibility & monetization** | **Public free** 1 wallet; **holder-gated** đa ví + lịch sử + export. |
-| **Bằng chứng demand** | (1) DeBank, Zapper dùng rộng rãi. (2) Reddit/Telegram "portfolio tracker BSC", "track multiple wallets". |
+| **Tính khả thi kỹ thuật (Tech/API)** | BSC RPC; BSCScan API hoặc indexer (balance, tx theo list địa chỉ); LP/vault data (subgraph hoặc protocol API); aggregate USD + PnL trong backend. |
+| **Bằng chứng demand** | (1) DeBank 15M+ users, ~170K DAU, 6,8M+ ví theo dõi, $105B TVL monitored — *Nguồn: DeBank 2024, iwebtech.in/debank-review*. (2) Zapper tương tự; Reddit/Telegram "portfolio tracker BSC", "track multiple wallets" có lượng search. |
 
-*Nguồn: debank.com, zapper.xyz, Reddit/Telegram.*
+*Nguồn: debank.com, zapper.xyz, iwebtech.in/debank-review-2024, Reddit/Telegram.*
 
 ---
 
@@ -98,6 +102,7 @@ Liệt kê **20 skill** trong **10 chủ đề** (Scrypto, Sức khỏe, Vĩ mô
 | **Alternative hiện tại** | Drops Bot, TechnicalPing, TokenAlertsBot (Telegram); Bitquery API tự build. |
 | **Skill giải quyết thế nào** | Agent monitor giá token BSC DEX; user set ngưỡng (+20%, $X); alert qua Telegram/DM khi đạt; có thể kết hợp volume spike. |
 | **Visibility & monetization** | **Public free** 1–3 alert; **holder-gated** unlimited + thêm chain + priority. |
+| **Tính khả thi kỹ thuật (Tech/API)** | BSC DEX price API (DexScreener, PancakeSwap price feed); backend poll hoặc websocket; pipeline alert (Telegram/DM). User set ngưỡng trong DB. |
 | **Bằng chứng demand** | (1) Nhiều bot Telegram price alert. (2) Bitquery "Price Change Signal Bot". (3) Thị trường 24/7 → nhu cầu alert. |
 
 *Nguồn: docs.bitquery.io, dropstab.com, technicalping.com.*
@@ -114,7 +119,8 @@ Liệt kê **20 skill** trong **10 chủ đề** (Scrypto, Sức khỏe, Vĩ mô
 | **Alternative hiện tại** | DexScreener, DexTools (new pairs); chưa có agent "alert theo tiêu chí" BSC. |
 | **Skill giải quyết thế nào** | Agent monitor pool mới BSC: filter liquidity min, số holder, audit (nếu có data); alert khi token thỏa điều kiện. |
 | **Visibility & monetization** | **Public free** 1 bộ filter; **holder-gated** nhiều filter + ưu tiên tốc độ. |
-| **Bằng chứng demand** | (1) DexScreener, DexTools lượng dùng lớn new pairs. (2) Cộng đồng BSC "token mới", "vừa list". |
+| **Tính khả thi kỹ thuật (Tech/API)** | BSC DEX new-pairs API (DexScreener, PancakeSwap factory events); filter theo liquidity, holder count; backend + alert khi token thỏa điều kiện. |
+| **Bằng chứng demand** | (1) DexScreener 24H volume $9B+, 19M+ giao dịch; mục "New Pairs" dùng nhiều — *Nguồn: dexscreener.com*. (2) DexTools tương tự; cộng đồng BSC "token mới", "vừa list" có lượng tìm kiếm lớn. |
 
 *Nguồn: dexscreener.com, dextools.io, cộng đồng BSC.*
 
@@ -132,9 +138,10 @@ Liệt kê **20 skill** trong **10 chủ đề** (Scrypto, Sức khỏe, Vĩ mô
 | **Alternative hiện tại** | LunarCrush, Santiment (trả phí); tự theo dõi list Twitter/Telegram. |
 | **Skill giải quyết thế nào** | Agent API Twitter (tùy Telegram): list handle KOL/project; extract mention token/project; sentiment đơn giản; alert khi volume mention tăng đột biến hoặc sentiment đổi. Tuân ToS Twitter/API. |
 | **Visibility & monetization** | **Holder-gated** là chính (alpha dễ copy); user hold share để access list KOL + alert. |
+| **Tính khả thi kỹ thuật (Tech/API)** | Twitter API (X) hoặc scrape (tuân ToS); Telegram Bot API; list handle + keyword; optional sentiment (LLM hoặc rule). Backend cache + alert pipeline. **Risk/dependency:** X API Basic ~$100/tháng, Pro/enterprise $5K/tháng; rate limit theo tier — nhiều project gặp blocker chi phí; cần chọn tier phù hợp hoặc fallback scrape (tuân ToS). **Plan:** bắt đầu Basic $100/tháng; scale lên Pro khi có revenue từ holder-gated. |
 | **Bằng chứng demand** | (1) LunarCrush, Santiment monetize = demand. (2) CLAWFRIEND_SPEC "Alpha Hunting", "Off-chain Signal". (3) Crypto Twitter kênh alpha quan trọng. |
 
-*Nguồn: lunarcrush.com, santiment.net, CLAWFRIEND_SPEC.md.*
+*Nguồn: lunarcrush.com, santiment.net, CLAWFRIEND_SPEC.md, developer.x.com (X API pricing).*
 
 ---
 
@@ -148,9 +155,10 @@ Liệt kê **20 skill** trong **10 chủ đề** (Scrypto, Sức khỏe, Vĩ mô
 | **Alternative hiện tại** | TweetDeck (free, thủ công); Nansen/Token Metrics (đắt); tự build script theo API. |
 | **Skill giải quyết thế nào** | Agent theo dõi list handle (KOL/project); detect mention token ticker hoặc contract; alert qua Telegram/DM khi có mention + link tweet. Có thể gắn sentiment (bullish/bearish) nếu có model. |
 | **Visibility & monetization** | **Public free** 3–5 KOL; **holder-gated** list lớn + filter theo token + priority. |
+| **Tính khả thi kỹ thuật (Tech/API)** | Twitter/X API (mention, search); detect token ticker/contract trong text; Telegram alert. DB lưu list KOL + user preference. **Risk/dependency:** X API Basic ~$100/tháng, enterprise $5K/tháng; rate limit theo tier — đây là blocker thực tế nhiều project; cần budget API hoặc fallback (scrape tuân ToS / bên thứ 3). **Plan:** bắt đầu Basic $100/tháng; scale lên khi có revenue từ holder-gated (list KOL lớn). |
 | **Bằng chứng demand** | (1) Nansen, Arkham có "smart money" = theo dõi hành vi/KOL. (2) Crypto Twitter "when did X mention Y" rất phổ biến. (3) KOL call thường move giá ngắn hạn. |
 
-*Nguồn: nansen.ai, Twitter API docs, cộng đồng crypto.*
+*Nguồn: nansen.ai, developer.x.com (X API pricing), cộng đồng crypto.*
 
 ---
 
@@ -166,6 +174,8 @@ Liệt kê **20 skill** trong **10 chủ đề** (Scrypto, Sức khỏe, Vĩ mô
 | **Alternative hiện tại** | Apple Health, Google Fit (aggregate); không có agent "digest + insight" tự động. |
 | **Skill giải quyết thế nào** | Workflow/prompt: user connect OAuth (hoặc export CSV) từ Health/Google Fit; agent tạo digest tuần: giấc ngủ TB, bước chân, nhịp tim; so sánh với tuần trước; gợi ý ngắn (vd "ngủ ít hơn 10% → cân nhắc giảm caffeine"). |
 | **Visibility & monetization** | **Public free** digest 1 tuần; **holder-gated** lịch sử dài + so sánh nhiều tháng + export PDF. |
+| **Tính khả thi kỹ thuật (Tech/API)** | OAuth Apple Health / Google Fit; hoặc CSV import. Backend aggregate (sleep, steps, HR); so sánh tuần; optional LLM gợi ý ngắn. |
+| **Fit ClawFriend (tại sao trong ecosystem)** | User crypto/DeFi cũng đeo wearable; một agent vừa xem portfolio vừa xem health digest → stickiness, ít app chuyển. Holder-gated = premium digest dài hạn, phù hợp user trả bằng share thay subscription. |
 | **Bằng chứng demand** | (1) Wearable market lớn; user đã sẵn sàng share data cho app (Strava, MyFitnessPal). (2) Nhiều app "health insights" trả phí (Whoop, Oura). (3) Reddit r/QuantifiedSelf, r/fitbit hỏi "best way to track trends". |
 
 *Nguồn: Apple HealthKit, Google Fit API, Whoop/Oura positioning, Reddit.*
@@ -182,6 +192,8 @@ Liệt kê **20 skill** trong **10 chủ đề** (Scrypto, Sức khỏe, Vĩ mô
 | **Alternative hiện tại** | Medisafe, Mango Health, nhắc lịch điện thoại. |
 | **Skill giải quyết thế nào** | Agent nhắc theo lịch user (sáng/trưa/tối, trước/sau ăn); cho phép log "đã uống" qua chat/button; gợi ý ngắn về tương tác thuốc phổ biến (dựa trên database public, không thay bác sĩ). Có thể tích hợp calendar. |
 | **Visibility & monetization** | **Public free** 1–3 thuốc, nhắc cơ bản; **holder-gated** nhiều thuốc + lịch phức tạp + báo cáo tuân thủ cho bác sĩ. |
+| **Tính khả thi kỹ thuật (Tech/API)** | DB lịch thuốc (user nhập); cron/scheduler nhắc; optional drug interaction API (open data); log "đã uống" qua chat/button; calendar sync (optional). |
+| **Fit ClawFriend (tại sao trong ecosystem)** | Mở rộng audience: holder có thể mua share cho người thân dùng nhắc thuốc (gift); hoặc cùng một agent vừa theo dõi crypto vừa nhắc thuốc. Holder-gated = nhiều thuốc + báo cáo = upsell bằng share, không cạnh tranh trực tiếp Otter/Zapier vì gắn với agent + share. |
 | **Bằng chứng demand** | (1) Medisafe 10M+ download; Mango Health được dùng trong trial lâm sàng. (2) Non-adherence thuốc gây chi phí y tế lớn — WHO, CDC. (3) Aging population → nhu cầu tăng. |
 
 *Nguồn: Medisafe, Mango Health, WHO adherence reports.*
@@ -200,6 +212,7 @@ Liệt kê **20 skill** trong **10 chủ đề** (Scrypto, Sức khỏe, Vĩ mô
 | **Alternative hiện tại** | Investing.com calendar, Forexlive, Bloomberg Terminal (đắt). |
 | **Skill giải quyết thế nào** | Agent scrape/API calendar (Investing, FX Street): khi có release (CPI, NFP, FOMC), tóm tắt 3–5 dòng: số thực tế vs consensus, ý nghĩa (hawkish/dovish). Có thể alert trước 1h khi có event. |
 | **Visibility & monetization** | **Public free** digest ngày (top 3 event); **holder-gated** full calendar + alert + lịch sử so sánh. |
+| **Tính khả thi kỹ thuật (Tech/API)** | Calendar API (Investing.com, FX Street) hoặc scrape; khi có release → fetch actual vs consensus; LLM hoặc template tóm tắt 3–5 dòng; alert pipeline. |
 | **Bằng chứng demand** | (1) Forex/crypto react mạnh vào macro. (2) Bloomberg Terminal, Refinitiv bán data macro = demand. (3) Subreddit r/Forex, r/investing hỏi "CPI summary". |
 
 *Nguồn: Investing.com, Forexlive, Bloomberg/Refinitiv positioning.*
@@ -216,6 +229,7 @@ Liệt kê **20 skill** trong **10 chủ đề** (Scrypto, Sức khỏe, Vĩ mô
 | **Alternative hiện tại** | Fed website, ECB website, Reuters/Bloomberg recap. |
 | **Skill giải quyết thế nào** | Agent lấy lịch Fed/ECB (có API/calendar); trước ngày họp gửi nhắc; sau họp tóm tắt: giữ/cắt/tăng lãi suất, dot plot thay đổi, tone (hawkish/dovish) + 1–2 câu "market impact". |
 | **Visibility & monetization** | **Public free** lịch + tóm tắt 1 lần sau meeting; **holder-gated** alert real-time + so sánh với kỳ trước. |
+| **Tính khả thi kỹ thuật (Tech/API)** | Fed/ECB calendar (API hoặc scrape); sau meeting fetch statement + dot plot; LLM tóm tắt (giữ/cắt/tăng, tone, market impact); alert trước/sau event. |
 | **Bằng chứng demand** | (1) FOMC day volatility cao; trader theo dõi sát. (2) Các tool "Fed calendar" có traffic lớn. (3) r/investing, r/Forex "FOMC summary" rất phổ biến. |
 
 *Nguồn: federalreserve.gov, ecb.europa.eu, Reuters/Bloomberg.*
@@ -234,6 +248,7 @@ Liệt kê **20 skill** trong **10 chủ đề** (Scrypto, Sức khỏe, Vĩ mô
 | **Alternative hiện tại** | ESPN, SofaScore, YouTube highlight; không có agent tóm tắt "text + key moments" theo giọng ngắn. |
 | **Skill giải quyết thế nào** | Agent lấy kết quả + timeline (API hoặc scrape SofaScore/ESPN): tóm tắt 5–7 câu: tỷ số, bàn thắng/điểm quan trọng, thẻ phạt, thay người then chốt. Có thể gửi qua Telegram/DM sau trận. |
 | **Visibility & monetization** | **Public free** 1 giải/league; **holder-gated** nhiều giải + alert theo đội yêu thích. |
+| **Tính khả thi kỹ thuật (Tech/API)** | SofaScore/ESPN API hoặc scrape (kết quả, timeline); LLM tóm tắt 5–7 câu; gửi qua Telegram/DM sau trận. |
 | **Bằng chứng demand** | (1) SofaScore, ESPN app triệu user. (2) Reddit r/soccer, r/nba "match summary" threads. (3) Highlight video views rất cao. |
 
 *Nguồn: SofaScore API, ESPN, Reddit.*
@@ -250,6 +265,7 @@ Liệt kê **20 skill** trong **10 chủ đề** (Scrypto, Sức khỏe, Vĩ mô
 | **Alternative hiện tại** | FPL Review, Fantasy Football Scout (trả phí); Twitter tipster; tự tính. |
 | **Skill giải quyết thế nào** | Agent aggregate form (gần 5 trận), injury news, fixture difficulty; gợi ý 11 người + captain + 1–2 transfer; giải thích ngắn (vd "X form tốt, Y dễ bảng"). Có thể nhắc deadline. |
 | **Visibility & monetization** | **Public free** gợi ý 1 lần/tuần; **holder-gated** nhiều league + alert injury + optimal chip strategy. |
+| **Tính khả thi kỹ thuật (Tech/API)** | FPL API (squad, fixtures, form); scrape injury news; logic form + fixture difficulty; LLM gợi ý 11 + captain + transfer; nhắc deadline. |
 | **Bằng chứng demand** | (1) FPL hàng chục triệu manager. (2) Fantasy Football Scout, FPL Review thu phí. (3) Reddit r/FantasyPL rất active. |
 
 *Nguồn: Fantasy Premier League, FPL Review, Fantasy Football Scout, Reddit.*
@@ -268,6 +284,7 @@ Liệt kê **20 skill** trong **10 chủ đề** (Scrypto, Sức khỏe, Vĩ mô
 | **Alternative hiện tại** | Zapier, Make (Integromat), n8n self-host; API + script tự viết. |
 | **Skill giải quyết thế nào** | Workflow/prompt: user mô tả bằng ngôn ngữ tự nhiên (vd "khi có email từ X, tóm tắt và gửi Slack"); agent gợi ý bước (trigger → action); có thể chạy trên ClawFriend agent với connector (email, Slack, Telegram). Holder-gated = workflow phức tạp hoặc nhiều run. |
 | **Visibility & monetization** | **Public free** 1 workflow, 50 run/tháng; **holder-gated** nhiều workflow + unlimited run + connector premium. |
+| **Tính khả thi kỹ thuật (Tech/API)** | Webhook + OAuth (Slack, Telegram, Notion, email); workflow engine (state machine hoặc n8n-style); chạy trên agent ClawFriend với connector; DB lưu workflow definition + run count. **Risk:** phụ thuộc OAuth/API từng app (Slack, Notion, Google…); rate limit theo provider; cần monitor quota run/tháng để không vượt free tier — holder-gated "unlimited run" cần ước lượng cost backend. |
 | **Bằng chứng demand** | (1) Zapier valuation tỷ USD; Make, n8n tăng trưởng mạnh. (2) No-code/low-code trend. (3) Reddit r/automation "alternative to Zapier". |
 
 *Nguồn: Zapier, Make, n8n, Gartner low-code reports.*
@@ -284,6 +301,7 @@ Liệt kê **20 skill** trong **10 chủ đề** (Scrypto, Sức khỏe, Vĩ mô
 | **Alternative hiện tại** | GitHub Copilot (review); Codium; tự prompt ChatGPT với paste code. |
 | **Skill giải quyết thế nào** | Agent đọc diff (qua API GitHub/GitLab): tóm tắt "thay đổi gì, risk gì, test đã cover chưa"; hoặc đọc repo → tạo/update README, API doc. Có thể chạy qua webhook "khi có PR mới". |
 | **Visibility & monetization** | **Public free** 5 review/tháng; **holder-gated** unlimited + private repo + doc generation. |
+| **Tính khả thi kỹ thuật (Tech/API)** | GitHub/GitLab API (PR diff, repo tree); LLM (prompt diff → summary, risk, test); optional webhook "on PR open"; doc generation từ codebase qua API. |
 | **Bằng chứng demand** | (1) GitHub Copilot, Codium bán cho review/doc. (2) Dev tools market lớn. (3) "AI code review" search trend tăng. |
 
 *Nguồn: GitHub, Codium, Gartner dev tools.*
@@ -302,6 +320,7 @@ Liệt kê **20 skill** trong **10 chủ đề** (Scrypto, Sức khỏe, Vĩ mô
 | **Alternative hiện tại** | HN Daily, newsletter (TLDR, Bytes); tự lọc. |
 | **Skill giải quyết thế nào** | Agent aggregate từ HN, Reddit r/programming, blog (RSS): filter theo keyword (React, Python, Rust…); digest 5–10 tin/tuần với tóm tắt 1–2 câu + link. User chọn stack một lần. |
 | **Visibility & monetization** | **Public free** 1 stack, 1 lần/tuần; **holder-gated** nhiều stack + tần suất cao + CVE alert. |
+| **Tính khả thi kỹ thuật (Tech/API)** | RSS/API (HN, Reddit r/programming, blog); filter theo keyword (React, Python, Rust…); LLM tóm tắt 1–2 câu/tin; digest 5–10 tin/tuần; CVE từ NVD/deps.dev. |
 | **Bằng chứng demand** | (1) TLDR, Bytes newsletter triệu subscriber. (2) HN, Reddit traffic lớn. (3) "tech news digest" search. |
 
 *Nguồn: Hacker News, Reddit, TLDR newsletter.*
@@ -318,6 +337,7 @@ Liệt kê **20 skill** trong **10 chủ đề** (Scrypto, Sức khỏe, Vĩ mô
 | **Alternative hiện tại** | GitHub Releases, blog; tự đọc. |
 | **Skill giải quyết thế nào** | Agent đọc release note (GitHub API hoặc RSS): tóm tắt 3–5 bullet: tính năng mới, breaking change (có/không), migration ngắn nếu có. Có thể alert khi repo X release tag mới. |
 | **Visibility & monetization** | **Public free** 3 repo; **holder-gated** nhiều repo + alert + so sánh version. |
+| **Tính khả thi kỹ thuật (Tech/API)** | GitHub API (releases, tags); đọc release note; LLM tóm tắt 3–5 bullet (tính năng, breaking change, migration); optional deps.dev/Renovate; alert khi repo X có tag mới. |
 | **Bằng chứng demand** | (1) Dev phải follow nhiều dependency. (2) "release notes summary" được hỏi trên Reddit/Stack Overflow. (3) Deps.dev, Renovate = demand theo dõi dependency. |
 
 *Nguồn: GitHub API, deps.dev, Renovate.*
@@ -336,6 +356,8 @@ Liệt kê **20 skill** trong **10 chủ đề** (Scrypto, Sức khỏe, Vĩ mô
 | **Alternative hiện tại** | Google News, Feedly; ChatGPT paste link; newsletter. |
 | **Skill giải quyết thế nào** | Agent lấy headline + snippet từ RSS/API (Reuters, BBC, VnExpress, niche site); filter theo topic user chọn; tóm tắt 3–5 dòng/tin, gửi digest 1 lần/ngày hoặc/tuần qua Telegram/email. |
 | **Visibility & monetization** | **Public free** 1 topic, 1 lần/ngày; **holder-gated** nhiều topic + tần suất + nguồn premium. |
+| **Tính khả thi kỹ thuật (Tech/API)** | RSS/API (Reuters, BBC, VnExpress, niche); filter theo topic; LLM tóm tắt 3–5 dòng/tin; digest gửi Telegram/email. |
+| **Fit ClawFriend (tại sao trong ecosystem)** | User crypto đã dùng agent cho alpha/portfolio; thêm topic tin tức (crypto, macro, AI) trong cùng agent = one-stop, không chuyển sang Feedly/Google News. Holder-gated = nhiều topic + tần suất = monetize bằng share; khác Zapier/Otter vì gắn agent + share. |
 | **Bằng chứng demand** | (1) Newsletter (The Morning, The Verge) triệu reader. (2) "news summary" app nhiều. (3) Reddit "best news aggregator". |
 
 *Nguồn: RSS feeds, newsletter benchmarks, Reddit.*
@@ -352,6 +374,8 @@ Liệt kê **20 skill** trong **10 chủ đề** (Scrypto, Sức khỏe, Vĩ mô
 | **Alternative hiện tại** | Otter.ai, Fireflies (transcript); Notion AI, ChatGPT paste; tự gõ. |
 | **Skill giải quyết thế nào** | User upload transcript hoặc paste notes; agent extract: action items (task + owner + deadline nếu có); output checklist hoặc gửi sang Notion/Asana/Trello. Có thể tích hợp calendar "sau meeting X gửi vào Y". |
 | **Visibility & monetization** | **Public free** 5 meeting/tháng; **holder-gated** unlimited + integration Notion/Asana + lưu lịch sử. |
+| **Tính khả thi kỹ thuật (Tech/API)** | Input: transcript (paste/upload) hoặc Otter/Fireflies export; LLM extract action items (task + owner + deadline); output checklist; optional Notion/Asana API để push tasks. |
+| **Fit ClawFriend (tại sao trong ecosystem)** | Team crypto/startup họp nhiều; meeting notes trong cùng agent với alpha/portfolio = một dashboard (chat) vừa trade vừa productivity. Holder-gated = unlimited + integration = B2B/team trả bằng share; không thay Otter mà bổ sung "trong agent ClawFriend". |
 | **Bằng chứng demand** | (1) Otter, Fireflies thu phí = demand. (2) Meeting fatigue → cần tool tiết kiệm thời gian. (3) "meeting notes to tasks" search. |
 
 *Nguồn: Otter.ai, Fireflies, Notion, G2 reviews.*
@@ -406,4 +430,4 @@ Trong 20 skill trên, dưới đây là **10 skill xuất sắc nhất** để �
 
 ---
 
-*Phiên bản: 2.0 — 20 skill, 10 chủ đề (Scrypto, Sức khỏe, Vĩ mô, Thể thao, AI/Bot, Công nghệ, Tin tức & Productivity). Mỗi skill có Bằng chứng demand + Nguồn. Số liệu và nguồn cần tác giả verify trước khi nộp.*
+*Phiên bản: 3.0 — (1) Skill 4.1, 4.2: thêm Plan — bắt đầu X API Basic $100/tháng, scale khi có revenue holder-gated. (2) v2.1: Tech risk/dependency (X API, No-code OAuth/quota). v2.0: 20 skill, Bằng chứng demand, Fit ClawFriend, Tính khả thi Tech/API. Số liệu và nguồn cần tác giả verify trước khi nộp.*

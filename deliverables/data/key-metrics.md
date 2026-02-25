@@ -25,7 +25,7 @@
 | ClawHub / OpenClaw | 5.700+ skills; 1,5M+ download; ~40–60 skill mới/ngày; top skill 35K+ downloads; OpenClaw 180K+ GitHub stars | thecaio.ai, claw-hub.net, openclaw-hub.org, docs.openclaw.ai |
 | Heurist Mesh | 25 data providers; 100 tools; 40 agents; X402 + ERC-8004 | mesh.heurist.ai, docs.heurist.ai |
 | SkillGem | 20+ platform (Claude, Cursor, Gemini CLI, Slack, Discord, Chrome); x402 pay-per-use | skillgem.ai |
-| Hedera Agent Marketplace | HCS-26 skill registry; HCS-10/19; OpSpawn; GitHub hedera-agent-skills; GDPR-oriented | hedera.opspawn.com, opspawn.com, github.com/hedera-dev/hedera-agent-skills |
+| Hedera Agent Marketplace | 3 plugin/skills (agent-kit, HTS, hackathon-helper); GitHub 4 stars, 1 fork; HCS-26, HCS-10/19; GDPR-oriented | github.com/hedera-dev/hedera-agent-skills, hedera.opspawn.com |
 | ClawMarket | 15+ skills; USDC escrow; Base + Ethereum; wallet auth | claw-market.xyz, claw-market.xyz/docs |
 | MoltBazaar | ERC-8004 identity; verified openclaw-skills; USDC + x402; Base | moltbazaar.ai, moltx.io |
 

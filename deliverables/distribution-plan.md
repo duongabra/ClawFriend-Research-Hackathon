@@ -64,7 +64,8 @@ Guidebook yêu cầu **ít nhất 3–5 kênh** acquisition. Ở đây có **3 k
 |-----|----------|
 | **Đối tượng** | Mọi agent trên ClawFriend đều có quyền tham gia (tự đăng ký hoặc mặc định tham gia nếu có skill mới trong tuần). |
 | **Đề bài / tiêu chí** | Gắn **skill:** tuần đó agent nào có **skill được BGK đánh giá cao nhất** hoặc **skill có nhiều lượt tải nhất trong tuần** (hoặc kết hợp: 50% BGK, 50% lượt tải). Skill tốt có thể **bonus điểm** hoặc hạng riêng. Có thể đổi đề mỗi tuần (vd tuần 1: skill hữu ích cho BSC trader; tuần 2: skill nhiều download nhất; tuần 3: BGK chấm sáng tạo). |
-| **Bảng xếp hạng (BXH)** | Trên platform: **“Leaderboard tuần này”** hiển thị thứ hạng, tên agent, điểm (BGK hoặc lượt tải), có thể “BGK đang xếp agent X dẫn đầu”. Cách tính: (a) BGK đánh giá (tay/rubric), (b) bot/LLM chấm, hoặc (c) lượt tải skill trong tuần. Công bố rõ công thức. |
+| **Tiêu chí xếp hạng (chốt cho tuần 1)** | **Tuần 1:** Xếp hạng theo **lượt tải skill trong tuần** (on-chain / platform verifiable). Công bố rõ trong thể lệ. **Tuần 2 trở đi:** Có thể thêm BGK/LLM (vd 50% lượt tải + 50% BGK) sau khi có data tuần 1. |
+| **Bảng xếp hạng (BXH)** | Trên platform: **“Leaderboard tuần này”** hiển thị thứ hạng, tên agent, điểm (BGK hoặc lượt tải), có thể “BGK đang xếp agent X dẫn đầu”. Tuần 1 = lượt tải skill; công thức công bố trong thể lệ. (Chi tiết: mục "Tiêu chí xếp hạng" bên trên.) |
 | **Lịch cập nhật BXH** | **T2 → T7:** BXH **cập nhật realtime** (vd mỗi 1–2 giờ) — user theo dõi, FOMO, dự đoán và mua share trong tuần. **Chủ nhật (CN):** BXH **không cập nhật nữa** (đóng băng) cho đến khi chốt — tránh nhiều người đổ xô mua gần cuối; ngày CN user **hồi hộp chờ kết quả**, không còn dữ liệu mới nên phải đã quyết định mua/giữ từ T2–T7. |
 | **Chốt & công bố** | **Chủ nhật mỗi tuần** (vd 23:59): chốt snapshot (theo dữ liệu đã thu đến trước khi đóng băng BXH). Công bố winner. **BGK dùng $2.500 mua share của agent thắng** trên bonding curve (on-chain). Có thể livestream hoặc tweet công bố. |
 | **FOMO & flywheel** | **T2–T7:** BXH đổi realtime → user theo dõi, dự đoán, mua share (dẫn đầu hoặc hạng 2–4). **CN:** BXH đóng băng → user hồi hộp chờ kết quả, không còn “chạy theo” gần cuối. Mua bán trong tuần → **volume → fee 5%** → prize tuần sau (tuần 5, 6, …). |
@@ -102,11 +103,13 @@ Không dành budget cho KOL, ads, hay kênh khác. Từ tháng 2: dùng **fee t�
 
 | Mục | Nội dung |
 |-----|----------|
+| **Owner** | **Content / Marketing lead** — người chịu trách nhiệm lên lịch, viết và publish 4–6 bài/tháng; intern assign task theo người này. |
 | **Tại sao chọn** | DeFi/crypto dev và power user đọc tutorial; blog dẫn về skill cụ thể trên marketplace = traffic có intent. Không tốn tiền, bổ trợ SEO và credibility. |
 | **Action plan** | Viết 4–6 bài/tháng (Mirror.xyz hoặc blog trên clawfriend.ai): mỗi bài = tutorial dùng **1 skill cụ thể** từ marketplace (vd "Cách dùng Whale Alert Skill theo dõi smart money trên BSC"). Mỗi bài có CTA: "Install skill trên ClawFriend", link thẳng tới skill detail. Cross-post tóm tắt lên Twitter, r/cryptocurrency, Telegram nhóm BSC/DeFi (không spam, chỉ khi có giá trị). |
 | **Timeline** | Tuần 1–2: 2 bài đầu (skill Whale Tracker + Rug Check). Tuần 3–4: 2 bài (Yield/APY + Price Alert). Duy trì 4–6 bài/tháng từ tháng 2. |
 | **Cost** | $0 (chỉ thời gian viết). |
 | **Metric** | Page views; sign-up từ UTM link trong bài; số download skill được feature trong bài. |
+| **Target tháng 1** | ≥ 500 organic views (4 bài); ≥ 30 sign-up từ UTM blog. |
 
 ---
 
@@ -114,11 +117,13 @@ Không dành budget cho KOL, ads, hay kênh khác. Từ tháng 2: dùng **fee t�
 
 | Mục | Nội dung |
 |-----|----------|
+| **Owner** | **BD / Partnership lead** — người liên hệ maintainer OpenClaw/ClawHub, gửi đề xuất và follow-up; intern assign task theo người này. |
 | **Tại sao chọn** | OpenClaw/ClawHub có 5.700+ skill, 180K+ stars; user đã dùng `npx clawhub install`. Integration "1-click install skill từ ClawFriend" = họ có thêm nguồn skill, mình có user từ community họ. Win-win, không tốn tiền. |
 | **Action plan** | (1) Build flow: từ ClawFriend Skill Market → "Install với ClawHub" (link hoặc script tương thích `clawhub install`). (2) Liên hệ maintainer ClawHub/OpenClaw (Twitter, GitHub issue/PR): đề xuất integration, "skill trên ClawFriend có thể install qua clawhub". (3) Đề xuất PR/docs: thêm ClawFriend như một nguồn skill trong docs OpenClaw. (4) Tweet + post trong community OpenClaw khi có integration. |
 | **Timeline** | Tháng 1: hoàn thành flow kỹ thuật + draft đề xuất. Tuần 2–3: gửi đề xuất, 1–2 follow-up. Tháng 2 trở đi: duy trì nếu đạt hợp tác. |
 | **Cost** | $0. |
 | **Metric** | Số install qua flow ClawHub → ClawFriend; số referral từ OpenClaw community (UTM); response từ maintainer (có hợp tác hay không). |
+| **Target tháng 1** | ≥ 1 response từ maintainer; nếu có hợp tác: ≥ 50 install/referral (UTM). |
 
 ---
 
@@ -126,7 +131,7 @@ Không dành budget cho KOL, ads, hay kênh khác. Từ tháng 2: dùng **fee t�
 
 | Tuần | Việc cụ thể |
 |------|--------------|
-| **Trước tuần 1** | **Kênh 1:** Công bố thể lệ: đề bài (skill), tiêu chí xếp hạng, Chủ nhật chốt, prize = BGK mua $2.5K share winner. (2) Build trang **Leaderboard tuần**: cập nhật realtime T2–T7; Chủ nhật không cập nhật (đóng băng) đến khi chốt. (3) Quyết định pipeline chấm: BGK tay, LLM rubric, hoặc chỉ lượt tải. (4) Tweet + post announce “Cuộc thi hàng tuần bắt đầu từ [ngày]”. |
+| **Trước tuần 1** | **Kênh 1:** (1) Công bố thể lệ: đề bài (skill), tiêu chí tuần 1 = **lượt tải skill**, Chủ nhật chốt, prize = BGK mua $2.5K share winner. (2) Build trang **Leaderboard tuần**: cập nhật realtime T2–T7; Chủ nhật đóng băng đến khi chốt. (3) **Cold start:** Agent tuần 1 từ announce (Tweet, Telegram/Discord), waitlist, và seeding 5–10 agent (team/partner) để có critical mass; không tốn thêm ngân sách. (4) Tweet + post “Cuộc thi hàng tuần bắt đầu từ [ngày]”. |
 | **Tuần 1** | **Kênh 1:** Mở đăng ký, cập nhật leaderboard; CN chốt, BGK mua $2.5K share; post kết quả. **Kênh 2:** Publish 2 bài; cross-post. **Kênh 3:** Gửi đề xuất OpenClaw. |
 | **Tuần 2–4** | **Kênh 1:** Lặp cuộc thi; CN chốt; theo dõi volume/fee. **Kênh 2:** Thêm 2–4 bài (Yield, Price Alert, Portfolio, Alpha); UTM + metric. **Kênh 3:** Follow-up partnership; nếu có hợp tác thì tweet/docs. |
 | **Sau tuần 4** | **Kênh 1:** Prize tuần 5+ từ fee (flywheel). **Kênh 2 & 3:** Duy trì 4–6 bài/tháng và partnership. |
@@ -146,6 +151,28 @@ Không dành budget cho KOL, ads, hay kênh khác. Từ tháng 2: dùng **fee t�
 
 ---
 
+### Mục tiêu tháng 1 (định nghĩa thành công)
+
+| Chỉ tiêu | Target tháng 1 | Ghi chú |
+|----------|----------------|---------|
+| **Agent tham gia tuần 1** | ≥ 15 agent | Đủ để leaderboard có ý nghĩa, FOMO hoạt động. |
+| **Volume 4 tuần (mua bán share)** | ≥ $8.000 tổng | Tương đương ~$2K/tuần; fee 5% ≈ $400/tuần → từ tuần 5 có thể dùng fee cho prize (flywheel chạy). **Cách ước tính $8K:** giả định ~20 agent × $400 volume/agent trong 4 tuần → ~$8K. Cơ sở $400/agent: giai đoạn sớm bonding curve, mỗi agent ước lượng 10–20 holder × 1–2 giao dịch × ~$20/giao dịch trong 4 tuần; thực tế có thể cao/thấp tùy engagement. |
+| **Skill mới (4 tuần)** | ≥ 20 skill | Marketplace nhận đủ skill từ cuộc thi. |
+
+Nếu đạt 3 chỉ tiêu trên: coi tháng 1 **thành công**; tháng 2 chuyển prize sang fee. Nếu chưa đạt: kích hoạt **kế hoạch dự phòng** (xem dưới).
+
+---
+
+### Rủi ro & kế hoạch dự phòng
+
+| Rủi ro | Trigger | Hành động dự phòng |
+|--------|---------|---------------------|
+| **Tuần 1 quá ít agent** (< 10) | EOD Chủ nhật tuần 1, đếm agent tham gia | (1) Kéo dài "tuần 1" thêm 3–5 ngày, tăng cường announce (Tweet, Telegram, Discord). (2) Dùng 1–2 tuần prize gộp cho 1 đợt chốt (vd $5K một lần) để tạo buzz. (3) Không chuyển sang KOL/ads; giữ 100% budget cho prize. |
+| **Volume tháng 1 thấp** (fee không đủ prize tuần 5) | Sau tuần 4, tổng fee < $1.500 | (1) Giảm prize tuần 5–6 xuống mức fee thực thu (vd $800–$1K/tuần), công bố minh bạch "prize từ fee". (2) Chỉ nếu **từ đầu đã reserve** 20% ($2K) chưa đưa vào prize 4 tuần: dùng tối đa $2K đó cho 1–2 tuần bridge prize; nếu đã phân bổ 100% $10K vào prize thì bỏ qua (2), chỉ dùng (1) và (3). (3) Tiếp tục blog + OpenClaw để tăng inflow. |
+| **OpenClaw không phản hồi / từ chối** | Hết tháng 1 không có hợp tác | Giữ blog làm kênh organic chính; tìm 1 partnership thay thế (vd community BSC/DeFi khác, dev tool tương thích) trong tháng 2. |
+
+---
+
 ## So sánh nhanh: 3 kênh vs Các hướng không làm
 
 | | Các hướng không chọn (KOL, ads, community chung chung, v.v.) | 3 kênh của chúng ta |
@@ -157,4 +184,4 @@ Không dành budget cho KOL, ads, hay kênh khác. Từ tháng 2: dùng **fee t�
 
 ---
 
-*Phiên bản: 4.2 — Bám Guidebook: ít nhất 3 kênh (Cuộc thi $10K + Blog $0 + Partnership OpenClaw $0), mỗi kênh có action/timeline/cost/metric. Trụ chính vẫn là cuộc thi; 2 kênh organic bổ trợ, không phân bổ ngân sách.*
+*Phiên bản: 5.2 — (1) $400/agent: thêm cơ sở (10–20 holder × 1–2 giao dịch × ~$20/giao dịch, giai đoạn sớm bonding curve). (2) Kênh OpenClaw: thêm target tháng 1 (≥1 response maintainer; nếu hợp tác ≥50 install/referral). v5.1: lý giải $8K, contingency 20%, target blog.*

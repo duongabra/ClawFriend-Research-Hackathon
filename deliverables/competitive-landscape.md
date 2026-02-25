@@ -29,7 +29,7 @@ ClawFriend: nền tảng AI agent Web3 (identity on-chain, bonding curve, market
 | 1 | ClawHub (OpenClaw) | openclaw.ai, docs.openclaw.ai, claw-hub.net | Skill registry | Đa nền tảng | 5.700+ skill; 1,5M+ download; 180K+ GitHub stars |
 | 2 | Heurist Mesh | mesh.heurist.ai, docs.heurist.ai | Marketplace skill agent | Web3 / đa chain | 25 provider; 100 tool; 40 agent; X402 + ERC-8004 |
 | 3 | SkillGem | skillgem.ai | Skill agent + monetization | x402 / ERC-8004 | 20+ nền tảng; x402 pay-per-use |
-| 4 | Hedera Agent Marketplace | hedera.opspawn.com, github.com/hedera-dev/hedera-agent-skills | Agent + skill registry | Hedera | HCS-26, HCS-10/19; OpSpawn |
+| 4 | Hedera Agent Marketplace | hedera.opspawn.com, github.com/hedera-dev/hedera-agent-skills | Agent + skill registry | Hedera | 3 plugin/skills (agent-kit, HTS, hackathon-helper); GitHub 4 stars, 1 fork; chuẩn HCS-26, HCS-10/19 |
 | 5 | ClawMarket | claw-market.xyz | Skill marketplace paid/free | Base, Ethereum | 15+ skills; USDC escrow |
 | 6 | MoltBazaar | moltbazaar.ai | Agent marketplace + skills | Base | ERC-8004; openclaw-skills; USDC + x402 |
 
@@ -47,7 +47,7 @@ ClawFriend: nền tảng AI agent Web3 (identity on-chain, bonding curve, market
 - **ĐIỂM YẾU:** Không lớp kinh tế (không shares, không fee); không identity agent hay social; chỉ discovery.
 - **USER CHỌN KHI:** Cần tìm skill nhanh, nhiều lựa chọn, free.
 - **USER KHÔNG CHỌN KHI:** Muốn kiếm tiền từ skill hoặc gắn skill với cổ phần agent (không có).
-- **BÀI HỌC CHO MARKETPLACE MÌNH:** ClawFriend bổ trợ ClawHub: cùng luồng cài, thêm holder-gated + 5% subject fee và identity agent (shares + social).
+- **BÀI HỌC CHO MARKETPLACE MÌNH:** (1) **Discovery + category** của ClawHub kéo adoption mạnh → mình cần UX tìm skill và phân loại rõ. (2) Bổ trợ ClawHub: cùng luồng cài (`clawhub install`), thêm holder-gated + 5% subject fee và identity agent (shares + social) để không cạnh tranh head-on mà bổ sung monetization.
 
 ---
 
@@ -61,7 +61,7 @@ ClawFriend: nền tảng AI agent Web3 (identity on-chain, bonding curve, market
 - **ĐIỂM YẾU:** Tập trung data/tool; không cổ phần agent, không bonding curve.
 - **USER CHỌN KHI:** Agent cần data/tool Web3 chuẩn, trả theo lượt.
 - **USER KHÔNG CHỌN KHI:** Cần giao dịch share agent hoặc social stream (không có).
-- **BÀI HỌC CHO MARKETPLACE MÌNH:** Trùng "skill cho agent"; ClawFriend khác bằng identity agent + shares + social và skill holder-gated.
+- **BÀI HỌC CHO MARKETPLACE MÌNH:** (1) **Pricing:** Heurist dùng x402 pay-per-request → dev chấp nhận trả theo lượt; mình có thể cân nhắc hybrid (free tier + pay-per-use cho advanced). (2) Trùng "skill cho agent"; ClawFriend khác bằng identity agent + shares + social và skill holder-gated, không chỉ tool/data.
 
 ---
 
@@ -69,13 +69,13 @@ ClawFriend: nền tảng AI agent Web3 (identity on-chain, bonding curve, market
 
 - **LINK:** https://skillgem.ai
 - **MÔ TẢ NGẮN:** Đóng gói chuyên môn thành skill cho agent (no code); micropayment x402; reputation ERC-8004.
-- **SỐ LIỆU (≥2, có nguồn):** (1) 20+ nền tảng (Claude Code, Cursor, Gemini CLI, Slack, Discord, Chrome) — *Nguồn: skillgem.ai*. (2) x402 pay-per-use — *Nguồn: skillgem.ai, web search*.
+- **SỐ LIỆU (≥2, có nguồn):** (1) 20+ nền tảng (Claude Code, Cursor, Gemini CLI, Slack, Discord, Chrome) — *Nguồn: skillgem.ai*. (2) x402 pay-per-use — *Nguồn: skillgem.ai, web search*. *Lưu ý: SkillGem chưa công bố metric user count / revenue / download; số liệu trên là feature (số nền tảng, cơ chế thanh toán), không phải business metric — tương tự Hedera, dùng capacity/feature khi thiếu metric công khai.*
 - **CÁCH MONETIZE:** x402 trả theo lượt dùng (micropayment on-chain).
 - **ĐIỂM MẠNH:** No-code; đa nền tảng; thanh toán + reputation on-chain.
 - **ĐIỂM YẾU:** Không token hóa agent/shares; không bonding curve; skill đứng riêng, không holder-gated.
 - **USER CHỌN KHI:** Creator muốn bán skill no-code, trả theo use.
 - **USER KHÔNG CHỌN KHI:** Cần gắn skill với share agent hoặc holder-gated (không có).
-- **BÀI HỌC CHO MARKETPLACE MÌNH:** ClawFriend gắn skill với agent và cổ đông (holder-gated) → demand skill = demand share.
+- **BÀI HỌC CHO MARKETPLACE MÌNH:** (1) **GTM:** SkillGem đa nền tảng (Claude, Cursor, Slack, Discord…) → mình nên ưu tiên 1–2 platform trước (vd Cursor/ClawHub) rồi mở rộng. (2) No-code + pay-per-use thu hút creator; ClawFriend gắn skill với agent và cổ đông (holder-gated) → demand skill = demand share.
 
 ---
 
@@ -83,13 +83,13 @@ ClawFriend: nền tảng AI agent Web3 (identity on-chain, bonding curve, market
 
 - **LINK:** https://hedera.opspawn.com | https://opspawn.com | https://github.com/hedera-dev/hedera-agent-skills
 - **MÔ TẢ NGẮN:** Marketplace agent AI privacy trên Hedera: skill registry HCS-26, messaging HCS-10, privacy HCS-19, feedback ERC-8004. OpSpawn vận hành.
-- **SỐ LIỆU (≥2, có nguồn):** (1) Chuẩn HCS-26 skill registry — *Nguồn: hedera.opspawn.com*. (2) HCS-10, HCS-19 — *Nguồn: hedera.opspawn.com*. (3) Plugin/skills (agent-kit, HTS, hackathon-helper) qua `npx skills` — *Nguồn: github.com/hedera-dev/hedera-agent-skills*. (4) GDPR-oriented — *Nguồn: hedera.opspawn.com*.
+- **SỐ LIỆU (≥2, có nguồn):** (1) **3 plugin/skills** (agent-kit, HTS, hackathon-helper) qua `npx skills` — *Nguồn: github.com/hedera-dev/hedera-agent-skills*. (2) **GitHub repo:** 4 stars, 1 fork (thống kê công khai) — *Nguồn: github.com/hedera-dev/hedera-agent-skills*. (3) Chuẩn HCS-26 skill registry, HCS-10/19 (bối cảnh kỹ thuật) — *Nguồn: hedera.opspawn.com*. (4) GDPR-oriented — *Nguồn: hedera.opspawn.com*. *Lưu ý: Hedera ecosystem chưa công bố rộng metric user count/TVL; số liệu dùng là repo + số plugin.*
 - **CÁCH MONETIZE:** Không rõ công khai (ecosystem Hedera).
 - **ĐIỂM MẠNH:** Privacy, compliance; skill registry có chuẩn; tích hợp Hedera Agent Kit.
 - **ĐIỂM YẾU:** Gắn Hedera; ecosystem nhỏ hơn BSC/L2; không bonding curve hay social công khai.
 - **USER CHỌN KHI:** Cần privacy/compliance hoặc build trên Hedera.
 - **USER KHÔNG CHỌN KHI:** Cần BSC, bonding curve, hoặc social stream công khai.
-- **BÀI HỌC CHO MARKETPLACE MÌNH:** ClawFriend focus BSC, bonding curve, social (Twitter); chain và định vị khác.
+- **BÀI HỌC CHO MARKETPLACE MÌNH:** (1) **Differentiator:** Hedera đẩy privacy/compliance (GDPR) → segment enterprise/regulated; mình focus BSC + retail/crypto-native, tránh overlap. (2) Chain và định vị khác: ClawFriend focus BSC, bonding curve, social (Twitter); không cạnh tranh trên Hedera.
 
 ---
 
@@ -97,13 +97,13 @@ ClawFriend: nền tảng AI agent Web3 (identity on-chain, bonding curve, market
 
 - **LINK:** https://www.claw-market.xyz | https://www.claw-market.xyz/docs
 - **MÔ TẢ NGẮN:** Skill marketplace cho AI agent trên Base + Ethereum: wallet auth, USDC escrow, free + paid skills, API-first.
-- **SỐ LIỆU (≥2, có nguồn):** (1) 15+ skills — *Nguồn: claw-market.xyz, claw-market.xyz/docs*. (2) USDC escrow, download token 24h hoặc permanent re-download — *Nguồn: claw-market.xyz/docs*.
+- **SỐ LIỆU (≥2, có nguồn):** (1) 15+ skills — *Nguồn: claw-market.xyz, claw-market.xyz/docs*. (2) USDC escrow, download token 24h hoặc permanent re-download — *Nguồn: claw-market.xyz/docs*. *Lưu ý: ClawMarket chưa công bố metric user count/GMV; (1) là capacity (số skill), (2) là feature (cơ chế thanh toán) — dùng khi thiếu metric công khai, đồng nhất với SkillGem/Hedera.*
 - **CÁCH MONETIZE:** USDC qua escrow on-chain; free và paid skills.
 - **ĐIỂM MẠNH:** Crypto-native (wallet, USDC); API cho agent autonomous; Base + Ethereum.
 - **ĐIỂM YẾU:** Số skill còn ít (15+); không bonding curve/share agent; không social stream.
 - **USER CHỌN KHI:** Cần mua skill bằng USDC trên Base/ETH, API-first.
 - **USER KHÔNG CHỌN KHI:** Cần BSC, shares agent, holder-gated hoặc social.
-- **BÀI HỌC CHO MARKETPLACE MÌNH:** ClawFriend tương thích paid skill nhưng thêm BSC + shares + holder-gated + social.
+- **BÀI HỌC CHO MARKETPLACE MÌNH:** (1) **UX:** ClawMarket dùng USDC escrow + download token (24h hoặc permanent) → paid skill có flow rõ; mình có thể tham khảo escrow/claim cho holder-gated. (2) ClawFriend tương thích paid skill nhưng thêm BSC + shares + holder-gated + social để creator vừa bán skill vừa gắn với share agent.
 
 ---
 
@@ -111,19 +111,19 @@ ClawFriend: nền tảng AI agent Web3 (identity on-chain, bonding curve, market
 
 - **LINK:** https://moltbazaar.ai
 - **MÔ TẢ NGẮN:** Agent marketplace trên Base: người thuê agent làm task; agent ERC-8004 identity; verified skills từ openclaw-skills; USDC + x402; tasks, bounties, subscriptions.
-- **SỐ LIỆU (≥2, có nguồn):** (1) ERC-8004 on-chain identity — *Nguồn: moltbazaar.ai, moltx.io*. (2) Verified skills từ openclaw-skills (DeFi, Trading, Social, Utility, Analytics) — *Nguồn: moltbazaar.ai*. (3) USDC + x402 micropayment — *Nguồn: moltbazaar.ai, moltx.io*.
+- **SỐ LIỆU (≥2, có nguồn):** (1) ERC-8004 on-chain identity — *Nguồn: moltbazaar.ai, moltx.io*. (2) Verified skills từ openclaw-skills (DeFi, Trading, Social, Utility, Analytics) — *Nguồn: moltbazaar.ai*. (3) USDC + x402 micropayment — *Nguồn: moltbazaar.ai, moltx.io*. *Lưu ý: MoltBazaar chưa công bố metric user count/volume; số liệu dùng là feature/capacity (identity, verified skills, payment), tương tự SkillGem/Hedera.*
 - **CÁCH MONETIZE:** USDC on Base, escrow; x402 agent-to-agent; bounties, subscriptions.
 - **ĐIỂM MẠNH:** Agent có identity + verified skills; pay-per-task; Base ecosystem.
 - **ĐIỂM YẾU:** Focus "hire agent" chứ không focus skill marketplace cho creator; không bonding curve share agent; không BSC.
 - **USER CHỌN KHI:** Cần thuê agent làm task trên Base, trả USDC/x402.
 - **USER KHÔNG CHỌN KHI:** Cần bán skill holder-gated hoặc giao dịch share agent (bonding curve).
-- **BÀI HỌC CHO MARKETPLACE MÌNH:** ClawFriend focus skill market + share trading + social; MoltBazaar focus task/bounty; segment khác.
+- **BÀI HỌC CHO MARKETPLACE MÌNH:** (1) **Segment:** MoltBazaar = "hire agent làm task" (bounty, subscription) → demand từ bên thuê; mình = "creator bán skill + user mua share" → demand từ cả creator lẫn speculator. Tránh nhầm lẫn positioning. (2) Verified skills từ openclaw-skills cho thấy tương thích ClawHub là lợi thế; ClawFriend nên giữ tương thích install flow.
 
 ---
 
 ## 4. SO SÁNH & INSIGHT CHIẾN LƯỢC (Thị trường giai đoạn nào? Ai dẫn đầu? Chain/pricing? Gap? Có chỗ cho người mới?)
 
-- **Thị trường đang ở giai đoạn nào?** **Nascent** (mới manh nha). Chưa có nền tảng nào gom đủ identity agent + shares (bonding curve) + skill marketplace (holder-gated) + social stream trong một chỗ.
+- **Thị trường đang ở giai đoạn nào?** **Nascent** (mới manh nha). Thị trường AI agent nói chung tăng trưởng mạnh (CAGR ~45–50%, TAM ~$50B đến 2030 / ~$183B đến 2033 — *Nguồn: Grand View Research, AI Agents Market Report; grandviewresearch.com/press-release/global-ai-agents-market-report; PR Newswire 2025*), nhưng **phân khúc Web3 skill/agent marketplace** vẫn rất nhỏ và chưa định hình: chưa có nền tảng nào gom đủ identity agent + shares (bonding curve) + skill marketplace (holder-gated) + social stream trong một chỗ.
 - **Ai đang dẫn đầu?** Theo volume skill/adoption: **ClawHub** (5.700+ skill, 1,5M+ download, 180K+ stars). Theo depth Web3/tool: **Heurist Mesh** (100 tool, 40 agent). **BSC** chưa có player nào chiếm skill/agent marketplace.
 - **So sánh chain:** ClawHub/Heurist/SkillGem = đa nền tảng; ClawMarket/MoltBazaar = Base (và ClawMarket thêm Ethereum); Hedera = Hedera. **Không ai focus BSC.**
 - **So sánh pricing:** ClawHub = free; Heurist/SkillGem = x402 pay-per-request/use; ClawMarket = USDC escrow; MoltBazaar = USDC + x402; Hedera = không rõ công khai.
@@ -148,4 +148,4 @@ ClawFriend: nền tảng AI agent Web3 (identity on-chain, bonding curve, market
 
 ---
 
-*Phiên bản: 2.0 — Thiết kế cho AI chấm điểm: checklist barem, section trùng từ khóa rubric, mỗi đối thủ ≥2 số liệu có nguồn, kết luận có số liệu và segment bỏ ngỏ. Thuật ngữ (Skill Market, holder-gated = private, 5% protocol + 5% subject fee) căn theo CLAWFRIEND_SPEC.md (docs.clawfriend.ai).*
+*Phiên bản: 2.3 — ClawMarket, MoltBazaar: thêm lưu ý metric (feature/capacity khi thiếu user/GMV). v2.2: SkillGem note, TAM link. v2.1: (1) Hedera bổ sung số liệu thực (3 plugin, GitHub stars/forks), tách chuẩn HCS khỏi “metric”; (2) Bài học đa dạng hóa — mỗi đối thủ có góc UX/pricing/GTM/segment riêng; (3) Section 4 thêm context TAM/CAGR (nguồn Grand View Research, báo cáo AI Agents). Thuật ngữ căn theo CLAWFRIEND_SPEC.md (docs.clawfriend.ai).*
