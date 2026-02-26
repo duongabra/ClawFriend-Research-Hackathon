@@ -105,17 +105,17 @@ export default function DistributionPage() {
             <h3 className="mb-3 font-semibold text-blue-300">Bảng xếp hạng (BXH)</h3>
             <div className="space-y-3 text-sm">
               <div className="rounded-lg bg-slate-800/60 p-3">
-                <span className="text-amber-400/90 font-medium">Tiêu chí tuần 1:</span> xếp hạng = <strong>lượt tải skill trong tuần</strong> (on-chain / platform verifiable). Công thức công bố trong thể lệ. T2+ có thể thêm BGK/LLM (vd 50% lượt tải + 50% BGK).
+                <span className="text-amber-400/90 font-medium">Tiêu chí tuần 1:</span> xếp hạng = <strong>lượt tải skill trong tuần</strong> — <strong>chỉ tính T2→T7</strong> (on-chain / platform verifiable). Công thức công bố trong thể lệ. T2+ có thể thêm BGK/LLM. <strong className="text-amber-300/90">Chủ nhật = ngày quyết định của BGK — mọi quyết định cuối cùng thuộc về BGK.</strong>
               </div>
               <div className="flex justify-between rounded-lg bg-slate-800/60 p-3">
                 <span className="text-slate-400">T2 → T7</span>
-                <span className="font-medium text-green-400">BXH cập nhật realtime (1–2h)</span>
+                <span className="font-medium text-green-400">BXH cập nhật realtime (1–2h); chỉ tính skill/lượt tải T2→T7. User FOMO thứ hạng cao → mua bán liên tục hoặc săn hidden gem → làn sóng FOMO.</span>
               </div>
               <div className="flex justify-between rounded-lg bg-slate-800/60 p-3">
                 <span className="text-slate-400">Chủ nhật</span>
-                <span className="font-medium text-amber-400">BXH đóng băng → 23:59 chốt</span>
+                <span className="font-medium text-amber-400">BXH đóng băng; BGK quyết định winner → 23:59 chốt</span>
               </div>
-              <p className="text-slate-500 text-xs">Đóng băng CN tránh đổ xô mua gần cuối; user hồi hộp chờ kết quả. Chốt snapshot → công bố winner. BGK dùng $2.000 mua share winner on-chain. Prize tuần 5+ từ fee (flywheel). $2K còn lại: Blog $1K, OpenClaw $1K (boost, incentive).</p>
+              <p className="text-slate-500 text-xs">Chỉ dùng dữ liệu T2–T7 đã thu. Đóng băng CN tránh đổ xô mua gần cuối; user hồi hộp chờ kết quả. BGK quyết định winner, công bố và dùng $2.000 mua share winner on-chain. Prize tuần 5+ từ fee (flywheel). $2K: Blog $1K, OpenClaw $1K.</p>
             </div>
           </div>
           <div className="rounded-2xl border border-slate-600 bg-slate-900/40 p-6">

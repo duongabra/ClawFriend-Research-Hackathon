@@ -211,7 +211,7 @@ Distribution plan lấy ràng buộc từ **Guidebook cuộc thi** và chi tiế
 | Mục | Số liệu / mô tả | Nguồn |
 |-----|-----------------|--------|
 | Prize mỗi tuần | $2.000 (BGK mua share agent thắng) | distribution-plan.md |
-| Tiêu chí tuần 1 | Xếp hạng = **lượt tải skill trong tuần** (on-chain / platform verifiable) | distribution-plan.md |
+| Tiêu chí tuần 1 | Xếp hạng = **lượt tải skill trong tuần** — **chỉ tính T2→T7** (on-chain verifiable). CN = ngày quyết định BGK, mọi quyết định cuối thuộc BGK | distribution-plan.md |
 | Từ tuần 2 | Có thể thêm BGK/LLM (vd 50% lượt tải + 50% BGK) | distribution-plan.md |
 | BXH | T2–T7 cập nhật realtime (vd 1–2h); Chủ nhật đóng băng đến chốt (vd 23:59) | distribution-plan.md |
 | Cold start | Announce + waitlist + **seeding 5–10 agent** (team/partner); không tốn thêm ngân sách | distribution-plan.md |

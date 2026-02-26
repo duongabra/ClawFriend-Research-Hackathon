@@ -66,10 +66,10 @@ Guidebook yêu cầu **ít nhất 3–5 kênh** acquisition. Ở đây có **3 k
 |-----|----------|
 | **Đối tượng** | Skill tạo mới trong tuần **mặc định tham gia** cuộc thi — không cần đăng ký; cứ tạo skill là tham gia luôn. |
 | **Đề bài / tiêu chí** | Gắn **skill:** tuần đó agent nào có **skill được BGK đánh giá cao nhất** hoặc **skill có nhiều lượt tải nhất trong tuần** (hoặc kết hợp: 50% BGK, 50% lượt tải). Skill tốt có thể **bonus điểm** hoặc hạng riêng. Có thể đổi đề mỗi tuần (vd tuần 1: skill hữu ích cho BSC trader; tuần 2: skill nhiều download nhất; tuần 3: BGK chấm sáng tạo). |
-| **Tiêu chí xếp hạng (chốt cho tuần 1)** | **Tuần 1:** Xếp hạng theo **lượt tải skill trong tuần** (on-chain / platform verifiable). Công bố rõ trong thể lệ. **Tuần 2 trở đi:** Có thể thêm BGK/LLM (vd 50% lượt tải + 50% BGK) sau khi có data tuần 1. |
+| **Tiêu chí xếp hạng (chốt cho tuần 1)** | **Tuần 1:** Xếp hạng theo **lượt tải skill trong tuần** — **chỉ tính trong khoảng T2→T7** (on-chain / platform verifiable). Công bố rõ trong thể lệ. **Tuần 2 trở đi:** Có thể thêm BGK/LLM (vd 50% lượt tải + 50% BGK). **Chủ nhật (CN) là ngày quyết định của BGK — mọi quyết định cuối cùng thuộc về BGK.** |
 | **Bảng xếp hạng (BXH)** | Trên platform: **“Leaderboard tuần này”** hiển thị thứ hạng, tên agent, điểm (BGK hoặc lượt tải), có thể “BGK đang xếp agent X dẫn đầu”. Tuần 1 = lượt tải skill; công thức công bố trong thể lệ. (Chi tiết: mục "Tiêu chí xếp hạng" bên trên.) |
-| **Lịch cập nhật BXH** | **T2 → T7:** BXH **cập nhật realtime** (vd mỗi 1–2 giờ) — user theo dõi, FOMO, dự đoán và mua share trong tuần. **Chủ nhật (CN):** BXH **không cập nhật nữa** (đóng băng) cho đến khi chốt — tránh nhiều người đổ xô mua gần cuối; ngày CN user **hồi hộp chờ kết quả**, không còn dữ liệu mới nên phải đã quyết định mua/giữ từ T2–T7. |
-| **Chốt & công bố** | **Chủ nhật mỗi tuần** (vd 23:59): chốt snapshot (theo dữ liệu đã thu đến trước khi đóng băng BXH). Công bố winner. **BGK dùng $2.000 mua share của agent thắng** trên bonding curve (on-chain). Có thể livestream hoặc tweet công bố. |
+| **Lịch cập nhật BXH** | **T2 → T7:** BXH **cập nhật realtime** (vd mỗi 1–2 giờ); **chỉ tính skill/lượt tải trong khoảng T2→T7.** User theo dõi liên tục → FOMO thứ hạng cao → mua bán share thứ hạng cao liên tục, hoặc săn share giá rẻ + skill tốt (hidden gem) → **làn sóng FOMO** → volume → fee 5%. Cập nhật BXH liên tục giữ nhịp engagement; giai đoạn đầu có thể seeding skill team để kích hoạt FOMO không tốn thêm. **Chủ nhật (CN):** BXH **đóng băng**, không nhận thêm dữ liệu — **ngày quyết định của BGK**; user hồi hộp chờ kết quả. |
+| **Chốt & công bố** | **Chủ nhật mỗi tuần** (vd 23:59): chốt snapshot theo **dữ liệu T2–T7** đã thu. **BGK quyết định winner** (mọi quyết định cuối thuộc BGK), công bố và **BGK dùng $2.000 mua share của agent thắng** trên bonding curve (on-chain). Có thể livestream hoặc tweet công bố. |
 | **FOMO & flywheel** | **T2–T7:** BXH đổi realtime → user theo dõi, dự đoán, mua share (dẫn đầu hoặc hạng 2–4). **CN:** BXH đóng băng → user hồi hộp chờ kết quả, không còn “chạy theo” gần cuối. Mua bán trong tuần → **volume → fee 5%** → prize tuần sau (tuần 5, 6, …). |
 | **Skill bonus** | Skill đặc biệt hay có thể: bonus điểm, “Skill of the week”, hoặc highlight trên Skill Market. |
 
@@ -81,9 +81,9 @@ Guidebook yêu cầu **ít nhất 3–5 kênh** acquisition. Ở đây có **3 k
 
 Cuộc thi buộc người tham gia **tạo và publish skill** để được xếp hạng. Mỗi tuần nhiều agent nộp skill mới → **marketplace nhận thêm rất nhiều skill chất lượng** từ chính người dự thi. Càng chạy lâu, kho skill càng đầy và đa dạng.
 
-**2. Lý do user FOMO: mua sớm share khi còn rẻ, chờ BGK mua đẩy giá**
+**2. Lý do user FOMO: theo dõi BXH liên tục, mua sớm share khi còn rẻ, chờ BGK mua đẩy giá**
 
-User **mua share của các agent có skill đột phá khi giá còn rẻ** (đầu tuần hoặc khi agent đang hạng 2–3), giữ đến Chủ nhật — nếu agent đó thắng, **BGK dùng $2.000 mua share** → cầu tăng → **giá đẩy lên** → user mua sớm được lợi. Tương tự hạng 2, 3, 4: user “cược” ai bứt tốc. **Mua trước, chờ BGK mua đẩy giá** = incentive tài chính trực tiếp.
+User **mua share của các agent có skill đột phá khi giá còn rẻ** (đầu tuần hoặc khi agent đang hạng 2–3), giữ đến Chủ nhật — **CN là ngày quyết định của BGK** (mọi quyết định cuối thuộc BGK); nếu agent đó thắng, **BGK dùng $2.000 mua share** → cầu tăng → **giá đẩy lên** → user mua sớm được lợi. Tương tự hạng 2, 3, 4: user “cược” ai bứt tốc. **Mua trước, chờ BGK mua đẩy giá** = incentive tài chính trực tiếp. BXH chỉ tính T2→T7; user FOMO thứ hạng cao → mua bán liên tục hoặc săn share giá rẻ + skill tốt (hidden gem) → làn sóng FOMO. Giai đoạn đầu có thể seeding skill team để kích hoạt FOMO không tốn thêm.
 
 **3. Nguồn tester vô tận: phải cài skill để đánh giá**
 

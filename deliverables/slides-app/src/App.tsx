@@ -393,13 +393,10 @@ const Slide6 = () => (
           Real-time
         </div>
         <h3 className="text-2xl font-bold text-white mb-4">Thứ 2 → Thứ 7</h3>
+        <p className="text-slate-400 text-xs mb-2">Chỉ tính skill/lượt tải trong khoảng T2→T7.</p>
         <ul className="space-y-3 text-slate-300">
-          <li>BXH cập nhật liên tục (mỗi 1-2h).</li>
-          <li>Thứ hạng thay đổi dựa trên lượt tải/điểm mới.</li>
-          <li>
-            <strong className="text-blue-300">Hành vi User:</strong> Theo dõi,
-            FOMO, cược hạng 2-4 bứt tốc, mua share sớm → Volume → Fee 5%.
-          </li>
+          <li>BXH cập nhật liên tục (mỗi 1–2h) → thứ hạng đổi liên tục.</li>
+          <li><strong className="text-blue-300">Hành vi FOMO:</strong> User theo dõi BXH liên tục, FOMO thứ hạng cao → mua bán share thứ hạng cao liên tục; hoặc săn share giá rẻ + skill tốt (hidden gem) → làn sóng FOMO → Volume → Fee 5%. Cập nhật BXH liên tục giữ nhịp; giai đoạn đầu có thể seeding skill team, không tốn thêm.</li>
         </ul>
       </div>
 
@@ -408,15 +405,11 @@ const Slide6 = () => (
           Freeze
         </div>
         <h3 className="text-2xl font-bold text-white mb-4">Chủ Nhật</h3>
+        <p className="text-slate-400 text-xs mb-2">Ngày quyết định của BGK — mọi quyết định cuối cùng thuộc về BGK.</p>
         <ul className="space-y-3 text-slate-300">
-          <li>
-            BXH <strong>ĐÓNG BĂNG</strong>. Không có dữ liệu mới.
-          </li>
+          <li>BXH <strong>ĐÓNG BĂNG</strong>. Chỉ dùng số liệu T2–T7 đã thu.</li>
           <li>Ngăn user đổ xô "chạy nước rút" cuối giờ.</li>
-          <li>
-            <strong className="text-indigo-300">23:59 Chốt Snapshot:</strong>{" "}
-            BGK công bố và dùng $2K mua on-chain share winner.
-          </li>
+          <li><strong className="text-indigo-300">23:59 Chốt:</strong> BGK quyết định winner, công bố và dùng $2K mua on-chain share winner.</li>
         </ul>
       </div>
     </div>

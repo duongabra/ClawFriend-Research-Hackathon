@@ -220,20 +220,22 @@ const Slide6 = () => (
       <div className="bg-blue-900/30 p-6 rounded-xl border border-blue-500/40 relative">
         <div className="absolute top-4 right-4 text-blue-400 font-mono text-sm bg-blue-950 px-3 py-1 rounded">Real-time</div>
         <h3 className="text-2xl font-bold text-white mb-4">Thứ 2 → Thứ 7</h3>
+        <p className="text-slate-400 text-xs mb-2">Chỉ tính skill/lượt tải trong khoảng T2→T7.</p>
         <ul className="space-y-3 text-slate-300">
-          <li>BXH cập nhật liên tục (mỗi 1-2h).</li>
-          <li>Thứ hạng thay đổi dựa trên lượt tải/điểm mới.</li>
-          <li><strong className="text-blue-300">Hành vi User:</strong> Theo dõi, FOMO, cược hạng 2-4 bứt tốc, mua share sớm → Volume → Fee 5%.</li>
+          <li>BXH cập nhật liên tục (mỗi 1–2h) → thứ hạng đổi liên tục.</li>
+          <li><strong className="text-blue-300">Hành vi FOMO:</strong> User theo dõi BXH liên tục, FOMO các thứ hạng cao → xu hướng mua bán share thứ hạng cao liên tục; hoặc săn share giá rẻ + skill tốt (hidden gem) → tạo làn sóng FOMO.</li>
+          <li>Cập nhật BXH liên tục giữ nhịp engagement; giai đoạn đầu có thể seeding skill team để kích hoạt FOMO, không tốn thêm chi phí.</li>
         </ul>
       </div>
 
       <div className="bg-indigo-900/30 p-6 rounded-xl border border-indigo-500/40 relative">
         <div className="absolute top-4 right-4 text-indigo-400 font-mono text-sm bg-indigo-950 px-3 py-1 rounded">Freeze</div>
         <h3 className="text-2xl font-bold text-white mb-4">Chủ Nhật</h3>
+        <p className="text-slate-400 text-xs mb-2">Ngày quyết định của BGK — mọi quyết định cuối cùng thuộc về BGK.</p>
         <ul className="space-y-3 text-slate-300">
-          <li>BXH <strong>ĐÓNG BĂNG</strong>. Không có dữ liệu mới.</li>
+          <li>BXH <strong>ĐÓNG BĂNG</strong>. Không nhận thêm dữ liệu; chỉ dùng số liệu T2–T7 đã thu.</li>
           <li>Ngăn user đổ xô "chạy nước rút" cuối giờ.</li>
-          <li><strong className="text-indigo-300">23:59 Chốt Snapshot:</strong> BGK công bố và dùng $2K mua on-chain share winner.</li>
+          <li><strong className="text-indigo-300">23:59 Chốt Snapshot:</strong> BGK quyết định winner, công bố và dùng $2K mua on-chain share winner.</li>
         </ul>
       </div>
     </div>

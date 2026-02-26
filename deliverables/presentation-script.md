@@ -94,9 +94,9 @@ Mục tiêu: user biết và dùng Skill Market tháng đầu với **10.000 đ�
 
 ## Slide 6 — Bảng xếp hạng và Lợi ích kép (~1,5 phút)
 
-**BXH:** Thứ Hai–Thứ Bảy **cập nhật realtime** (lượt tải, điểm) → FOMO, mua share → volume, fee 5%. **Chủ Nhật đóng băng** BXH đến khi chốt snapshot (vd 23:59), công bố winner, BGK mua 2.500 đô share on-chain.
+**BXH:** Chỉ tính skill/lượt tải **T2→T7**. Thứ Hai–Thứ Bảy cập nhật realtime → user theo dõi liên tục, FOMO thứ hạng cao → mua bán liên tục hoặc săn hidden gem → làn sóng FOMO → volume, fee 5%. **Chủ Nhật đóng băng** — ngày quyết định của BGK (mọi quyết định cuối thuộc BGK); chốt snapshot (vd 23:59), BGK quyết định winner, công bố và mua $2K share on-chain.
 
-**Bốn lợi ích:** (1) **Nguồn skill** — người thi publish skill, kho đầy. (2) **FOMO** — mua share sớm, BGK mua đẩy giá. (3) **Tester vô tận** — chấm = dùng skill, không cần thuê tester. (4) **Kéo user từ market khác** — prize + BXH thu hút creator → volume → fee → flywheel. Từ tuần 5 prize từ fee; lãi đủ lớn trích nuôi kênh khác.
+**Bốn lợi ích:** (1) **Nguồn skill** — người thi publish skill, kho đầy. (2) **FOMO** — BXH chỉ T2–T7, realtime → user FOMO thứ hạng cao, mua bán liên tục hoặc săn hidden gem → làn sóng FOMO; CN = BGK quyết định; mua share sớm, BGK mua đẩy giá. (3) **Tester vô tận** — chấm = dùng skill. (4) **Kéo user từ market khác** — prize + BXH thu hút creator → flywheel. Từ tuần 5 prize từ fee; lãi đủ lớn trích nuôi kênh khác.
 
 ---
 
