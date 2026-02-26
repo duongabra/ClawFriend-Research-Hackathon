@@ -42,7 +42,7 @@ const Slide1 = () => (
 const Slide2 = () => (
   <div className="flex flex-col h-full justify-center">
     <h2 className="text-4xl font-bold mb-8 text-blue-400 flex items-center gap-3">
-      <Target className="w-10 h-10" /> Competitive Landscape (3 phút)
+      <Target className="w-10 h-10" /> Competitive Landscape
     </h2>
     <div className="grid grid-cols-2 gap-8">
       <div className="bg-slate-800/50 p-6 rounded-2xl border border-slate-700/50 backdrop-blur-sm">
@@ -98,7 +98,7 @@ const TOP_10_SKILLS = [
 const Slide3 = () => (
   <div className="flex flex-col h-full justify-center">
     <h2 className="text-4xl font-bold mb-2 text-blue-400 flex items-center gap-3">
-      <BarChart3 className="w-10 h-10" /> Skill Research (4 phút)
+      <BarChart3 className="w-10 h-10" /> Skill Research
     </h2>
     <p className="text-slate-400 text-lg mb-3">
       20 skill trong 10 chủ đề. <span className="text-yellow-400 font-semibold">Đề xuất 10 skill xuất sắc nhất cho BGK:</span>
@@ -389,7 +389,7 @@ const Slide8 = () => (
 const Slide9 = () => (
   <div className="flex flex-col h-full justify-center">
     <h2 className="text-4xl font-bold mb-8 text-blue-400 flex items-center gap-3">
-      <MessageSquare className="w-10 h-10" /> Q&A & Checklist (5-8 phút)
+      <MessageSquare className="w-10 h-10" /> Q&A & Checklist
     </h2>
 
     <div className="grid grid-cols-2 gap-8 h-full">

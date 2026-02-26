@@ -4,11 +4,47 @@ Script đầy đủ để đọc khi present. Mỗi slide có nội dung chi ti�
 
 ---
 
+## Giải thích thuật ngữ (glossary)
+
+Dùng khi BGK hoặc người nghe hỏi, hoặc khi cần nói rõ ý trong lúc present.
+
+| Thuật ngữ | Giải thích |
+|-----------|------------|
+| **Identity on-chain** | Danh tính (identity) của agent được ghi và xác minh trên blockchain — không lưu trên server tập trung. Mỗi agent có thể có địa chỉ ví, token hoặc contract riêng trên chain; ai nắm key thì sở hữu/điều khiển agent đó. Chuẩn như ERC-8004 dùng để “token hóa” agent (agent = identity on-chain). |
+| **Bonding curve** | Đường cong định giá: giá mua/bán **share** (cổ phần) của agent phụ thuộc vào số share đã bán. Càng nhiều người mua, giá càng tăng; bán ra thì giá giảm. Cho phép giao dịch share không cần sàn order book; thanh khoản và giá do công thức curve quyết định. |
+| **BSC** | Binance Smart Chain — blockchain tương thích EVM do Binance vận hành. Phí gas thấp, tốc độ nhanh; ecosystem DeFi và user lớn. Trong script: ClawFriend chạy trên BSC, đối thủ chưa ai chiếm skill/agent marketplace trên BSC. |
+| **Web3** | Internet phi tập trung dựa trên blockchain: ví, smart contract, token, dữ liệu on-chain. Ở đây: AI agent + skill/plugin marketplace gắn với ví, thanh toán on-chain, identity on-chain. |
+| **Skill / plugin marketplace** | Nơi user hoặc agent có thể cài thêm “skill” (tính năng, plugin) — ví dụ Whale Alert, Rug Check — để mở rộng chức năng. Marketplace = catalog skill + cơ chế cài, có thể trả phí hoặc holder-gated. |
+| **Holder-gated** | Chỉ người **đang nắm share** (holder) của agent mới được dùng bản nâng cao của skill (filter mạnh hơn, real-time, unlimited alert…). Không có share thì dùng bản free/giới hạn. Thay cho mô hình subscription. |
+| **Shares (cổ phần agent)** | “Cổ phần” của một agent — mua/bán trên bonding curve. Holder được quyền lợi (vd holder-gated skill, chia fee). BGK mua share winner = mua cổ phần agent thắng cuộc thi on-chain. |
+| **5% fee / subject fee** | Protocol thu **5%** trên volume giao dịch (mua/bán share). Phần fee này dùng để tài trợ prize tuần sau (flywheel) hoặc nuôi kênh khác khi đủ lãi. “Subject” = gắn với chủ thể (agent/skill). |
+| **Discovery** | Bước “tìm thấy” — user tìm skill/agent (search, category, ranking). ClawHub chỉ làm discovery (tìm và cài skill); ClawFriend thêm monetization (fee, share, holder-gated). |
+| **Flywheel** | Vòng lặp tự cường: volume mua bán → fee 5% → prize tuần sau → thu hút thêm agent/user → volume tăng → fee tăng… Càng chạy càng to. |
+| **FOMO** | Fear of missing out — sợ bỏ lỡ. User mua share sớm vì sợ giá lên sau khi agent thắng (BGK mua $2.5K đẩy giá); hoặc sợ bỏ lỡ cơ hội vào platform. |
+| **On-chain** | Giao dịch hoặc dữ liệu được ghi trên blockchain (minh bạch, không đổi được). VD: BGK mua share winner on-chain = giao dịch thật trên chain. |
+| **Snapshot** | Chốt dữ liệu tại một thời điểm — VD Chủ nhật 23:59 chốt BXH theo dữ liệu đến lúc đó để xác định winner, không nhận thêm dữ liệu sau. |
+| **BXH** | Bảng xếp hạng (leaderboard) — thứ hạng agent theo tiêu chí (lượt tải skill, điểm BGK…). |
+| **BGK** | Ban Giám khảo — trong cơ chế cuộc thi: BGK chấm/chốt winner và dùng $2.500 mua share agent thắng. |
+| **Prize** | Giải thưởng — ở đây = BGK mua $2.500 share của agent thắng mỗi tuần (4 tuần = $10K). Từ tuần 5: prize lấy từ fee. |
+| **Cold start** | Giai đoạn khởi động khi chưa có user/agent: cần announce, waitlist, seeding 5–10 agent (team/partner) để BXH có nội dung, FOMO hoạt động. |
+| **Organic / paid channel** | **Organic:** kênh không trả tiền quảng cáo — blog, partnership, SEO. **Paid:** trả tiền — ở đây toàn bộ $10K = prize cuộc thi (paid cho winner qua mua share). |
+| **KOL** | Key Opinion Leader — người có ảnh hưởng (influencer). Script nói không dùng ngân sách cho KOL/ads. |
+| **Lead magnet** | Nội dung hoặc lợi ích miễn phí để “kéo” user vào (vd skill free 5 lần quét/ngày) rồi chuyển sang holder-gated hoặc mua share. |
+| **UTM** | Tham số trong link (utm_source, utm_medium…) để đo nguồn traffic (vd sign-up từ blog, từ OpenClaw). |
+| **CTA** | Call to action — lời kêu gọi hành động (vd “Install skill”, “Mua share”). |
+| **GTM** | Go-to-market — chiến lược đưa sản phẩm ra thị trường (kênh, timeline, metric). |
+| **x402 / ERC-8004** | **x402:** chuẩn thanh toán theo request (pay-per-use) cho API/tool. **ERC-8004:** chuẩn token/identity cho agent trên Ethereum-compatible chain. Đối thủ Heurist, SkillGem, MoltBazaar dùng; ClawFriend dùng BSC + bonding curve. |
+| **USDC** | Stablecoin neo 1:1 với USD; dùng để thanh toán (vd ClawMarket dùng USDC escrow cho skill). |
+| **Nascent** | Sơ khai, mới nổi — thị trường skill/agent Web3 đang ở giai đoạn nascent. |
+| **Creator monetization** | Creator (người tạo skill/agent) kiếm tiền — qua fee share, holder-gated, prize… ClawFriend giải bài toán này; ClawHub không có lớp monetization. |
+
+---
+
 ## Slide 1 — Title (khoảng 30 giây)
 
 Kính chào Ban Giám khảo, kính chào Lab3 và mọi người.
 
-Hôm nay em trình bày đề tài **Cook a Web3 Skill Marketplace** — kế hoạch go-to-market cho Skill Market của **ClawFriend**. ClawFriend là nền tảng AI agent Web3 với identity on-chain, bonding curve và marketplace skill/plugin, chạy trên BSC. Bài làm của em gồm ba phần chính theo Guidebook: Competitive Landscape, Skill Research, và Distribution Plan; cuối cùng là phần AI Showcase.
+Hôm nay em trình bày đề tài kế hoạch go-to-market cho Skill Market của **ClawFriend**. ClawFriend là nền tảng AI agent Web3 với identity on-chain, bonding curve và marketplace skill/plugin, chạy trên BSC. Bài làm của em gồm ba phần chính theo Guidebook: Competitive Landscape, Skill Research, và Distribution Plan; cuối cùng là phần AI Showcase.
 
 Trình bày bởi [Tên thí sinh / Team của bạn]. Em xin phép được bắt đầu.
 
@@ -88,11 +124,11 @@ Kế hoạch phân phối với mục tiêu: làm thế nào để user biết �
 
 ## Slide 5 — Cơ chế Cuộc thi Hàng tuần (khoảng 1,5 phút)
 
-Cơ chế cuộc thi: **2.500 đô nhân 4 tuần bằng 10.000 đô.** Toàn bộ budget là giải thưởng — Prize. Không dành cho KOL, ads hay kênh khác. Mỗi **Chủ Nhật**, BGK dùng **2.500 đô mua share của agent thắng** ngay trên bonding curve on-chain. Từ tháng 2 trở đi: dùng fee từ volume giao dịch để tiếp tục prize — ví dụ 1.500 đến 2K đô mỗi tuần tùy fee thu được.
+Cơ chế cuộc thi: **2.500 đô nhân 4 tuần bằng 10.000 đô.** Toàn bộ budget là giải thưởng — Prize. Không dành cho KOL, ads hay kênh khác. Mỗi **Chủ Nhật**, BGK dùng **2.500 đô mua share của agent thắng** ngay trên bonding curve on-chain. Từ tháng 2 trở đi: dùng fee từ volume giao dịch để tiếp tục prize — ví dụ 1.500 đến 2K đô mỗi tuần tùy fee thu được. **Khi cuộc thi có lợi nhuận đủ lớn** — fee vượt mức prize cần thiết — thì trích một phần để **nuôi các kênh khác**: blog trả phí, partnership incentive, hoặc kênh paid bổ sung; flywheel không chỉ tự nuôi prize mà còn mở rộng acquisition.
 
 **Đối tượng tham gia:** Mọi agent trên ClawFriend đều có quyền tham gia — tự đăng ký hoặc mặc định tham gia nếu có skill mới trong tuần.
 
-**Đề bài và tiêu chí:** Gắn với **skill**. Tuần đó agent nào có skill được BGK đánh giá cao nhất hoặc skill có nhiều lượt tải nhất trong tuần — hoặc kết hợp 50% BGK, 50% lượt tải. Skill tốt có thể bonus điểm hoặc hạng riêng "Skill of the week". Có thể đổi đề mỗi tuần — ví dụ tuần 1 skill hữu ích cho BSC trader, tuần 2 skill nhiều download nhất, tuần 3 BGK chấm sáng tạo. Cách tính điểm: BGK đánh giá tay hoặc theo rubric; hoặc bot LLM chấm; hoặc lượt tải skill trong tuần. Công thức phải công bố rõ từ đầu tuần.
+**Đề bài và tiêu chí:** Gắn với **skill**. **Tuần 1 chốt:** xếp hạng theo **lượt tải skill trong tuần** (on-chain hoặc platform verifiable), công bố rõ trong thể lệ. Từ tuần 2 trở đi có thể thêm BGK hoặc LLM — ví dụ 50% lượt tải, 50% BGK. Skill tốt có thể bonus điểm hoặc hạng riêng "Skill of the week". Có thể đổi đề mỗi tuần — ví dụ tuần 1 skill hữu ích cho BSC trader, tuần 2 skill nhiều download nhất, tuần 3 BGK chấm sáng tạo.
 
 ---
 
@@ -106,7 +142,7 @@ Trên platform có trang **Leaderboard tuần này** hiển thị thứ hạng, 
 
 **Chủ Nhật:** BXH **không cập nhật nữa** — đóng băng từ đầu ngày Chủ Nhật cho đến khi chốt. Không có dữ liệu mới đẩy vào BXH. Tại sao đóng băng: tránh nhiều người đổ xô mua share ngay trước giờ chốt; ngày Chủ Nhật chỉ còn việc chờ snapshot và công bố winner, không còn dữ liệu mới để sprint cuối. User hồi hộp chờ kết quả; mọi quyết định mua hoặc giữ đã phải thực hiện từ Thứ Hai đến Thứ Bảy. **Chốt và công bố:** Chủ Nhật ví dụ **23:59** chốt snapshot theo dữ liệu đã thu trước khi đóng băng BXH. Công bố winner. BGK dùng 2.500 đô mua share của agent thắng trên bonding curve on-chain. Có thể livestream hoặc tweet công bố.
 
-**Ba lợi ích cốt lõi — Flywheel:**
+**Bốn lợi ích cốt lõi — Flywheel:**
 
 1. **Nguồn skill chất lượng:** Người dự thi phải tạo và publish skill để được xếp hạng. Marketplace nhận rất nhiều skill từ chính người thi; càng chạy lâu kho skill càng đầy.
 
@@ -114,7 +150,9 @@ Trên platform có trang **Leaderboard tuần này** hiển thị thứ hạng, 
 
 3. **Nguồn tester vô tận:** Để đánh giá — lượt tải hoặc trải nghiệm — user và BGK phải cài và dùng skill. Mỗi lần đánh giá là một lần test skill; không cần thuê tester; skill được stress-test bởi người dùng thật.
 
-Mua bán trong tuần → volume → fee 5% → prize tuần sau từ tuần 5 trở đi — cuộc thi tự nuôi sau 4 tuần đầu.
+4. **Kéo user từ skill market khác:** Các nền tảng skill khác dù build tốt nhưng **không có sự chú ý** — visibility, prize, spotlight — nên creator **mất động lực**. Họ sẽ chuyển sang nền tảng có cuộc thi, có giải thưởng, có BXH realtime. Ta thu hút nguồn lực đông đảo — agent, skill, user — → volume tăng → fee tăng → prize mạnh hơn → càng thu hút thêm → **vòng lặp càng ngày càng to** → tiền.
+
+Mua bán trong tuần → volume → fee 5% → prize tuần sau từ tuần 5 trở đi. Khi lợi nhuận đủ lớn thì trích ra nuôi các kênh khác — cuộc thi tự nuôi sau 4 tuần đầu và có thể mở rộng acquisition.
 
 ---
 
@@ -124,7 +162,7 @@ Mua bán trong tuần → volume → fee 5% → prize tuần sau từ tuần 5 t
 
 **Kênh 3 — Partnership OpenClaw, 0 đô:** Tại sao chọn: OpenClaw ClawHub có 5.700+ skill và 180K+ stars; user đã dùng lệnh npx clawhub install. Integration "1-click install skill từ ClawFriend" — họ có thêm nguồn skill, mình có user từ community họ. Win-win, không tốn tiền. Action plan: (1) Build flow từ ClawFriend Skill Market đến "Install với ClawHub" — link hoặc script tương thích clawhub install. (2) Liên hệ maintainer ClawHub OpenClaw qua Twitter, GitHub issue hoặc PR: đề xuất integration — skill trên ClawFriend có thể install qua clawhub. (3) Đề xuất PR hoặc docs: thêm ClawFriend như một nguồn skill trong docs OpenClaw. (4) Tweet và post trong community OpenClaw khi có integration. Timeline: Tháng 1 hoàn thành flow kỹ thuật và draft đề xuất; tuần 2–3 gửi đề xuất và 1–2 follow-up; từ tháng 2 duy trì nếu đạt hợp tác. Cost 0 đô. Metric: số install qua flow ClawHub đến ClawFriend; số referral từ OpenClaw community qua UTM; response từ maintainer.
 
-**Timeline tổng hợp:** **Trước tuần 1:** Kênh 1 — Công bố thể lệ: đề bài skill, tiêu chí xếp hạng, Chủ Nhật chốt, prize bằng BGK mua 2.500 đô share winner. Build trang Leaderboard tuần: cập nhật realtime Thứ Hai đến Thứ Bảy; Chủ Nhật không cập nhật — đóng băng — đến khi chốt. Quyết định pipeline chấm: BGK tay, LLM rubric, hoặc chỉ lượt tải. Tweet và post announce "Cuộc thi hàng tuần bắt đầu từ [ngày]". **Tuần 1 đến 4:** Kênh 1 — Mỗi tuần mở đăng ký, cập nhật BXH, Chủ Nhật chốt, BGK mua 2.500 đô share, công bố; theo dõi volume và fee. Kênh 2 và 3 — Publish bài, gửi đề xuất OpenClaw. **Sau tuần 4:** Prize tuần 5 trở đi từ fee — flywheel. Kênh 2 và 3 duy trì 4–6 bài mỗi tháng và partnership.
+**Timeline tổng hợp:** **Trước tuần 1:** Kênh 1 — Công bố thể lệ: đề bài skill, tiêu chí xếp hạng, Chủ Nhật chốt, prize bằng BGK mua 2.500 đô share winner. Build trang Leaderboard tuần: cập nhật realtime Thứ Hai đến Thứ Bảy; Chủ Nhật không cập nhật — đóng băng — đến khi chốt. Quyết định pipeline chấm: BGK tay, LLM rubric, hoặc chỉ lượt tải. Tweet và post announce "Cuộc thi hàng tuần bắt đầu từ [ngày]". **Tuần 1 đến 4:** Kênh 1 — Mỗi tuần mở đăng ký, cập nhật BXH, Chủ Nhật chốt, BGK mua 2.500 đô share, công bố; theo dõi volume và fee. Kênh 2 và 3 — Publish bài, gửi đề xuất OpenClaw. **Sau tuần 4:** Prize tuần 5 trở đi từ fee — flywheel. Khi fee đủ lớn thì trích phần nuôi kênh khác — blog, partnership, paid. Kênh 2 và 3 duy trì 4–6 bài mỗi tháng và partnership.
 
 **Metric cuộc thi:** Số agent tham gia mỗi tuần; số skill mới mỗi tuần; volume giao dịch share mua bán on-chain; fee protocol thu được — 5% volume để tái đầu tư prize tuần sau; số user mới sign-up do FOMO vào platform mua share; engagement leaderboard — lượt xem trang leaderboard, thời gian trên trang.
 
@@ -152,7 +190,7 @@ Em xin kết thúc phần trình bày và sẵn sàng Q&A. Dưới đây là m�
 
 **Skill này có ai thực sự cần không? Có drive user không?** — Có bằng chứng demand: Nansen đang thu 99 đến 999 đô mỗi tháng; Whale Alert có 2,5 triệu followers; Token Sniffer 30K+ contract mỗi ngày; YO Protocol hơn 1M đô earn volume hai tuần; RugChecker, DeBank, LunarCrush đang được dùng. Các tool trả phí và freemium này chứng tỏ user sẵn sàng trả hoặc dùng — demand là có thật. Chi tiết từng skill có trong deliverable skill-research với nguồn.
 
-**10.000 đô budget tháng đầu có đủ không?** — 100% mười nghìn đô dồn vào giải thưởng công khai: mỗi Chủ Nhật BGK dùng 2.500 đô mua share winner on-chain — minh bạch. Không rải tiền cho KOL hay ads. Tạo flywheel: volume giao dịch → fee 5% → prize tuần sau từ tuần 5 trở đi; cuộc thi tự nuôi sau bốn tuần đầu. Unit economics: prize gắn trực tiếp với sản phẩm — skill và share — nên mỗi đô tạo cả awareness lẫn engagement và fee.
+**10.000 đô budget tháng đầu có đủ không?** — 100% mười nghìn đô dồn vào giải thưởng công khai: mỗi Chủ Nhật BGK dùng 2.500 đô mua share winner on-chain — minh bạch. Không rải tiền cho KOL hay ads. Tạo flywheel: volume giao dịch → fee 5% → prize tuần sau từ tuần 5 trở đi; cuộc thi tự nuôi sau bốn tuần đầu. Khi cuộc thi có lợi nhuận đủ lớn thì trích ra nuôi các kênh khác — blog, partnership, paid. Unit economics: prize gắn trực tiếp với sản phẩm — skill và share — nên mỗi đô tạo cả awareness lẫn engagement và fee.
 
 **Tại sao user không dùng ChatGPT hay Claude thay vì skill?** — AI thường không có real-time on-chain data; không tích hợp wallet trực tiếp để user giao dịch ngay; không có holder-gated access thay cho subscription. Skill trên ClawFriend gắn với BSC, data real-time, wallet và share — giá trị khác với chatbot đa dụng.
 
