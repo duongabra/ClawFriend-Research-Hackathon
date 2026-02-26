@@ -109,20 +109,57 @@ const Slide2 = () => (
   </div>
 );
 
-const TOP_10_SKILLS = [
-  { name: "Real-time Whale / Smart Money Tracker", topic: "Scrypto" },
-  { name: "Rug Pull / Scam Token Detector (BSC)", topic: "Scrypto" },
-  { name: "DeFi Yield Optimizer / APY So sánh (BSC)", topic: "DeFi & Yield" },
+const TOP_10_SKILLS: { name: string; topic: string; why: string }[] = [
+  {
+    name: "Real-time Whale / Smart Money Tracker",
+    topic: "Scrypto",
+    why: "Theo dõi ví cá mập, copy trade — demand cao (Nansen/Whale Alert thu phí).",
+  },
+  {
+    name: "Rug Pull / Scam Token Detector (BSC)",
+    topic: "Scrypto",
+    why: "Cảnh báo token lừa đảo trước khi mua — BSC user cần bảo vệ vốn.",
+  },
+  {
+    name: "DeFi Yield Optimizer / APY So sánh (BSC)",
+    topic: "DeFi & Yield",
+    why: "So sánh APY nhiều pool, gợi ý strategy — YO Protocol $1M+ volume chứng minh demand.",
+  },
   {
     name: "Alpha / Sentiment từ Social (Twitter + TG)",
     topic: "Alpha & Social",
+    why: "Tổng hợp sentiment, tin nóng từ KOL — trader cần edge thông tin nhanh.",
   },
-  { name: "Token Price Alert (BSC + đa chain)", topic: "Crypto Alert" },
-  { name: "KOL / Influencer Track & Mention Alert", topic: "Alpha & Social" },
-  { name: "Medication / Nhắc uống thuốc thông minh", topic: "Sức khỏe" },
-  { name: "Macro Indicator Digest (CPI, lãi suất)", topic: "Vĩ mô" },
-  { name: "No-code Workflow Builder (app + trigger)", topic: "AI / Bot" },
-  { name: "Meeting Notes → Tasks (biên bản → action)", topic: "Productivity" },
+  {
+    name: "Token Price Alert (BSC + đa chain)",
+    topic: "Crypto Alert",
+    why: "Alert giá chạm ngưỡng 24/7 — thị trường crypto không ngủ, cần theo dõi liên tục.",
+  },
+  {
+    name: "KOL / Influencer Track & Mention Alert",
+    topic: "Alpha & Social",
+    why: "Biết khi nào KOL nhắc đến token — alpha sớm = lợi thế mua/bán.",
+  },
+  {
+    name: "Medication / Nhắc uống thuốc thông minh",
+    topic: "Sức khỏe",
+    why: "Nhắc uống thuốc đúng giờ, lịch — nhu cầu phổ biến, dễ viral, kéo user không crypto.",
+  },
+  {
+    name: "Macro Indicator Digest (CPI, lãi suất)",
+    topic: "Vĩ mô",
+    why: "Tóm tắt CPI, FOMC, lãi suất — macro quyết định xu hướng thị trường.",
+  },
+  {
+    name: "No-code Workflow Builder (app + trigger)",
+    topic: "AI / Bot",
+    why: "Tự động hóa task (if X then Y) không cần code — creator và team nhỏ cần tool đơn giản.",
+  },
+  {
+    name: "Meeting Notes → Tasks (biên bản → action)",
+    topic: "Productivity",
+    why: "Chuyển biên bản họp thành task giao việc — tiết kiệm thời gian, tăng follow-through.",
+  },
 ];
 
 const Slide3 = () => (
@@ -158,6 +195,9 @@ const Slide3 = () => (
             {s.name}
           </div>
           <div className="text-slate-500 text-xs mt-1">{s.topic}</div>
+          <div className="text-slate-400 text-xs mt-1.5 leading-snug border-t border-slate-700/60 pt-1.5">
+            {s.why}
+          </div>
         </div>
       ))}
     </div>
@@ -418,7 +458,7 @@ const Slide7 = () => (
     <div className="grid grid-cols-2 gap-8 mb-8">
       <div className="bg-slate-800/60 p-6 rounded-xl border border-slate-600/50">
         <h3 className="text-2xl font-bold text-white mb-4 text-blue-300">
-          Kênh 2: Technical Blog ($0)
+          Kênh 2: Technical Blog ($1000)
         </h3>
         <ul className="space-y-2 text-slate-300 text-lg">
           <li>
@@ -439,7 +479,7 @@ const Slide7 = () => (
 
       <div className="bg-slate-800/60 p-6 rounded-xl border border-slate-600/50">
         <h3 className="text-2xl font-bold text-white mb-4 text-blue-300">
-          Kênh 3: OpenClaw Partner ($0)
+          Kênh 3: OpenClaw Partner ($1000)
         </h3>
         <ul className="space-y-2 text-slate-300 text-lg">
           <li>
