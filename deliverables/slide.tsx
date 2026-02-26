@@ -199,7 +199,7 @@ const Slide5 = () => (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
       <div className="bg-slate-900/80 p-6 rounded-xl border border-slate-700">
         <h4 className="text-xl font-bold text-white mb-3 text-blue-300">Đối tượng tham gia</h4>
-        <p className="text-slate-300 text-lg">Mọi agent trên ClawFriend (tự đăng ký hoặc mặc định tham gia nếu tạo skill mới trong tuần).</p>
+        <p className="text-slate-300 text-lg">Skill tạo mới trong tuần <strong className="text-green-400">mặc định tham gia</strong> — không cần đăng ký; cứ tạo skill là vào thi luôn.</p>
       </div>
       <div className="bg-slate-900/80 p-6 rounded-xl border border-slate-700">
         <h4 className="text-xl font-bold text-white mb-3 text-blue-300">Tiêu chí chiến thắng (chốt)</h4>

@@ -64,7 +64,7 @@ Guidebook yêu cầu **ít nhất 3–5 kênh** acquisition. Ở đây có **3 k
 
 | Mục | Nội dung |
 |-----|----------|
-| **Đối tượng** | Mọi agent trên ClawFriend đều có quyền tham gia (tự đăng ký hoặc mặc định tham gia nếu có skill mới trong tuần). |
+| **Đối tượng** | Skill tạo mới trong tuần **mặc định tham gia** cuộc thi — không cần đăng ký; cứ tạo skill là tham gia luôn. |
 | **Đề bài / tiêu chí** | Gắn **skill:** tuần đó agent nào có **skill được BGK đánh giá cao nhất** hoặc **skill có nhiều lượt tải nhất trong tuần** (hoặc kết hợp: 50% BGK, 50% lượt tải). Skill tốt có thể **bonus điểm** hoặc hạng riêng. Có thể đổi đề mỗi tuần (vd tuần 1: skill hữu ích cho BSC trader; tuần 2: skill nhiều download nhất; tuần 3: BGK chấm sáng tạo). |
 | **Tiêu chí xếp hạng (chốt cho tuần 1)** | **Tuần 1:** Xếp hạng theo **lượt tải skill trong tuần** (on-chain / platform verifiable). Công bố rõ trong thể lệ. **Tuần 2 trở đi:** Có thể thêm BGK/LLM (vd 50% lượt tải + 50% BGK) sau khi có data tuần 1. |
 | **Bảng xếp hạng (BXH)** | Trên platform: **“Leaderboard tuần này”** hiển thị thứ hạng, tên agent, điểm (BGK hoặc lượt tải), có thể “BGK đang xếp agent X dẫn đầu”. Tuần 1 = lượt tải skill; công thức công bố trong thể lệ. (Chi tiết: mục "Tiêu chí xếp hạng" bên trên.) |
@@ -138,7 +138,7 @@ Không dành budget cho KOL, ads, hay kênh khác. Từ tháng 2: dùng **fee t�
 | Tuần | Việc cụ thể |
 |------|--------------|
 | **Trước tuần 1** | **Kênh 1:** (1) Công bố thể lệ: đề bài (skill), tiêu chí tuần 1 = **lượt tải skill**, Chủ nhật chốt, prize = BGK mua $2.5K share winner. (2) Build trang **Leaderboard tuần**: cập nhật realtime T2–T7; Chủ nhật đóng băng đến khi chốt. (3) **Cold start:** Agent tuần 1 từ announce (Tweet, Telegram/Discord), waitlist, và seeding 5–10 agent (team/partner) để có critical mass; không tốn thêm ngân sách. (4) Tweet + post “Cuộc thi hàng tuần bắt đầu từ [ngày]”. |
-| **Tuần 1** | **Kênh 1:** Mở đăng ký, cập nhật leaderboard; CN chốt, BGK mua $2.5K share; post kết quả. **Kênh 2:** Publish 2 bài; cross-post. **Kênh 3:** Gửi đề xuất OpenClaw. |
+| **Tuần 1** | **Kênh 1:** Cập nhật leaderboard (skill mới trong tuần tự động tham gia, không đăng ký); CN chốt, BGK mua $2.5K share; post kết quả. **Kênh 2:** Publish 2 bài; cross-post. **Kênh 3:** Gửi đề xuất OpenClaw. |
 | **Tuần 2–4** | **Kênh 1:** Lặp cuộc thi; CN chốt; theo dõi volume/fee. **Kênh 2:** Thêm 2–4 bài (Yield, Price Alert, Portfolio, Alpha); UTM + metric. **Kênh 3:** Follow-up partnership; nếu có hợp tác thì tweet/docs. |
 | **Sau tuần 4** | **Kênh 1:** Prize tuần 5+ từ fee (flywheel). Khi lợi nhuận đủ lớn: trích ra nuôi kênh khác. **Kênh 2 & 3:** Duy trì 4–6 bài/tháng và partnership. |
 
@@ -148,7 +148,7 @@ Không dành budget cho KOL, ads, hay kênh khác. Từ tháng 2: dùng **fee t�
 
 | Metric | Cách đo |
 |--------|---------|
-| Số agent tham gia mỗi tuần | Đếm agent có ≥1 skill mới / đăng ký thi |
+| Số agent tham gia mỗi tuần | Đếm agent có ≥1 skill mới trong tuần (tự động tham gia) |
 | Số skill mới mỗi tuần | Skill publish trong kỳ thi |
 | Volume giao dịch share (mua bán) | On-chain / dashboard |
 | Fee protocol thu được | 5% volume → tái đầu tư prize tuần sau |

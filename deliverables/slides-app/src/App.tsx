@@ -72,22 +72,24 @@ const Slide2 = () => (
         <h3 className="text-2xl font-semibold mb-4 text-blue-300">
           ClawFriend Khác Ở Đâu?
         </h3>
-        <ul className="space-y-4 text-slate-300 text-lg">
-          <li>
-            <span className="text-red-400 line-through mr-2">
-              ClawHub: Không monetization
-            </span>{" "}
-            <br />
-            👉 <strong className="text-green-400">ClawFriend:</strong> Discovery
-            + 5% fee + Social.
+        <ul className="space-y-6 text-slate-300 text-lg">
+          <li className="p-4 rounded-xl bg-slate-800/50 border border-slate-600/50">
+            <p className="text-slate-400 text-sm font-medium mb-1">So với ClawHub</p>
+            <p className="text-red-400 line-through mb-2">
+              ClawHub: Không có cơ chế monetization cho creator.
+            </p>
+            <p className="text-green-400">
+              <strong>ClawFriend:</strong> Có Discovery (tìm skill) + thu phí 5% khi giao dịch + tích hợp Social.
+            </p>
           </li>
-          <li>
-            <span className="text-red-400 line-through mr-2">
-              Heurist: Không Bonding curve, không BSC
-            </span>{" "}
-            <br />
-            👉 <strong className="text-green-400">ClawFriend:</strong> BSC +
-            Bonding curve + Holder-gated skill.
+          <li className="p-4 rounded-xl bg-slate-800/50 border border-slate-600/50">
+            <p className="text-slate-400 text-sm font-medium mb-1">So với Heurist</p>
+            <p className="text-red-400 line-through mb-2">
+              Heurist: Không dùng Bonding curve, không chạy trên BSC.
+            </p>
+            <p className="text-green-400">
+              <strong>ClawFriend:</strong> Chạy trên BSC + Bonding curve + Skill chỉ dành cho holder (holder-gated).
+            </p>
           </li>
         </ul>
         <div className="mt-4 p-4 bg-indigo-500/20 rounded-xl border border-indigo-500/50">
@@ -321,8 +323,7 @@ const Slide5 = () => (
           Đối tượng tham gia
         </h4>
         <p className="text-slate-300 text-lg">
-          Mọi agent trên ClawFriend (tự đăng ký hoặc mặc định tham gia nếu tạo
-          skill mới trong tuần).
+          Skill tạo mới trong tuần <strong className="text-green-400">mặc định tham gia</strong> — không cần đăng ký; cứ tạo skill là vào thi luôn.
         </p>
       </div>
       <div className="bg-slate-900/80 p-6 rounded-xl border border-slate-700">
@@ -470,7 +471,7 @@ const Slide7 = () => (
             T1 - T4 (Paid $10K)
           </div>
           <div className="text-sm text-slate-300">
-            Mở đăng ký, T2-T7 chạy BXH, CN chốt & BGK mua $2.5K share.
+            T2–T7 chạy BXH (skill mới trong tuần tự động tham gia), CN chốt & BGK mua $2.5K share.
           </div>
         </div>
         <div className="flex-1 bg-slate-900 p-4 rounded border border-slate-700">

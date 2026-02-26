@@ -65,7 +65,7 @@ export default function DistributionPage() {
               </div>
               <h3 className="text-lg font-bold text-white">Cuộc thi hàng tuần</h3>
               <p className="mt-2 text-2xl font-black text-amber-400">$10.000</p>
-              <p className="mt-2 text-sm text-slate-400">$2.500 × 4 tuần = BGK mua share agent thắng mỗi Chủ nhật (on-chain). Đề bài gắn <strong className="text-amber-300">skill</strong> (agent tạo skill hay / nhiều lượt tải). <strong className="text-amber-300">Tuần 1: xếp hạng = lượt tải skill</strong> (on-chain, công bố trong thể lệ); T2+ có thể thêm BGK/LLM. Đối tượng: mọi agent trên ClawFriend (tự đăng ký hoặc mặc định nếu có skill mới).</p>
+              <p className="mt-2 text-sm text-slate-400">$2.500 × 4 tuần = BGK mua share agent thắng mỗi Chủ nhật (on-chain). Đề bài gắn <strong className="text-amber-300">skill</strong> (agent tạo skill hay / nhiều lượt tải). <strong className="text-amber-300">Tuần 1: xếp hạng = lượt tải skill</strong> (on-chain, công bố trong thể lệ); T2+ có thể thêm BGK/LLM. Đối tượng: skill tạo mới trong tuần mặc định tham gia — không đăng ký, cứ tạo là vào thi.</p>
               <ul className="mt-4 space-y-1 text-xs text-slate-300">
                 <li>· <strong>Cold start:</strong> announce (Tweet, Telegram/Discord) + waitlist + seeding 5–10 agent (team/partner); không tốn thêm ngân sách</li>
                 <li>· <strong>Flywheel:</strong> volume → fee 5% → prize tuần sau (từ T5). Khi lợi nhuận đủ lớn: trích ra nuôi kênh khác (blog, partnership incentive, paid bổ sung).</li>
@@ -124,7 +124,7 @@ export default function DistributionPage() {
             </h3>
             <ul className="space-y-2 text-sm text-slate-400">
               <li><strong className="text-slate-300">Trước T1:</strong> (1) Công bố thể lệ: đề bài skill, tiêu chí tuần 1 = lượt tải, CN chốt, prize = BGK mua $2.5K share. (2) Build Leaderboard tuần (realtime T2–T7, đóng băng CN). (3) Cold start: announce + waitlist + seeding 5–10 agent. (4) Tweet/post "Cuộc thi bắt đầu từ [ngày]".</li>
-              <li><strong className="text-slate-300">T1:</strong> Kênh 1: mở đăng ký, BXH; CN chốt, BGK mua share, post kết quả. Kênh 2: publish 2 bài; cross-post. Kênh 3: gửi đề xuất OpenClaw.</li>
+              <li><strong className="text-slate-300">T1:</strong> Kênh 1: BXH (skill mới trong tuần tự động tham gia); CN chốt, BGK mua share, post kết quả. Kênh 2: publish 2 bài; cross-post. Kênh 3: gửi đề xuất OpenClaw.</li>
               <li><strong className="text-slate-300">T2–4:</strong> Kênh 1: lặp cuộc thi; theo dõi volume/fee. Kênh 2: thêm 2–4 bài (Yield, Price Alert, Portfolio, Alpha); UTM. Kênh 3: follow-up; nếu hợp tác thì tweet/docs.</li>
               <li><strong className="text-slate-300">Sau T4:</strong> Prize T5+ từ fee (flywheel). Khi fee đủ lớn → trích phần nuôi kênh khác (blog, partnership, paid). Kênh 2 & 3: duy trì 4–6 bài/tháng và partnership.</li>
             </ul>
@@ -147,7 +147,7 @@ export default function DistributionPage() {
           <p className="mb-3 text-xs font-medium text-slate-400">Metric cuộc thi (cách đo)</p>
           <div className="grid gap-2 text-sm md:grid-cols-2">
             {[
-              { m: 'Số agent tham gia mỗi tuần', how: 'Đếm agent có ≥1 skill mới / đăng ký thi' },
+              { m: 'Số agent tham gia mỗi tuần', how: 'Đếm agent có ≥1 skill mới trong tuần (tự động tham gia)' },
               { m: 'Số skill mới mỗi tuần', how: 'Skill publish trong kỳ thi' },
               { m: 'Volume giao dịch share (mua bán)', how: 'On-chain / dashboard' },
               { m: 'Fee protocol thu được', how: '5% volume → tái đầu tư prize tuần sau' },
