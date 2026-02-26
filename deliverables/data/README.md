@@ -1,16 +1,16 @@
 # Data — Số liệu chính và nguồn đối chiếu (theo Guidebook cuộc thi)
 
-Folder này chứa **số liệu chính** dùng trong ba deliverable (Competitive Landscape, Skill Research, Distribution Plan) và **nguồn đối chiếu** cho từng con số. Mục đích: đạt tiêu chí *"số liệu có nguồn"* khi AI chấm điểm và khi BGK hoặc người đọc hỏi *"số liệu lấy ở đâu?"*.
+Folder này chứa **số liệu chính** dùng trong ba deliverable (Competitive Landscape, Skill Research, Distribution Plan) và **nguồn đối chiếu** cho từng con số. Mục đích: đạt tiêu chí *"số liệu có nguồn"*; khi được hỏi *"số liệu lấy ở đâu?"* có thể chỉ file key-metrics.md và dòng Nguồn trong từng deliverable.
 
 ---
 
-## CHECKLIST ĐÁP ỨNG (AI chấm điểm / Guidebook)
+## CHECKLIST ĐÁP ỨNG (theo Guidebook)
 
 | Tiêu chí | Đáp ứng | Vị trí |
 |----------|---------|--------|
 | Số liệu có nguồn — mọi con số trong deliverables có thể verify | CÓ | **key-metrics.md** — Section 1 (Competitive), 2 (Skill), 3 (Distribution); mỗi số có Nguồn / Nguồn gốc |
 | Đối chiếu với competitive-landscape.md, skill-research.md, distribution-plan.md | CÓ | key-metrics.md tổng hợp số liệu đã dùng trong cả 3 file + nguồn |
-| Phục vụ AI chấm điểm + BGK hỏi "số liệu từ đâu?" | CÓ | Mở key-metrics.md → tìm theo tên đối thủ / skill / mục distribution → chỉ dòng nguồn tương ứng |
+| Đối chiếu nguồn nhanh | CÓ | Mở key-metrics.md → tìm theo tên đối thủ / skill / mục distribution → chỉ dòng Nguồn tương ứng |
 
 *Tham chiếu Guidebook (README gốc repo): "Data / AI Showcase — Số liệu có nguồn; prompt/workflow dùng AI." "Data / Số liệu — Số liệu chính + nguồn đối chiếu."*
 
@@ -27,7 +27,7 @@ Folder này chứa **số liệu chính** dùng trong ba deliverable (Competitiv
 
 ## Vai trò của folder Data trong bài làm
 
-- **Với đề bài / Guidebook:** Ban tổ chức yêu cầu số liệu có nguồn; AI chấm điểm kiểm tra điều này. Folder **deliverables/data** là nơi **đối chiếu nguồn** tập trung: thay vì phải mở từng deliverable tìm dòng *Nguồn:*, người chấm và BGK mở một file (key-metrics.md) để xem toàn bộ số + nguồn.
+- **Theo Guidebook:** Số liệu phải có nguồn. Folder **deliverables/data** là nơi **đối chiếu nguồn** tập trung: thay vì mở từng deliverable tìm dòng *Nguồn:*, mở một file (key-metrics.md) để xem toàn bộ số + nguồn.
 - **Với 3 deliverable:** competitive-landscape.md, skill-research.md, distribution-plan.md **không** chứa bản sao toàn bộ key-metrics; họ chứa phân tích và narrative, còn **số liệu** và **nguồn** được tổng hợp và mở rộng trong key-metrics.md. Khi viết hoặc sửa 3 file đó, tác giả đảm bảo mọi con số **có mặt trong key-metrics.md** với nguồn rõ ràng.
 - **Với AI Showcase:** Folder **deliverables/ai-showcase** mô tả prompt và workflow dùng AI (research, video). Số liệu do AI hỗ trợ tìm vẫn phải **verify** và **ghi nguồn** — nơi ghi là key-metrics.md (và dòng *Nguồn:* trong từng deliverable). Hai folder bổ sung nhau: ai-showcase = *cách* dùng AI; data = *số liệu* và *nguồn*.
 
@@ -46,9 +46,9 @@ Folder này chứa **số liệu chính** dùng trong ba deliverable (Competitiv
 - Câu hỏi dạng *"Số liệu này lấy ở đâu?"* hoặc *"Làm sao verify con số X?"*: mở **key-metrics.md**, tìm theo tên đối thủ / skill / mục (vd "ClawHub", "Whale Alert", "Volume 4 tuần") và chỉ dòng **Nguồn gốc** / **Nguồn** tương ứng.
 - Có thể trả lời ngắn: *"Mọi số liệu có nguồn trong file deliverables/data/key-metrics.md; ví dụ ClawHub 5.700+ skill từ thecaio.ai và claw-hub.net."*
 
-### Khi AI chấm điểm
+### Khi đối chiếu nguồn
 
-- Đối chiếu từng số trong 3 deliverable với **key-metrics.md**: số nào không có trong key-metrics hoặc không có nguồn thì chưa đạt tiêu chí "số liệu có nguồn". Checklist ở đầu key-metrics.md và đầu README này giúp nhanh chóng kiểm tra đáp ứng Guidebook.
+- Đối chiếu từng số trong 3 deliverable với **key-metrics.md**: mỗi số liệu phải có mục tương ứng trong key-metrics với nguồn rõ. Checklist ở đầu key-metrics.md và đầu README này giúp kiểm tra đáp ứng tiêu chí "số liệu có nguồn".
 
 ---
 
@@ -82,4 +82,4 @@ Folder này chứa **số liệu chính** dùng trong ba deliverable (Competitiv
 
 ---
 
-*Cập nhật: Feb 2026 — README mở rộng chi tiết: vai trò folder, cách dùng (viết/chỉnh, present/Q&A, AI chấm), cấu trúc key-metrics, quy trình cập nhật, liên kết repo. Checklist giữ theo Guidebook.*
+*Cập nhật: Feb 2026 — Vai trò folder, cách dùng (viết/chỉnh, present/Q&A, đối chiếu nguồn), cấu trúc key-metrics, quy trình cập nhật. Checklist theo Guidebook.*

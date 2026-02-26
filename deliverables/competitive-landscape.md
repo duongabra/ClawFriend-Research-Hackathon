@@ -2,7 +2,7 @@
 
 ---
 
-## CHECKLIST ĐÁP ỨNG BAREM (AI chấm điểm)
+## CHECKLIST ĐÁP ỨNG BAREM (theo Guidebook)
 
 | Tiêu chí | Điểm | Đáp ứng | Vị trí trong file |
 |----------|------|---------|-------------------|

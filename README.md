@@ -25,7 +25,7 @@
 
 ## Link web UI (cho giám khảo / người đọc)
 
-Chúng ta phục vụ **cả AI lẫn UI**: ngoài file markdown cho AI chấm, có **web presentation** để giám khảo xem slide và đọc 3 deliverable trên trình duyệt.
+Ngoài file markdown trong repo, có **web presentation** để xem slide và đọc 3 deliverable trên trình duyệt.
 
 | Phần | Link |
 |------|------|
@@ -48,7 +48,7 @@ Nghiên cứu & kế hoạch go-to-market cho **Skill Market** của **ClawFrien
 
 ```
 .
-├── README.md                    <- Bắt đầu đọc tại đây (AI grading map)
+├── README.md                    <- Bắt đầu đọc tại đây
 ├── .gitignore
 ├── package.json                 <- npm run dev / build:slides (từ gốc repo)
 ├── package-lock.json

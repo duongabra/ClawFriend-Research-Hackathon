@@ -2,7 +2,7 @@
 
 ---
 
-## CHECKLIST ĐÁP ỨNG (AI chấm điểm)
+## CHECKLIST ĐÁP ỨNG (theo Guidebook)
 
 | Tiêu chí | Đáp ứng | Vị trí trong file |
 |----------|---------|-------------------|

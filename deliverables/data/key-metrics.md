@@ -1,10 +1,10 @@
 # Số liệu chính dùng trong deliverables — có nguồn đối chiếu
 
-File này tổng hợp **mọi số liệu** xuất hiện trong **competitive-landscape.md**, **skill-research.md** và **distribution-plan.md**, kèm **nguồn gốc** (website, tài liệu, Guidebook) để đạt tiêu chí *"số liệu có nguồn"* khi AI chấm điểm hoặc BGK verify. Mục đích: ai đọc xong có thể kiểm chứng từng con số và hiểu ngữ cảnh đầy đủ.
+File này tổng hợp **mọi số liệu** xuất hiện trong **competitive-landscape.md**, **skill-research.md** và **distribution-plan.md**, kèm **nguồn gốc** (website, tài liệu, Guidebook) để đạt tiêu chí *"số liệu có nguồn"*. Mục đích: kiểm chứng từng con số và hiểu ngữ cảnh đầy đủ.
 
 ---
 
-## CHECKLIST ĐÁP ỨNG (AI chấm điểm / Guidebook)
+## CHECKLIST ĐÁP ỨNG (theo Guidebook)
 
 | Tiêu chí | Đáp ứng | Vị trí trong file |
 |----------|---------|-------------------|
@@ -18,9 +18,9 @@ File này tổng hợp **mọi số liệu** xuất hiện trong **competitive-l
 
 ## Cách dùng file này
 
-- **Cho AI chấm điểm:** Đối chiếu mọi con số trong ba deliverable với section tương ứng bên dưới; mỗi số liệu đều có nguồn.
-- **Cho BGK / người đọc:** Khi hỏi "số liệu lấy ở đâu?", mở file này và tìm theo tên đối thủ / skill / mục distribution; nguồn ghi rõ từng dòng.
-- **Khi cập nhật deliverable:** Đảm bảo mọi số mới thêm vào competitive-landscape, skill-research hoặc distribution-plan đều được bổ sung vào key-metrics.md kèm nguồn.
+- **Đối chiếu nguồn:** Mọi con số trong ba deliverable có section tương ứng bên dưới; mỗi số liệu có nguồn.
+- **Khi hỏi "số liệu lấy ở đâu?":** Mở file này, tìm theo tên đối thủ / skill / mục distribution; nguồn ghi rõ từng dòng.
+- **Khi cập nhật deliverable:** Mọi số mới thêm vào competitive-landscape, skill-research hoặc distribution-plan phải được bổ sung vào key-metrics.md kèm nguồn.
 
 ---
 
@@ -260,7 +260,7 @@ Khi trích dẫn "đối thủ" trong deliverable 1, chỉ dùng 6 đối thủ 
 ## 5. Phiên bản và cập nhật
 
 - **Phiên bản:** Feb 2026 — File mở rộng từ bản ngắn: thêm section dài theo từng đối thủ, từng nhóm skill, và distribution (target, contingency, timeline). Mọi số liệu đối chiếu với competitive-landscape.md, skill-research.md, distribution-plan.md.
-- **Khi thêm số mới vào deliverable:** Cập nhật key-metrics.md tương ứng và ghi rõ nguồn để AI chấm điểm và BGK verify không bị thiếu.
+- **Khi thêm số mới vào deliverable:** Cập nhật key-metrics.md tương ứng và ghi rõ nguồn để đối chiếu đầy đủ.
 
 ---
 
