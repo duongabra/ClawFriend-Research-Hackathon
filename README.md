@@ -48,51 +48,58 @@ Nghiên cứu & kế hoạch go-to-market cho **Skill Market** của **ClawFrien
 
 ```
 .
-├── README.md                    <- Bắt đầu đọc tại đây
+├── README.md                     <- Bắt đầu đọc tại đây
 ├── .gitignore
-├── package.json                 <- npm run dev / build:slides (từ gốc repo)
+├── package.json                  <- npm run dev / build:slides (từ gốc repo)
 ├── package-lock.json
 ├── tsconfig.json
-├── plan.ini
-├── CLAWFRIEND_SPEC.md           <- Tham chiếu spec (docs.clawfriend.ai)
+├── CLAWFRIEND_SPEC.md            <- Tham chiếu spec (docs.clawfriend.ai)
 ├── presentation-outline.md      <- Gợi ý nội dung slide
-├── .github/workflows/
-│   └── deploy-slides.yml        <- Deploy web UI lên GitHub Pages
+├── .github/
+│   └── workflows/
+│       └── deploy-slides.yml     <- Deploy web UI lên GitHub Pages
 └── deliverables/
-    ├── competitive-landscape.md <- Deliverable 1 (25%)
-    ├── skill-research.md        <- Deliverable 2
-    ├── distribution-plan.md     <- Deliverable 3
-    ├── presentation-script.md   <- Script thuyết trình từng slide (synced với 3 deliverable)
-    ├── SELF-ASSESSMENT-BY-GUIDEBOOK.md <- Tự đánh giá theo barem
-    ├── slide.tsx, slide.d.ts    <- Nguồn slide (dùng cho slides-app)
-    ├── slides-app/              <- Web UI: slide deck + 3 trang đọc (header chung)
+    ├── competitive-landscape.md  <- Deliverable 1 (25%)
+    ├── skill-research.md         <- Deliverable 2
+    ├── distribution-plan.md      <- Deliverable 3
+    ├── competitors-table.md      <- Bảng 6 đối thủ (tóm tắt, link competitive-landscape.md)
+    ├── presentation-script.md    <- Script thuyết trình từng slide (synced với 3 deliverable)
+    ├── SELF-ASSESSMENT-BY-GUIDEBOOK.md  <- Tự đánh giá theo barem
+    ├── slide.tsx                 <- Nguồn slide (dùng cho slides-app)
+    ├── slide.d.ts
+    ├── slides-app/               <- Web UI: slide deck + 3 trang đọc (header chung)
     │   ├── index.html
     │   ├── package.json, package-lock.json
     │   ├── vite.config.ts, tsconfig.json, tailwind.config.js, postcss.config.js
     │   ├── README.md
-    │   ├── public/content/      <- competitive-landscape.md, skill-research.md, distribution-plan.md (copy để serve)
+    │   ├── public/
+    │   │   └── content/          <- competitive-landscape.md, skill-research.md, distribution-plan.md (copy để serve)
     │   └── src/
     │       ├── main.tsx, index.css, vite-env.d.ts
     │       ├── App.tsx           <- Slide deck
-    │       ├── Layout.tsx       <- Header chung (nav Slide | Landscape | Skills | Distribution)
-    │       ├── RouterApp.tsx    <- Routes /, /landscape, /skills, /distribution
-    │       ├── ReaderPage.tsx   <- Trang đọc markdown (tùy chọn)
+    │       ├── Layout.tsx        <- Header chung (nav Slide | Landscape | Skills | Distribution)
+    │       ├── RouterApp.tsx     <- Routes /, /landscape, /skills, /distribution
+    │       ├── ReaderPage.tsx    <- Trang đọc markdown (tùy chọn)
     │       └── pages/
-    │           ├── LandscapePage.tsx   <- UI Competitive Landscape (data từ competitive-landscape.md)
-    │           ├── SkillsPage.tsx      <- UI Skill Research (data từ skill-research.md)
-    │           └── DistributionPage.tsx<- UI Distribution Plan (data từ distribution-plan.md)
+    │           ├── LandscapePage.tsx    <- UI Competitive Landscape
+    │           ├── SkillsPage.tsx       <- UI Skill Research
+    │           └── DistributionPage.tsx <- UI Distribution Plan
     ├── ai-showcase/
     │   ├── README.md
-    │   ├── prompts-used.md
+    │   ├── prompts-used.md       <- Workflow + ánh xạ prompt → deliverable
+    │   ├── prompts-to-capture.md <- 12 câu prompt copy-paste (đã chụp screenshot)
+    │   ├── screenshots/          <- 12 ảnh Cursor (prompt + response); map trong README.md
     │   ├── script-vi.txt, script.txt, gen-audio.py
     │   ├── video-step-by-step.md, ghép-video-capcut.md, tts-vietnamese-options.md, ai-presentation-idea.md
     │   ├── audio/, slides/, videos-draft/
-    │   └── mc.png, pikachu-mc.png  <- Avatar cho video
-    ├── video/                   <- MC.mp4 không đẩy repo (.gitignore, >100MB); xem link Google Drive trong README
+    │   └── mc.png, pikachu-mc.png       <- Avatar cho video
+    ├── video/                    <- MC.mp4 không đẩy repo (.gitignore, >100MB); link Google Drive trong README
     └── data/
         ├── README.md
-        └── key-metrics.md
+        └── key-metrics.md        <- Nguồn số liệu (đối chiếu Competitive, Skill)
 ```
+
+*Không liệt kê trong cây: `node_modules/`, `dist/`, `plan.ini`, `ai-showcase/.venv/` (gitignore hoặc generated).*
 
 ---
 

@@ -16,6 +16,37 @@
 
 Liệt kê **20 skill** trong **10 chủ đề** (Scrypto, Sức khỏe, Vĩ mô, Thể thao, AI/Bot, Công nghệ, v.v.) mà Skill Market **nên có**, mỗi skill có bằng chứng user thực sự **cần** và sẽ **tạo demand**. Theo **CLAWFRIEND_SPEC.md**: Skill Market hỗ trợ **Skill**, **Workflow**, **Prompt**; visibility **public** hoặc **private (holder-gated)**. Các skill có thể triển khai public → holder-gated theo spec.
 
+**Tóm tắt 10 chủ đề × 2 skill (chỉ tên):**
+
+| # | Chủ đề | Skill 1 | Skill 2 |
+|---|--------|---------|---------|
+| 1 | Scrypto / Crypto (BSC) | Real-time Whale / Smart Money Tracker | Rug Pull / Scam Token Detector |
+| 2 | DeFi & Yield | DeFi Yield Optimizer / APY So sánh | Portfolio Tracker đa ví |
+| 3 | Crypto Alert & Discovery | Token Price Alert | New Token / Listing Alert |
+| 4 | Alpha & Social | Alpha / Sentiment từ Social (Twitter + Telegram) | KOL / Influencer Track & Mention Alert |
+| 5 | Sức khỏe | Health Metrics Digest | Medication / Nhắc uống thuốc thông minh |
+| 6 | Vĩ mô | Macro Indicator Digest | Fed / ECB Calendar & Impact |
+| 7 | Thể thao | Match Result & Highlight Summary | Fantasy / Tip Assistant |
+| 8 | AI / Bot | No-code Workflow Builder | Code Review / Doc from Repo |
+| 9 | Công nghệ | Tech News Digest by Stack | Changelog / Release Summarizer |
+| 10 | Tin tức & Productivity | News Summarizer by Topic | Meeting Notes → Tasks |
+
+---
+
+## Ví dụ 1 skill theo template (reference)
+
+**Tên skill:** Real-time Whale / Smart Money Tracker
+
+| Mục | Nội dung |
+|-----|----------|
+| **Target user** | Trader crypto/DeFi, portfolio $5K–$100K, trade 3–5 lần/tuần; đang dùng hoặc cân nhắc Nansen/Arkham nhưng thấy đắt. |
+| **Vấn đề họ gặp** | Mất 2–3h/ngày theo dõi ví whale thủ công trên Etherscan/BSCScan; bỏ lỡ giao dịch lớn hoặc vào/ra muộn so smart money. |
+| **Alternative** | Nansen $99–$999/tháng; Arkham (free tier giới hạn); Whale Alert (Twitter 2.5M+ followers). |
+| **Skill giải quyết thế nào** | Agent theo dõi 500+ ví whale/smart money trên BSC; alert qua Telegram/Twitter trong 30–60s khi whale move > ngưỡng (vd $50K); hiển thị địa chỉ ví, token, khối lượng, nguồn/đích. |
+| **Visibility** | **Public free** (cơ bản) kéo user; **holder-gated** cho bộ filter nâng cao (theo token, pool). |
+| **Tech/API** | BSC RPC; BSCScan hoặc indexer (list ví whale, on-chain tx); backend cache + pipeline alert (Telegram/DM). Có thể dùng subgraph hoặc API bên thứ 3 (vd Moralis) cho real-time. *Risk:* phụ thuộc RPC/indexer; rate limit API bên thứ 3. |
+| **Bằng chứng demand** | (1) Whale Alert 2.5M+ followers — *Nguồn: whale-alert.io, Twitter.* (2) Nansen thu phí $99–$999/tháng — *Nguồn: nansen.ai.* (3) Nansen "Whale Watching: Top Tools..." — nhu cầu rõ. *Nguồn: blockchainmagazine.com.* |
+
 ---
 
 ## Chủ đề 1: Scrypto / Crypto (BSC, on-chain)
@@ -382,28 +413,39 @@ Liệt kê **20 skill** trong **10 chủ đề** (Scrypto, Sức khỏe, Vĩ mô
 
 ---
 
-## 10 skill xuất sắc nhất (đề xuất ưu tiên)
+## 10 skill xuất sắc nhất (đề xuất ưu tiên cho BGK)
 
-Trong 20 skill trên, dưới đây là **10 skill xuất sắc nhất** để ưu tiên triển khai hoặc pitch cho Skill Market — chọn theo: bằng chứng demand rõ, fit với ClawFriend (BSC/crypto + holder-gated), và tiềm năng kéo user / monetization.
+Trong 20 skill (10 chủ đề: Scrypto, DeFi, Alert, Alpha, Sức khỏe, Vĩ mô, Thể thao, AI/Bot, Công nghệ, Productivity), dưới đây là **10 skill xuất sắc nhất** để ưu tiên triển khai hoặc pitch cho BGK — chọn theo: bằng chứng demand rõ, fit với ClawFriend (BSC/crypto + holder-gated), và tiềm năng kéo user / monetization.
 
-| # | Skill | Chủ đề | Lý do chọn |
-|---|-------|--------|------------|
+**(1) Bảng 10 skill**
+
+| # | Tên skill | Chủ đề | Lý do chọn |
+|---|-----------|--------|------------|
 | 1 | Real-time Whale / Smart Money Tracker | Scrypto | Demand đã validate (Nansen $99–999/tháng, Whale Alert 2.5M+ followers); core use case BSC; public → holder-gated rõ. |
 | 2 | Rug Pull / Scam Token Detector (BSC) | Scrypto | Pain point cao (mất tiền 1 lần là đau); nhiều tool trả phí = thị trường có sẵn; lead magnet 5 lần/ngày → drive share. |
-| 3 | DeFi Yield Optimizer / APY So sánh (BSC) | DeFi & Yield | YO Protocol $1M+ earn volume 2 tuần = demand; BSC holder cần so pool; data có giá trị → holder-gated real-time hợp lý. |
-| 4 | Alpha / Sentiment từ Social (Twitter + Telegram) | Alpha & Social | Khớp spec "Alpha Hunting", "Off-chain Signal"; LunarCrush/Santiment monetize; holder-gated tự nhiên (alpha dễ copy). |
-| 5 | Token Price Alert (BSC + đa chain) | Crypto Alert | Thị trường 24/7, nhu cầu alert phổ biến; nhiều bot Telegram = demand; freemium 1–3 alert → unlimited gated. |
-| 6 | KOL / Influencer Track & Mention Alert | Alpha & Social | Khác biệt so tool truyền thống; "when did X mention Y" rất phổ biến; drive hold share cho list KOL lớn. |
+| 3 | DeFi Yield Optimizer / APY So sánh (BSC) | DeFi | YO Protocol $1M+ earn volume 2 tuần = demand; BSC holder cần so pool; data có giá trị → holder-gated real-time hợp lý. |
+| 4 | Alpha / Sentiment từ Social (Twitter + Telegram) | Alpha | Khớp spec "Alpha Hunting", "Off-chain Signal"; LunarCrush/Santiment monetize; holder-gated tự nhiên (alpha dễ copy). |
+| 5 | Token Price Alert (BSC + đa chain) | Alert | Thị trường 24/7, nhu cầu alert phổ biến; nhiều bot Telegram = demand; freemium 1–3 alert → unlimited gated. |
+| 6 | KOL / Influencer Track & Mention Alert | Alpha | Khác biệt so tool truyền thống; "when did X mention Y" rất phổ biến; drive hold share cho list KOL lớn. |
 | 7 | Medication / Nhắc uống thuốc thông minh | Sức khỏe | Medisafe 10M+ download; WHO/CDC nhấn mạnh adherence; tác động xã hội lớn; mở rộng sang user không crypto. |
 | 8 | Macro Indicator Digest (CPI, lãi suất, việc làm) | Vĩ mô | Trader/investor react mạnh vào macro; Bloomberg/Refinitiv bán data = demand; digest ngắn phù hợp agent. |
-| 9 | No-code Workflow Builder (kết nối app + trigger) | AI / Bot | Zapier valuation tỷ USD; no-code trend; platform play — nhiều workflow = stickiness + holder-gated run. |
-| 10 | Meeting Notes → Tasks (biên bản → action items) | Tin tức & Productivity | Otter, Fireflies thu phí; meeting fatigue; productivity use case dễ demo, phù hợp B2B/team. |
+| 9 | No-code Workflow Builder (kết nối app + trigger) | AI/Bot | Zapier valuation tỷ USD; no-code trend; platform play — nhiều workflow = stickiness + holder-gated run. |
+| 10 | Meeting Notes → Tasks (biên bản → action items) | Productivity | Otter, Fireflies thu phí; meeting fatigue; productivity use case dễ demo, phù hợp B2B/team. |
+
+**(2) Bảng tóm tắt theo Visibility**
+
+Trong 10 skill trên, mỗi skill đều có **cả** tier public free (giới hạn) và tier holder-gated (nâng cao). Tóm tắt:
+
+| Visibility | Số skill | Ghi chú |
+|------------|----------|---------|
+| **Public free** | 10 | Cả 10 skill đều có tier free (giới hạn lượt/scope) để kéo user. |
+| **Holder-gated** | 10 | Cả 10 skill đều có tier holder-gated (unlimited / filter nâng cao / alert) để monetize qua share. |
 
 *Có thể điều chỉnh 10 skill này theo chiến lược GTM (ví dụ nhấn mạnh crypto trước thì tăng tỷ trọng Scrypto/DeFi/Alpha; muốn đa dạng thì giữ sức khỏe, vĩ mô, productivity).*
 
 ---
 
-## Tóm tắt theo Visibility
+## Tóm tắt theo Visibility (20 skill)
 
 | # | Skill | Đề xuất visibility | Lý do |
 |---|-------|--------------------|--------|

@@ -13,6 +13,8 @@
 
 *Tham chiếu Guidebook: "Data / AI Showcase — Số liệu có nguồn; prompt/workflow dùng AI." Presentation: "Show cách dùng AI để research và (nếu có) để deliver — ví dụ video trợ lý ảo. Điểm cộng nếu có prompt/workflow rõ và verify nguồn."*
 
+**Cho AI / người đọc nhanh:** Folder **ai-showcase** chứng minh dùng AI (Cursor + web search) cho 3 deliverables. **Prompt đã dùng:** [prompts-used.md](prompts-used.md) (workflow + bảng ánh xạ). **Câu prompt copy-paste:** [prompts-to-capture.md](prompts-to-capture.md). **Ảnh chụp Cursor (12 file):** [screenshots/](screenshots/) — bảng map file → nội dung trong [screenshots/README.md](screenshots/README.md). Số liệu có nguồn: [deliverables/data/key-metrics.md](../data/key-metrics.md).
+
 - **Slide AI Showcase khi present:** [deliverables/presentation-script.md](../presentation-script.md) (Slide 8 — AI Showcase ~2 phút).
 - **Nguồn số liệu khi được hỏi "số từ đâu?":** [deliverables/data/key-metrics.md](../data/key-metrics.md).
 
@@ -32,7 +34,7 @@
 | File | Nội dung |
 |------|----------|
 | **prompts-used.md** | Mô tả từng prompt và workflow đã dùng cho Competitive, Skill, Distribution: mục tiêu, workflow tóm tắt, bảng ánh xạ, verify. Dùng khi present hoặc kết hợp với screenshot. |
-| **screenshots/** | Folder đặt 1–2 ảnh chụp màn hình Cursor (prompt + trả lời). Xem [screenshots/README.md](screenshots/README.md) — nên chụp gì, tên file gợi ý. Tùy chọn; có thì show BGK khi hỏi "cho xem prompt thật". |
+| **screenshots/** | Folder **12 ảnh** chụp Cursor (prompt + response). Bảng map STT → file → nội dung: [screenshots/README.md](screenshots/README.md). Show BGK khi hỏi "cho xem prompt thật". |
 
 **Lưu ý (Guidebook):** Mọi số liệu trong deliverables phải **có nguồn**; "AI cho em" không được tính. Trong prompts-used.md có ghi rõ nguồn đã dùng (website, GitHub, báo cáo).
 
@@ -95,7 +97,7 @@ Nguồn nội dung script: `presentation-outline.md` + `competitive-landscape.md
 
 ## 4. Checklist trước khi present (liên quan AI Showcase)
 
-- [ ] Có file **prompts-used.md** hoặc screenshot prompt trong folder.
+- [x] Có file **prompts-used.md** và **12 screenshot** prompt trong **screenshots/** (xem [screenshots/README.md](screenshots/README.md)).
 - [ ] Có thể trả lời "Số liệu lấy ở đâu?" — không trả lời "AI cho em"; nêu nguồn → **deliverables/data/key-metrics.md**.
 - [ ] **prompts-used.md** đồng bộ 3 deliverable: 6 đối thủ + TAM/CAGR; 20 skill (10 chủ đề), 10 đề xuất, Tech/API; phân bổ ít/free, thi hàng tuần, 4 lợi ích.
 - [ ] Nếu có video pitch: link Google Drive trong **README.md gốc repo** (video >100 MB không trong repo).
@@ -109,4 +111,16 @@ Số liệu trong competitive-landscape.md, skill-research.md có **nguồn** t�
 
 ---
 
-*Cập nhật: Feb 2026 — Checklist theo Guidebook; đồng bộ với data/key-metrics; cấu trúc script, audio, slides, videos-draft, prompts-used.*
+## 6. Screenshot prompt AI (Cursor) — đã chụp đủ
+
+Screenshot cho AI Showcase = **chụp đoạn chat Cursor** (prompt + response). **Đã có 12 ảnh** trong **ai-showcase/screenshots/**:
+
+- **Competitive (5 ảnh):** danh sách 6 đối thủ, số liệu có nguồn, TAM/CAGR + tổng quan, block đối thủ, Section 5 kết luận.
+- **Skill (3 ảnh):** 10 chủ đề + 20 skill, 1 skill template (demand + Nguồn), 10 đề xuất + Visibility.
+- **Distribution (4 ảnh):** đánh giá ý tưởng + các hướng khác, cơ chế thi + 4 lợi ích, phân bổ $10K + Kênh 2/3, Action/Metric/Rủi ro.
+
+**Cho người / AI đọc:** Tên file dạng `cursor-competitive-1-danh-sach-doi-thu.png.png` … `cursor-distribution-4-action-metric-risk.png.png`. Bảng đầy đủ STT → file → nội dung: **[screenshots/README.md](screenshots/README.md)**. Câu prompt gốc để paste: **[prompts-to-capture.md](prompts-to-capture.md)**. Ánh xạ prompt → vị trí trong deliverable: **[prompts-used.md](prompts-used.md)** (bảng ánh xạ từng phần).
+
+---
+
+*Cập nhật: Feb 2026 — Checklist theo Guidebook; đồng bộ với data/key-metrics; cấu trúc script, audio, slides, videos-draft, prompts-used; mục 6 = kế hoạch chụp screenshot prompt AI.*

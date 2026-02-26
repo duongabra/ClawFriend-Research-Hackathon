@@ -1,6 +1,6 @@
 # AI Showcase — Prompts & Workflow
 
-**Mục đích:** Mô tả cách team dùng AI (Cursor + web search) để research và viết 3 deliverables. (1) **Số liệu có nguồn** — mọi metric verify, không chỉ "AI cho em"; (2) **Prompt/workflow dùng AI** — từng bước có prompt, công cụ, output; (3) **Cách dùng AI để research** (và deliver nếu có). Khi present: mở file này hoặc **screenshot Cursor** trong [ai-showcase/screenshots/](screenshots/) (screenshot-1.png, screenshot-2.png); dùng phần "Gợi ý script present" và "Q&A dự kiến".
+**Mục đích:** Mô tả cách team dùng AI (Cursor + web search) để research và viết 3 deliverables. (1) **Số liệu có nguồn** — mọi metric verify, không chỉ "AI cho em"; (2) **Prompt/workflow dùng AI** — từng bước có prompt, công cụ, output; (3) **Cách dùng AI để research** (và deliver nếu có). Khi present: mở file này hoặc **screenshot Cursor** trong [ai-showcase/screenshots/](screenshots/) (12 ảnh theo bảng trong [screenshots/README.md](screenshots/README.md)); dùng phần "Gợi ý script present" và "Q&A dự kiến".
 
 **Verify nguồn:** Số liệu trong Competitive và Skill đối chiếu **deliverables/data/key-metrics.md**; mỗi dòng trong deliverable có *Nguồn:*.
 
@@ -136,4 +136,32 @@
 
 **Search query tham khảo (Skill):** Nansen Arkham whale tracking | Token Sniffer rug pull | YO Protocol DeBank portfolio | Medisafe medication | DexScreener new pairs | LunarCrush X API pricing | SofaScore FPL | Zapier Copilot | Otter Fireflies meeting notes
 
-*Screenshot Cursor: [ai-showcase/screenshots/](screenshots/) — screenshot-1.png (prompt Competitive + Distribution + response), screenshot-2.png (prompt 4 lợi ích kép + response). Phiên bản rút gọn — Feb 2026.*
+---
+
+# KẾ HOẠCH CHỤP SCREENSHOT PROMPT AI (Cursor)
+
+Chụp **đủ các đoạn chat Cursor** (prompt + response) tương ứng từng phần trong file này, lưu vào **ai-showcase/screenshots/** để khi present hoặc BGK hỏi *"cho xem prompt thật"* có đủ minh chứng.
+
+**→ Câu prompt sẵn để paste vào Cursor:** [prompts-to-capture.md](prompts-to-capture.md) — copy từng khối prompt, paste vào Cursor, chờ response rồi chụp ảnh, lưu đúng tên file gợi ý.
+
+| STT | Nhóm prompt (theo prompts-used.md) | Nội dung cần có trong ảnh | Tên file gợi ý |
+|-----|-------------------------------------|---------------------------|----------------|
+| **PHẦN 1 — COMPETITIVE** |
+| 1 | Search 6 đối thủ + Cursor tổng hợp | Search query (Web3 AI agent marketplace...) + prompt Cursor tổng hợp 6 đối thủ + response (bảng Tên, Link, Loại, Chain) | `cursor-competitive-1-danh-sach-doi-thu.png` |
+| 2 | Search số liệu từng đối thủ | Ít nhất 1 search (vd "ClawHub OpenClaw skill registry stats") + kết quả/số liệu + prompt Cursor viết block đối thủ (có Nguồn) | `cursor-competitive-2-so-lieu-nguon.png` |
+| 3 | Search TAM/CAGR + Cursor Section 4 | Search "AI agents market TAM CAGR 2030" (hoặc tương tự) + prompt Cursor viết Section 4 (nascent, TAM/CAGR) + response | `cursor-competitive-3-tam-cagr.png` |
+| 4 | Cursor block 6 đối thủ | Prompt kiểu "Viết block Đối thủ 1 ClawHub: LINK, Mô tả, Số liệu + Nguồn, Điểm mạnh/yếu..." + response (1–2 block) | `cursor-competitive-4-block-doi-thu.png` |
+| 5 | Cursor Section 5 kết luận | Prompt viết Section 5 (kết luận định vị, gap BSC, thua ở đâu) + response | `cursor-competitive-5-ket-luan.png` |
+| **PHẦN 2 — SKILL** |
+| 6 | Cursor 10 chủ đề + 20 skill draft | Prompt đề xuất 10 chủ đề, mỗi chủ đề 2 skill (hoặc draft 20 skill) + response | `cursor-skill-1-chu-de-draft.png` |
+| 7 | Search demand + Cursor viết skill | Ít nhất 1 search demand (vd Nansen, Token Sniffer, YO Protocol) + prompt Cursor viết skill theo template (Tech/API, Nguồn) + response | `cursor-skill-2-demand-template.png` |
+| 8 | Cursor 10 đề xuất + Visibility | Prompt chọn 10 skill xuất sắc nhất + bảng Visibility + response | `cursor-skill-3-10-de-xuat-visibility.png` |
+| **PHẦN 3 — DISTRIBUTION** |
+| 9 | Ràng buộc + brainstorm / Đánh giá + Các hướng khác | Prompt đọc Guidebook, brainstorm cuộc thi; hoặc "Viết Đánh giá ý tưởng" + "Các hướng khác phân bổ ít/free" + response | `cursor-distribution-1-danh-gia-huong-khac.png` |
+| 10 | Cơ chế thi + 4 lợi ích kép | Prompt bảng Cơ chế cuộc thi (đối tượng, BXH T2–T7, CN BGK $2K) + 4 lợi ích kép + response | `cursor-distribution-2-co-che-4-loi-ich.png` *(đã có: screenshot-1.png, screenshot-2.png)* |
+| 11 | Phân bổ $10K + Kênh 2, Kênh 3 | Prompt bảng Phân bổ $8K cuộc thi + $2K blog/OpenClaw; Kênh 2 blog $1K, Kênh 3 OpenClaw $1K + response | `cursor-distribution-3-phan-bo-kenh.png` |
+| 12 | Action, Metric, Mục tiêu, Rủi ro, So sánh | Prompt Action plan & timeline, Metric, Mục tiêu tháng 1, Rủi ro & dự phòng, So sánh 3 kênh + response | `cursor-distribution-4-action-metric-risk.png` |
+
+**Checklist chụp:** [x] Competitive 1–5  [x] Skill 6–8  [x] Distribution 9–12. **Đã chụp đủ 12 ảnh.**
+
+*Screenshot hiện có: [ai-showcase/screenshots/](screenshots/) — 12 file `cursor-competitive-1-danh-sach-doi-thu.png.png` … `cursor-distribution-4-action-metric-risk.png.png`. Bảng map STT → file → nội dung: [screenshots/README.md](screenshots/README.md). Câu prompt gốc: [prompts-to-capture.md](prompts-to-capture.md). Cho AI đọc: mỗi ảnh = một đoạn chat Cursor (prompt + response) tương ứng một phần deliverable; ánh xạ đầy đủ trong prompts-used.md (bảng ánh xạ Prompt → Deliverable) và screenshots/README.md (bảng ảnh → file → nội dung).*

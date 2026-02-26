@@ -39,9 +39,14 @@ ClawFriend: nền tảng AI agent Web3 (identity on-chain, bonding curve, market
 
 ### Đối thủ 1: ClawHub (OpenClaw)
 
-- **LINK:** https://openclaw.ai | https://docs.openclaw.ai/tools/clawhub | https://openclaw-hub.org/openclaw-hub-top-skills.html | https://claw-hub.net
-- **MÔ TẢ NGẮN:** Framework agent mã nguồn mở + skill registry (cài qua `npx clawhub@latest install`). Không marketplace thương mại; không bonding curve, không cổ phần agent.
-- **SỐ LIỆU (≥2, có nguồn):** (1) 5.700+ skill — *Nguồn: thecaio.ai (OpenClaw Skills & ClawHub Guide 2026)*. (2) 1,5M+ tổng download — *Nguồn: claw-hub.net*. (3) ~40–60 skill mới/ngày — *Nguồn: thecaio.ai*. (4) OpenClaw 180K+ GitHub stars — *Nguồn: thecaio.ai, docs.openclaw.ai*. (5) Skill top 35K+ download (Capability Evolver) — *Nguồn: claw-hub.net*.
+- **LINK:** https://openclaw.ai | https://docs.openclaw.ai | https://claw-hub.net
+- **MÔ TẢ NGẮN:** Framework agent mã nguồn mở + skill registry; cài skill qua `npx clawhub install`. Không marketplace thương mại; không bonding curve, không cổ phần agent.
+- **SỐ LIỆU (mỗi số có nguồn):**
+  - 5.700+ skill — *Nguồn: thecaio.ai (OpenClaw Skills & ClawHub Guide 2026).*
+  - 1,5M+ tổng download — *Nguồn: claw-hub.net.*
+  - 180K+ GitHub stars (OpenClaw) — *Nguồn: docs.openclaw.ai, thecaio.ai.*
+  - ~40–60 skill mới/ngày — *Nguồn: thecaio.ai.*
+  - Skill top 35K+ download (vd Capability Evolver) — *Nguồn: claw-hub.net.*
 - **CÁCH MONETIZE:** Registry miễn phí; không monetization cho creator hay holder-gated.
 - **ĐIỂM MẠNH:** Kho skill lớn nhất; dev dùng nhiều; semantic search + category; version control, community ratings.
 - **ĐIỂM YẾU:** Không lớp kinh tế (không shares, không fee); không identity agent hay social; chỉ discovery.
@@ -54,8 +59,12 @@ ClawFriend: nền tảng AI agent Web3 (identity on-chain, bonding curve, market
 ### Đối thủ 2: Heurist Mesh
 
 - **LINK:** https://mesh.heurist.ai | https://docs.heurist.ai/heurist-mesh/overview
-- **MÔ TẢ NGẮN:** Marketplace skill cho agent Web3: tool crypto/blockchain cho agent; REST, x402 trả theo lượt, MCP.
-- **SỐ LIỆU (≥2, có nguồn):** (1) 25 data provider — *Nguồn: mesh.heurist.ai, docs.heurist.ai*. (2) 100 tool triển khai — *Nguồn: mesh.heurist.ai*. (3) 40 agent — *Nguồn: mesh.heurist.ai, docs.heurist.ai*. (4) X402 + ERC-8004 — *Nguồn: docs.heurist.ai*.
+- **MÔ TẢ NGẮN:** Marketplace skill/tool cho agent Web3: tool crypto/blockchain (ví, DEX, token, social); REST, x402 trả theo lượt, MCP. Đa chain.
+- **SỐ LIỆU (mỗi số có nguồn):**
+  - 25 data provider — *Nguồn: mesh.heurist.ai, docs.heurist.ai.*
+  - 100 tool triển khai — *Nguồn: mesh.heurist.ai.*
+  - 40 agent — *Nguồn: mesh.heurist.ai, docs.heurist.ai.*
+  - X402 + ERC-8004 (pay-per-use, identity on-chain) — *Nguồn: mesh.heurist.ai, docs.heurist.ai.*
 - **CÁCH MONETIZE:** API key; x402 trả theo request (stablecoin).
 - **ĐIỂM MẠNH:** Crypto-native (ví, Pump.fun, DexScreener); reputation on-chain; tích hợp nhanh.
 - **ĐIỂM YẾU:** Tập trung data/tool; không cổ phần agent, không bonding curve.
@@ -123,28 +132,60 @@ ClawFriend: nền tảng AI agent Web3 (identity on-chain, bonding curve, market
 
 ## 4. SO SÁNH & INSIGHT CHIẾN LƯỢC (Thị trường giai đoạn nào? Ai dẫn đầu? Chain/pricing? Gap? Có chỗ cho người mới?)
 
-- **Thị trường đang ở giai đoạn nào?** **Nascent** (mới manh nha). Thị trường AI agent nói chung tăng trưởng mạnh (CAGR ~45–50%, TAM ~$50B đến 2030 / ~$183B đến 2033 — *Nguồn: Grand View Research, AI Agents Market Report; grandviewresearch.com/press-release/global-ai-agents-market-report; PR Newswire 2025*), nhưng **phân khúc Web3 skill/agent marketplace** vẫn rất nhỏ và chưa định hình: chưa có nền tảng nào gom đủ identity agent + shares (bonding curve) + skill marketplace (holder-gated) + social stream trong một chỗ.
-- **Ai đang dẫn đầu?** Theo volume skill/adoption: **ClawHub** (5.700+ skill, 1,5M+ download, 180K+ stars). Theo depth Web3/tool: **Heurist Mesh** (100 tool, 40 agent). **BSC** chưa có player nào chiếm skill/agent marketplace.
-- **So sánh chain:** ClawHub/Heurist/SkillGem = đa nền tảng; ClawMarket/MoltBazaar = Base (và ClawMarket thêm Ethereum); Hedera = Hedera. **Không ai focus BSC.**
+### Tổng quan thị trường
+
+**(1) Giai đoạn thị trường — nascent, AI agent dẫn đầu.** Phân khúc Web3 skill/agent marketplace còn rất sớm; chưa định hình. AI agent (ClawHub, Heurist, SkillGem…) đang dẫn đầu adoption (skill, tool, agent); chưa có nền tảng nào gom đủ identity agent + shares + skill marketplace holder-gated + social trong một chỗ.
+
+**(2) TAM / CAGR (có nguồn).**
+
+| Chỉ số | Khoảng | Nguồn |
+|--------|--------|--------|
+| TAM đến 2030 | ~$50B – $183B | Grand View Research (AI Agents Market Report); PR Newswire |
+| CAGR | ~45–50% | Grand View Research; grandviewresearch.com/press-release/global-ai-agents-market-report; PR Newswire 2025 |
+
+**(3) So sánh chain.** ClawHub / Heurist / SkillGem = đa nền tảng; ClawMarket = Base + Ethereum; MoltBazaar = Base; Hedera = Hedera. **BSC chưa có player nào chiếm skill/agent marketplace.**
+
+**(4) Gap thị trường.** **BSC + bonding curve + holder-gated skill** — chưa ai gom đủ ba yếu tố này trong một nền tảng; thêm social stream càng hiếm. Segment bỏ ngỏ cho người mới.
+
+---
+
 - **So sánh pricing:** ClawHub = free; Heurist/SkillGem = x402 pay-per-request/use; ClawMarket = USDC escrow; MoltBazaar = USDC + x402; Hedera = không rõ công khai.
-- **Gap nào chưa ai lấp?** (1) BSC. (2) Bonding curve + share agent. (3) Holder-gated skill. (4) Social stream trong cùng nền tảng với skill market.
 - **Có chỗ cho người mới không?** **Có.** Thị trường nascent; không ai có combo BSC + bonding curve + holder-gated skill + social; segment bỏ ngỏ.
 
 ---
 
-## 5. KẾT LUẬN & ĐỊNH VỊ MARKETPLACE (Marketplace khác ở đâu? Segment đối thủ bỏ ngỏ? Lợi thế cạnh tranh? Thua ở đâu?)
+## 5. KẾT LUẬN & ĐỊNH VỊ MARKETPLACE
 
-- **Marketplace của mình khác ở đâu?**
-  - ClawHub có 5.700+ skill, 1,5M+ download nhưng **chỉ discovery, không monetization**, không share agent. ClawFriend = cùng discovery + **monetization (5% fee) + share agent + social**.
-  - Heurist Mesh có 100 tool, 40 agent, x402 nhưng **không bonding curve, không BSC**. ClawFriend = **BSC + bonding curve + holder-gated skill** trong một nền tảng.
-  - ClawMarket có USDC paid skill trên Base/ETH nhưng 15+ skill, không share agent. ClawFriend = **BSC + shares + holder-gated**.
-  - **Tổng thể:** Chưa ai làm **BSC + trading (bonding curve) + skill market (holder-gated) + social** trong một hệ sinh thái → **có chỗ**.
+**(1) Marketplace khác ở đâu — đối thủ làm gì, thiếu gì.**
 
-- **Segment đối thủ bỏ ngỏ (đánh vào segment nào)?** (1) **BSC** — không đối thủ nào focus BSC cho skill/agent marketplace. (2) **Agent economy đầy đủ** — bonding curve + holder-gated skill + social trong một nền tảng. (3) **Creator monetization** — 5% subject fee + skill holder-gated (đối thủ hoặc free hoặc x402 không gắn share agent).
+| Đối thủ | Làm gì | Thiếu gì |
+|---------|--------|----------|
+| ClawHub | 5.700+ skill, 1,5M+ download, discovery, semantic search | Monetization, share agent, bonding curve, holder-gated |
+| Heurist Mesh | 100 tool, 40 agent, x402 pay-per-use, Web3 data/tool | Bonding curve, BSC, share agent, social |
+| SkillGem | Skill no-code, x402, ERC-8004, đa nền tảng | Share agent, bonding curve, holder-gated |
+| ClawMarket | Paid skill USDC trên Base/ETH, API-first | BSC, share agent, holder-gated, số skill còn ít |
+| MoltBazaar | Agent marketplace Base, ERC-8004, verified skills | BSC, bonding curve, focus “skill cho creator” |
+| Hedera | Agent + skill registry, privacy/GDPR, HCS | BSC, bonding curve, social, ecosystem nhỏ |
 
-- **Lợi thế cạnh tranh cụ thể:** (1) Một nền tảng deploy → verify → capitalize → launch (TGE) → execute (social + skill) → redistribute. (2) Creator có doanh thu từ phí share (5%) và skill holder-gated. (3) BSC chưa có đối thủ trực tiếp chiếm segment này. (4) Holder-gated skill đẩy demand mua share → flywheel.
+**Tổng thể:** Chưa ai gom đủ **BSC + bonding curve + skill market (holder-gated) + social** trong một nền tảng.
 
-- **Thua ở điểm nào (hiện tại)?** (1) Số lượng skill thua ClawHub (5.7K vs mới build). (2) Độ trưởng thành tool/skill thua Heurist Mesh (100 tool, 40 agent). Cách giảm thiểu: tập trung agent-first + skill market + BSC và distribution (Deliverable 3).
+**(2) Segment bỏ ngỏ / gap.**
+
+- **BSC + bonding curve + holder-gated skill** — chưa ai gom đủ ba yếu tố này; thêm social stream càng hiếm.
+- **BSC:** Không đối thủ nào focus BSC cho skill/agent marketplace.
+- **Creator monetization gắn share:** 5% subject fee + skill holder-gated (đối thủ hoặc free hoặc x402 không gắn share agent).
+
+**(3) Lợi thế cạnh tranh cụ thể của mình.**
+
+- Một nền tảng: deploy → verify → capitalize → launch (TGE) → execute (social + skill) → redistribute.
+- Creator có doanh thu từ phí share (5%) và skill holder-gated; holder-gated skill đẩy demand mua share → flywheel.
+- BSC chưa có đối thủ trực tiếp chiếm segment skill/agent marketplace.
+
+**(4) Mình thua ở đâu.**
+
+- **Số lượng skill:** Thua ClawHub (5.7K+ skill vs mới build).
+- **Độ trưởng thành tool/skill:** Thua Heurist Mesh (100 tool, 40 agent).
+- **Giảm thiểu:** Tập trung agent-first + skill market + BSC và distribution (Deliverable 3).
 
 ---
 

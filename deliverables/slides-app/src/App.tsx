@@ -528,22 +528,23 @@ const Slide8 = () => (
         <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
           <FileText className="w-5 h-5 text-purple-400" /> AI cho Research
         </h3>
-        <p className="text-sm text-slate-400 mb-4">
-          <strong className="text-purple-300">Cursor + Web search.</strong> Mọi số liệu đối chiếu nguồn (
-          <strong>key-metrics.md</strong>) — không chỉ &quot;AI cho em&quot;.
+        <p className="text-sm text-slate-400 mb-3">
+          <strong className="text-purple-300">Cursor + Web search.</strong> Đã dùng <strong>12 prompt</strong> (đã chụp
+          screenshot từng đoạn chat); đây chỉ là <strong>tóm tắt</strong> — chi tiết trong prompts-used.md &amp;
+          prompts-to-capture.md. Mọi số liệu đối chiếu nguồn (<strong>key-metrics.md</strong>).
         </p>
-        <ul className="space-y-2 text-sm text-slate-300 mb-4">
-          <li className="flex items-start gap-2">
-            <span className="text-purple-400 shrink-0">1.</span>
-            Competitive: 6 đối thủ trực tiếp + TAM/CAGR (prompt + search từ website, GitHub).
+        <ul className="space-y-3 text-sm text-slate-300 mb-4 list-none pl-0">
+          <li className="flex gap-3 items-baseline">
+            <span className="text-purple-400 font-semibold shrink-0 w-[8rem]">Competitive (5):</span>
+            <span className="min-w-0 flex-1">Bảng 6 đối thủ, block số liệu + Nguồn, TAM/CAGR, Section 5 kết luận.</span>
           </li>
-          <li className="flex items-start gap-2">
-            <span className="text-purple-400 shrink-0">2.</span>
-            Skill: bằng chứng demand + Tech/API cho 20 skill / 10 đề xuất.
+          <li className="flex gap-3 items-baseline">
+            <span className="text-purple-400 font-semibold shrink-0 w-[8rem]">Skill (3):</span>
+            <span className="min-w-0 flex-1">10 chủ đề × 2 skill, 1 skill template (demand + Nguồn), 10 đề xuất + Visibility.</span>
           </li>
-          <li className="flex items-start gap-2">
-            <span className="text-purple-400 shrink-0">3.</span>
-            Distribution: cuộc thi hàng tuần, phân bổ ít/free có lý do, 4 lợi ích (kéo user từ market khác).
+          <li className="flex gap-3 items-baseline">
+            <span className="text-purple-400 font-semibold shrink-0 w-[8rem]">Distribution (4):</span>
+            <span className="min-w-0 flex-1">Đánh giá + các hướng khác, cơ chế thi + 4 lợi ích, phân bổ $10K + kênh, Action/Metric/Rủi ro.</span>
           </li>
         </ul>
         <div className="mt-auto pt-3 border-t border-slate-700 flex flex-wrap gap-2">
@@ -551,7 +552,10 @@ const Slide8 = () => (
             prompts-used.md
           </span>
           <span className="px-3 py-1.5 bg-slate-900/80 border border-slate-600 rounded-lg text-slate-300 text-xs">
-            screenshots/
+            prompts-to-capture.md
+          </span>
+          <span className="px-3 py-1.5 bg-slate-900/80 border border-slate-600 rounded-lg text-slate-300 text-xs">
+            screenshots/ (12 ảnh)
           </span>
         </div>
       </div>
