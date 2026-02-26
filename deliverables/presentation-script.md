@@ -22,14 +22,14 @@ Dùng khi BGK hoặc người nghe hỏi, hoặc khi cần nói rõ ý trong lú
 | **5% fee / subject fee** | Protocol thu **5%** trên volume giao dịch (mua/bán share). Phần fee này dùng để tài trợ prize tuần sau (flywheel) hoặc nuôi kênh khác khi đủ lãi. “Subject” = gắn với chủ thể (agent/skill). |
 | **Discovery** | Bước “tìm thấy” — user tìm skill/agent (search, category, ranking). ClawHub chỉ làm discovery (tìm và cài skill); ClawFriend thêm monetization (fee, share, holder-gated). |
 | **Flywheel** | Vòng lặp tự cường: volume mua bán → fee 5% → prize tuần sau → thu hút thêm agent/user → volume tăng → fee tăng… Càng chạy càng to. |
-| **FOMO** | Fear of missing out — sợ bỏ lỡ. User mua share sớm vì sợ giá lên sau khi agent thắng (BGK mua $2.5K đẩy giá); hoặc sợ bỏ lỡ cơ hội vào platform. |
+| **FOMO** | Fear of missing out — sợ bỏ lỡ. User mua share sớm vì sợ giá lên sau khi agent thắng (BGK mua $2K đẩy giá); hoặc sợ bỏ lỡ cơ hội vào platform. |
 | **On-chain** | Giao dịch hoặc dữ liệu được ghi trên blockchain (minh bạch, không đổi được). VD: BGK mua share winner on-chain = giao dịch thật trên chain. |
 | **Snapshot** | Chốt dữ liệu tại một thời điểm — VD Chủ nhật 23:59 chốt BXH theo dữ liệu đến lúc đó để xác định winner, không nhận thêm dữ liệu sau. |
 | **BXH** | Bảng xếp hạng (leaderboard) — thứ hạng agent theo tiêu chí (lượt tải skill, điểm BGK…). |
-| **BGK** | Ban Giám khảo — trong cơ chế cuộc thi: BGK chấm/chốt winner và dùng $2.500 mua share agent thắng. |
-| **Prize** | Giải thưởng — ở đây = BGK mua $2.500 share của agent thắng mỗi tuần (4 tuần = $10K). Từ tuần 5: prize lấy từ fee. |
+| **BGK** | Ban Giám khảo — trong cơ chế cuộc thi: BGK chấm/chốt winner và dùng $2.000 mua share agent thắng. |
+| **Prize** | Giải thưởng — ở đây = BGK mua $2.000 share của agent thắng mỗi tuần (4 tuần = $8K). Còn $2K cho blog/OpenClaw. Từ tuần 5: prize lấy từ fee. |
 | **Cold start** | Giai đoạn khởi động khi chưa có user/agent: cần announce, waitlist, seeding 5–10 agent (team/partner) để BXH có nội dung, FOMO hoạt động. |
-| **Organic / paid channel** | **Organic:** kênh không trả tiền quảng cáo — blog, partnership, SEO. **Paid:** trả tiền — ở đây toàn bộ $10K = prize cuộc thi (paid cho winner qua mua share). |
+| **Organic / paid channel** | **Organic:** kênh không trả tiền quảng cáo — blog, partnership, SEO. **Paid:** trả tiền — ở đây $8K prize cuộc thi + $2K blog/OpenClaw (paid cho winner qua mua share + boost kênh). |
 | **KOL** | Key Opinion Leader — người có ảnh hưởng (influencer). Script nói không dùng ngân sách cho KOL/ads. |
 | **Lead magnet** | Nội dung hoặc lợi ích miễn phí để “kéo” user vào (vd skill free 5 lần quét/ngày) rồi chuyển sang holder-gated hoặc mua share. |
 | **UTM** | Tham số trong link (utm_source, utm_medium…) để đo nguồn traffic (vd sign-up từ blog, từ OpenClaw). |
@@ -78,7 +78,7 @@ Em chuyển sang Distribution Plan.
 
 Mục tiêu: user biết và dùng Skill Market tháng đầu với **10.000 đô**. Ràng buộc: 1 organic + 1 paid; plan cụ thể.
 
-**Phân bổ ít/free có lý do:** KOL/ads — mua reach một lần, không flywheel; CPC cao. Telegram/Discord — post free đủ **10K dồn prize** nên làm thế nào để có flywheel rõ hơn. **Cuộc thi hàng tuần** (không all-in một lần): 4 tuần = 4 lần thử, giảm rủi ro; nhiều skill chất lượng; BGK minh bạch.
+**Phân bổ ít/free có lý do:** KOL/ads — mua reach một lần, không flywheel; CPC cao. Telegram/Discord — post free đủ **$8K prize + $2K kênh khác** nên làm thế nào để có flywheel rõ hơn. **Cuộc thi hàng tuần** (không all-in một lần): 4 tuần = 4 lần thử, giảm rủi ro; nhiều skill chất lượng; BGK minh bạch.
 
 **Ba kênh:** Kênh 1 paid — Cuộc thi hàng tuần, toàn bộ 10K. Kênh 2 organic — Technical blog 0 đô. Kênh 3 organic — Partnership OpenClaw 0 đô.
 
@@ -122,7 +122,7 @@ Hai nhánh: **AI research** và **AI deliver** (video trợ lý ảo).
 
 ## Slide 9 — Kết và Q&A (~30 giây)
 
-Em xin hết phần trình bày. Repo public, link trong Telegram; Competitive 6 đối thủ có nguồn; Skill 20 skill có bằng chứng demand; Distribution 3 kênh, 10K prize, BXH + 4 lợi ích; AI Showcase có prompts-used và video. Mọi số liệu verify key-metrics. Em cảm ơn BGK và mọi người, sẵn sàng Q&A.
+Em xin hết phần trình bày. Repo public, link trong Telegram; Competitive 6 đối thủ có nguồn; Skill 20 skill có bằng chứng demand; Distribution 3 kênh, $8K prize + $2K blog/OpenClaw, BXH + 4 lợi ích; AI Showcase có prompts-used và video. Mọi số liệu verify key-metrics. Em cảm ơn BGK và mọi người, sẵn sàng Q&A.
 
 ---
 
@@ -132,6 +132,6 @@ Em xin hết phần trình bày. Repo public, link trong Telegram; Competitive 6
 
 **Skill có demand không?** — Nansen 99–999 đô/tháng, Whale Alert 2,5M followers, Token Sniffer 30K contract/ngày, YO 1M+ đô volume; skill-research có nguồn từng skill.
 
-**10K đủ không?** — 100% dồn prize; BGK mua share on-chain minh bạch; từ tuần 5 prize từ fee; lãi đủ trích nuôi kênh khác.
+**10K đủ không?** — $8K prize 4 tuần (BGK mua share on-chain minh bạch) + $2K blog/OpenClaw; từ tuần 5 prize từ fee; lãi đủ trích nuôi kênh khác.
 
 **Sao không dùng ChatGPT/Claude?** — AI thiếu real-time on-chain, wallet, holder-gated; skill ClawFriend gắn BSC, data real-time, share — giá trị khác.

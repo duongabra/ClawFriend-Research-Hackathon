@@ -202,15 +202,15 @@ Distribution plan lấy ràng buộc từ **Guidebook cuộc thi** và chi tiế
 | Mục | Số liệu / mô tả | Nguồn |
 |-----|-----------------|--------|
 | Ngân sách tháng 1 | **$10.000** | Guidebook cuộc thi; distribution-plan.md |
-| Phân bổ prize | **$2.500 × 4 tuần = $10.000** — BGK mua share winner mỗi Chủ nhật on-chain | distribution-plan.md |
-| Số kênh | **3 kênh:** (1) Cuộc thi hàng tuần — paid $10K; (2) Technical blog — organic $0; (3) Partnership OpenClaw — organic $0 | Guidebook (ít nhất 3–5 kênh, 1 organic + 1 paid); distribution-plan.md |
+| Phân bổ prize | **$2.000 × 4 tuần = $8.000** (cuộc thi) — BGK mua share winner mỗi Chủ nhật on-chain; **$2.000** (Blog $1K + OpenClaw $1K) | distribution-plan.md |
+| Số kênh | **3 kênh:** (1) Cuộc thi — paid $8K; (2) Technical blog — paid $1K; (3) Partnership OpenClaw — paid $1K. Tổng $10K | Guidebook (ít nhất 3–5 kênh, 1 organic + 1 paid); distribution-plan.md |
 | Fee protocol | **5%** volume giao dịch → tái đầu tư prize từ tuần 5+; khi lợi nhuận đủ lớn trích nuôi kênh khác | distribution-plan.md; CLAWFRIEND_SPEC.md |
 
 ### 3.2 Cơ chế cuộc thi (số liệu dùng trong slide / script)
 
 | Mục | Số liệu / mô tả | Nguồn |
 |-----|-----------------|--------|
-| Prize mỗi tuần | $2.500 (BGK mua share agent thắng) | distribution-plan.md |
+| Prize mỗi tuần | $2.000 (BGK mua share agent thắng) | distribution-plan.md |
 | Tiêu chí tuần 1 | Xếp hạng = **lượt tải skill trong tuần** (on-chain / platform verifiable) | distribution-plan.md |
 | Từ tuần 2 | Có thể thêm BGK/LLM (vd 50% lượt tải + 50% BGK) | distribution-plan.md |
 | BXH | T2–T7 cập nhật realtime (vd 1–2h); Chủ nhật đóng băng đến chốt (vd 23:59) | distribution-plan.md |
@@ -236,13 +236,13 @@ Distribution plan lấy ràng buộc từ **Guidebook cuộc thi** và chi tiế
 | Rủi ro | Trigger (số liệu) | Hành động dự phòng (tóm tắt) | Nguồn |
 |--------|--------------------|------------------------------|--------|
 | Tuần 1 quá ít agent | EOD Chủ nhật tuần 1, **< 10 agent** tham gia | Kéo dài tuần 1 thêm 3–5 ngày; gộp 1–2 tuần prize ($5K một lần); giữ 100% budget cho prize | distribution-plan.md |
-| Volume tháng 1 thấp | Sau tuần 4, **tổng fee < $1.500** | Giảm prize T5–6 theo fee thực thu; nếu đã reserve 20% ($2K) thì dùng tối đa $2K bridge 1–2 tuần; tăng blog + OpenClaw | distribution-plan.md |
+| Volume tháng 1 thấp | Sau tuần 4, **tổng fee < $1.200** | Giảm prize T5–6 theo fee thực thu; tăng blog + OpenClaw (đã có $2K). | distribution-plan.md |
 | OpenClaw không phản hồi | Hết tháng 1 không có hợp tác | Giữ blog chính; tìm partnership thay thế (BSC/DeFi, dev tool) tháng 2 | distribution-plan.md |
 
-### 3.6 Contingency 20%
+### 3.6 Chốt phương án ngân sách (v5.4)
 
-- **Nếu từ đầu reserve 20% ($2K)** chưa đưa vào prize 4 tuần: có thể dùng tối đa $2K cho 1–2 tuần bridge prize khi fee chưa đủ. Nếu đã phân bổ 100% $10K vào prize thì không có khoản này, chỉ giảm prize theo fee và tăng blog/OpenClaw.
-- **Nguồn:** distribution-plan.md (bảng Rủi ro & kế hoạch dự phòng).
+- **Đã chốt:** $8.000 cuộc thi ($2.000 × 4 tuần) + $2.000 các kênh khác (Blog $1K, OpenClaw $1K). Tổng $10K. Nếu fee tuần 5 thấp: giảm prize theo fee thực thu; blog/OpenClaw đã có $2K.
+- **Nguồn:** distribution-plan.md (Phân bổ $10.000, Rủi ro & kế hoạch dự phòng).
 
 ---
 

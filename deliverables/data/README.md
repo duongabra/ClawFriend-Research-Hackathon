@@ -58,7 +58,7 @@ Folder này chứa **số liệu chính** dùng trong ba deliverable (Competitiv
 |---------|----------|----------------------|
 | **1. Competitive Landscape** | 6 đối thủ (ClawHub, Heurist, SkillGem, Hedera, ClawMarket, MoltBazaar); mỗi đối thủ có Số liệu + Nguồn gốc + Lưu ý. Subsection 1.7: TAM/CAGR, ai dẫn đầu, so sánh chain. | Số liệu đối thủ (skill count, download, stars, tool, agent, chain, v.v.) |
 | **2. Skill Research** | Bằng chứng demand theo nhóm: Whale/Rug, DeFi yield, Portfolio, Price alert, Alpha/KOL, Sức khỏe, Vĩ mô, No-code/Productivity. Mỗi nhóm có bảng Số liệu | Nguồn. Cuối section: Bảng tổng hợp nhanh. | Demand (Nansen, Whale Alert, Token Sniffer, DeBank, YO Protocol, Medisafe, Zapier, Otter, v.v.) |
-| **3. Distribution Plan** | 3.1 Ngân sách ($10K, $2.5K×4, 3 kênh, 5% fee). 3.2 Cơ chế cuộc thi. 3.3 Mục tiêu tháng 1 (≥15 agent, ≥$8K volume, ≥20 skill). 3.4 Target kênh 2 & 3. 3.5 Rủi ro & dự phòng. 3.6 Contingency 20%. | Số budget, target, metric, trigger contingency |
+| **3. Distribution Plan** | 3.1 Ngân sách ($10K = $8K cuộc thi $2K×4 + $2K blog/OpenClaw, 3 kênh, 5% fee). 3.2 Cơ chế cuộc thi. 3.3 Mục tiêu tháng 1 (≥15 agent, ≥$8K volume, ≥20 skill). 3.4 Target kênh 2 & 3. 3.5 Rủi ro & dự phòng. 3.6 Chốt phương án $8K/$2K. | Số budget, target, metric, trigger dự phòng |
 | **4. Đối thủ không trong bảng** | Giải thích vì sao friend.tech, Virtuals, SingularityNET, ELIZA không nằm trong Competitive (không cùng phân khúc). | Khi hỏi "tại sao chỉ 6 đối thủ?" |
 
 ---

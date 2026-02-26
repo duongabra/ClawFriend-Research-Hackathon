@@ -213,21 +213,20 @@ const Slide4 = () => (
           </p>
         </div>
         <p className="text-xl text-white mb-4 leading-relaxed">
-          100% $10K dồn vào một đòn bẩy duy nhất để tạo Flywheel:
-          <br />
+          $10K = $8K cuộc thi + $2K các kênh khác. Trụ chính:{" "}
           <span className="text-blue-300 font-bold text-2xl inline-block mt-2">
             Cuộc Thi Hàng Tuần
           </span>
         </p>
         <ul className="space-y-3 text-slate-300 mt-6">
           <li className="flex items-center gap-2">
-            ✓ <strong>Kênh 1 (Paid):</strong> Cuộc thi hàng tuần ($10K)
+            ✓ <strong>Kênh 1 (Paid):</strong> Cuộc thi hàng tuần ($8K = $2K × 4 tuần)
           </li>
           <li className="flex items-center gap-2">
-            ✓ <strong>Kênh 2 (Organic):</strong> Technical Blog ($0)
+            ✓ <strong>Kênh 2 (Paid):</strong> Technical Blog ($1K)
           </li>
           <li className="flex items-center gap-2">
-            ✓ <strong>Kênh 3 (Organic):</strong> Partnership OpenClaw ($0)
+            ✓ <strong>Kênh 3 (Paid):</strong> Partnership OpenClaw ($1K)
           </li>
         </ul>
       </div>
@@ -241,7 +240,7 @@ const Slide4 = () => (
         </h3>
         <div className="bg-slate-950/50 p-4 rounded-xl border border-slate-700/50 mb-6">
           <p className="text-slate-300 text-lg">
-            Không dồn $10K —{" "}
+            KOL/ads không nhận phần lớn —{" "}
             <strong className="text-amber-300/90">ít hoặc free</strong>
           </p>
         </div>
@@ -296,11 +295,10 @@ const Slide5 = () => (
             tuần một winner nhận prize qua BGK mua share on-chain rồi burn.
           </p>
           <p className="text-xl text-slate-300 leading-relaxed">
-            <strong className="text-white">$2.500 × 4 tuần = $10.000.</strong>{" "}
-            Toàn bộ budget là giải thưởng (Prize).
+            <strong className="text-white">$2.000 × 4 tuần = $8.000</strong> (cuộc thi). Còn <strong>$2.000</strong> cho Blog $1K + OpenClaw $1K.
             <br />
             Mỗi Chủ Nhật, BGK dùng{" "}
-            <strong>$2.500 mua share của agent thắng</strong> ngay trên bonding
+            <strong>$2.000 mua share của agent thắng</strong> ngay trên bonding
             curve (on-chain).
             <br />
             <span className="text-blue-400 text-base mt-2 inline-block">
@@ -309,7 +307,7 @@ const Slide5 = () => (
           </p>
         </div>
         <div className="w-full md:w-1/3 md:shrink-0 bg-slate-900 p-6 rounded-xl border border-slate-700 text-center shadow-inner relative z-10">
-          <div className="text-5xl font-black text-green-400 mb-2">$2.5K</div>
+          <div className="text-5xl font-black text-green-400 mb-2">$2K</div>
           <div className="text-slate-400 uppercase tracking-widest text-sm font-bold">
             Mua Share / Tuần
           </div>
@@ -377,7 +375,7 @@ const Slide6 = () => (
           <li>Ngăn user đổ xô "chạy nước rút" cuối giờ.</li>
           <li>
             <strong className="text-indigo-300">23:59 Chốt Snapshot:</strong>{" "}
-            BGK công bố và dùng $2.5K mua on-chain share winner.
+            BGK công bố và dùng $2K mua on-chain share winner.
           </li>
         </ul>
       </div>
@@ -468,10 +466,10 @@ const Slide7 = () => (
         </div>
         <div className="flex-1 bg-slate-900 p-4 rounded border border-blue-700/50 shadow-[0_0_10px_rgba(37,99,235,0.2)]">
           <div className="text-blue-400 font-bold mb-1">
-            T1 - T4 (Paid $10K)
+            T1 - T4 (Paid $8K contest + $2K blog/OpenClaw)
           </div>
           <div className="text-sm text-slate-300">
-            T2–T7 chạy BXH (skill mới trong tuần tự động tham gia), CN chốt & BGK mua $2.5K share.
+            T2–T7 chạy BXH (skill mới trong tuần tự động tham gia), CN chốt & BGK mua $2K share.
           </div>
         </div>
         <div className="flex-1 bg-slate-900 p-4 rounded border border-slate-700">

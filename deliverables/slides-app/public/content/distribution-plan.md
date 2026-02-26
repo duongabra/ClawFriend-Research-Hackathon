@@ -6,8 +6,8 @@
 
 | Tiêu chí | Đáp ứng | Vị trí trong file |
 |----------|---------|-------------------|
-| Ngân sách $10.000 tháng đầu | CÓ | Ràng buộc + bảng "Phân bổ $10.000" |
-| Ít nhất 3–5 kênh acquisition cụ thể | CÓ | 3 kênh: (1) Cuộc thi hàng tuần — paid $10K; (2) Technical blog — organic $0; (3) Partnership OpenClaw — organic $0 |
+| Ngân sách $10.000 tháng đầu | CÓ | Ràng buộc + bảng "Phân bổ $10.000" ($8K cuộc thi + $2K các kênh khác) |
+| Ít nhất 3–5 kênh acquisition cụ thể | CÓ | 3 kênh: (1) Cuộc thi — paid $8K; (2) Technical blog — paid $1K; (3) Partnership OpenClaw — paid $1K |
 | Ít nhất 1 kênh organic + 1 kênh paid | CÓ | Paid: Cuộc thi (prize BGK mua share). Organic: Blog + Partnership (không tốn budget) |
 | Mỗi kênh: Tại sao chọn, Action plan, Timeline, Cost, Metric | CÓ | Bảng cơ chế cuộc thi + bảng 2 kênh organic bên dưới |
 | Plan cụ thể — intern đọc xong biết ngày mai làm gì | CÓ | Bảng "Action plan & timeline" + từng kênh có action rõ |
@@ -44,17 +44,17 @@ Chúng ta **không** tập trung vào các hướng sau — vì **đã cũ**, **
 
 ---
 
-Guidebook yêu cầu **ít nhất 3–5 kênh** acquisition. Ở đây có **3 kênh**: (1) **Cuộc thi hàng tuần** — kênh chính, paid $10K; (2) **Technical blog** — organic $0; (3) **Partnership OpenClaw** — organic $0. Hai kênh organic không chia budget; trụ chính là cuộc thi.
+Guidebook yêu cầu **ít nhất 3–5 kênh** acquisition. Ở đây có **3 kênh**: (1) **Cuộc thi hàng tuần** — $8K ($2K × 4 tuần); (2) **Technical blog** — $1K; (3) **Partnership OpenClaw** — $1K. Tổng $10K.
 
 ---
 
-## Kênh 1 (chính): Cuộc thi hàng tuần — toàn bộ $10K
+## Kênh 1 (chính): Cuộc thi hàng tuần — $8K
 
 ### Đánh giá ý tưởng
 
-**Ý tưởng:** Dồn **toàn bộ** $10K vào **cuộc thi hàng tuần**: mọi agent được tham gia; mỗi tuần có bảng xếp hạng realtime; Chủ nhật chốt; **BGK dùng $2.500 mua share của agent thắng**; đề bài gắn với **skill** (agent tạo skill hay / nhiều lượt tải nhất). User FOMO: mua share các agent có skill đột phá **khi còn rẻ**, chờ BGK mua đẩy giá → ranking đổi liên tục → mua bán → **fee protocol** → dùng fee tổ chức thi tiếp (**flywheel**).
+**Ý tưởng:** Dồn **$8K** vào **cuộc thi hàng tuần** ($2.000 × 4 tuần): mọi agent được tham gia; mỗi tuần có bảng xếp hạng realtime; Chủ nhật chốt; **BGK dùng $2.000 mua share của agent thắng**; đề bài gắn với **skill** (agent tạo skill hay / nhiều lượt tải nhất). User FOMO: mua share các agent có skill đột phá **khi còn rẻ**, chờ BGK mua đẩy giá → ranking đổi liên tục → mua bán → **fee protocol** → dùng fee tổ chức thi tiếp (**flywheel**).
 
-**Đánh giá:** (1) **Flywheel rõ:** Prize = BGK mua share, minh bạch; volume → fee 5% → tài trợ tuần sau. (2) **Gắn đúng sản phẩm:** Skill + agent + share trong một vòng thi. (3) **Nguồn skill chất lượng:** Người dự thi tạo skill → marketplace nhận rất nhiều skill. (4) **FOMO rõ:** Mua share skill đột phá khi rẻ, chờ BGK mua $2.5K đẩy giá. (5) **Nguồn tester vô tận:** Để đánh giá phải cài/dùng skill → không cần thuê tester. (6) **Realtime ranking** → engagement, mua bán liên tục. Cần quy định rõ tiêu chí xếp hạng và minh bạch.
+**Đánh giá:** (1) **Flywheel rõ:** Prize = BGK mua share, minh bạch; volume → fee 5% → tài trợ tuần sau. (2) **Gắn đúng sản phẩm:** Skill + agent + share trong một vòng thi. (3) **Nguồn skill chất lượng:** Người dự thi tạo skill → marketplace nhận rất nhiều skill. (4) **FOMO rõ:** Mua share skill đột phá khi rẻ, chờ BGK mua $2K đẩy giá. (5) **Nguồn tester vô tận:** Để đánh giá phải cài/dùng skill → không cần thuê tester. (6) **Realtime ranking** → engagement, mua bán liên tục. Cần quy định rõ tiêu chí xếp hạng và minh bạch.
 
 ---
 
@@ -66,7 +66,7 @@ Guidebook yêu cầu **ít nhất 3–5 kênh** acquisition. Ở đây có **3 k
 | **Đề bài / tiêu chí** | Gắn **skill:** tuần đó agent nào có **skill được BGK đánh giá cao nhất** hoặc **skill có nhiều lượt tải nhất trong tuần** (hoặc kết hợp: 50% BGK, 50% lượt tải). Skill tốt có thể **bonus điểm** hoặc hạng riêng. Có thể đổi đề mỗi tuần (vd tuần 1: skill hữu ích cho BSC trader; tuần 2: skill nhiều download nhất; tuần 3: BGK chấm sáng tạo). |
 | **Bảng xếp hạng (BXH)** | Trên platform: **“Leaderboard tuần này”** hiển thị thứ hạng, tên agent, điểm (BGK hoặc lượt tải), có thể “BGK đang xếp agent X dẫn đầu”. Cách tính: (a) BGK đánh giá (tay/rubric), (b) bot/LLM chấm, hoặc (c) lượt tải skill trong tuần. Công bố rõ công thức. |
 | **Lịch cập nhật BXH** | **T2 → T7:** BXH **cập nhật realtime** (vd mỗi 1–2 giờ) — user theo dõi, FOMO, dự đoán và mua share trong tuần. **Chủ nhật (CN):** BXH **không cập nhật nữa** (đóng băng) cho đến khi chốt — tránh nhiều người đổ xô mua gần cuối; ngày CN user **hồi hộp chờ kết quả**, không còn dữ liệu mới nên phải đã quyết định mua/giữ từ T2–T7. |
-| **Chốt & công bố** | **Chủ nhật mỗi tuần** (vd 23:59): chốt snapshot (theo dữ liệu đã thu đến trước khi đóng băng BXH). Công bố winner. **BGK dùng $2.500 mua share của agent thắng** trên bonding curve (on-chain). Có thể livestream hoặc tweet công bố. |
+| **Chốt & công bố** | **Chủ nhật mỗi tuần** (vd 23:59): chốt snapshot (theo dữ liệu đã thu đến trước khi đóng băng BXH). Công bố winner. **BGK dùng $2.000 mua share của agent thắng** trên bonding curve (on-chain). Có thể livestream hoặc tweet công bố. |
 | **FOMO & flywheel** | **T2–T7:** BXH đổi realtime → user theo dõi, dự đoán, mua share (dẫn đầu hoặc hạng 2–4). **CN:** BXH đóng băng → user hồi hộp chờ kết quả, không còn “chạy theo” gần cuối. Mua bán trong tuần → **volume → fee 5%** → prize tuần sau (tuần 5, 6, …). |
 | **Skill bonus** | Skill đặc biệt hay có thể: bonus điểm, “Skill of the week”, hoặc highlight trên Skill Market. |
 
@@ -80,7 +80,7 @@ Cuộc thi buộc người tham gia **tạo và publish skill** để được x
 
 **2. Lý do user FOMO: mua sớm share khi còn rẻ, chờ BGK mua đẩy giá**
 
-User **mua share của các agent có skill đột phá khi giá còn rẻ** (đầu tuần hoặc khi agent đang hạng 2–3), giữ đến Chủ nhật — nếu agent đó thắng, **BGK dùng $2.500 mua share** → cầu tăng → **giá đẩy lên** → user mua sớm được lợi. Tương tự hạng 2, 3, 4: user “cược” ai bứt tốc. **Mua trước, chờ BGK mua đẩy giá** = incentive tài chính trực tiếp.
+User **mua share của các agent có skill đột phá khi giá còn rẻ** (đầu tuần hoặc khi agent đang hạng 2–3), giữ đến Chủ nhật — nếu agent đó thắng, **BGK dùng $2.000 mua share** → cầu tăng → **giá đẩy lên** → user mua sớm được lợi. Tương tự hạng 2, 3, 4: user “cược” ai bứt tốc. **Mua trước, chờ BGK mua đẩy giá** = incentive tài chính trực tiếp.
 
 **3. Nguồn tester vô tận: phải cài skill để đánh giá**
 
@@ -88,13 +88,16 @@ User **mua share của các agent có skill đột phá khi giá còn rẻ** (đ
 
 ---
 
-### Phân bổ $10.000 — Chỉ cuộc thi
+### Phân bổ $10.000 — $8K cuộc thi + $2K các kênh khác
 
 | Hạng mục | Chi phí | Ghi chú |
 |----------|---------|--------|
-| **Prize cuộc thi (BGK mua share winner)** | **$2.500 × 4 tuần = $10.000** | Toàn bộ $10K: mỗi Chủ nhật BGK dùng $2.500 mua share agent thắng. |
+| **Prize cuộc thi (BGK mua share winner)** | **$2.000 × 4 tuần = $8.000** | Mỗi Chủ nhật BGK dùng $2.000 mua share agent thắng. |
+| **Kênh 2: Technical blog** | **$1.000** | Boost bài, sponsor, ads nhỏ. |
+| **Kênh 3: Partnership OpenClaw** | **$1.000** | Incentive, bounty integration. |
+| **Tổng** | **$10.000** | $8K + $1K + $1K. |
 
-Không dành budget cho KOL, ads, hay kênh khác. Từ tháng 2: dùng **fee từ volume** để tiếp tục prize (vd $1.500–$2K/tuần tùy fee thu được).
+Từ tháng 2: dùng **fee từ volume** để tiếp tục prize (vd $1.200–$1.5K/tuần tùy fee thu được).
 
 ---
 
@@ -126,8 +129,8 @@ Không dành budget cho KOL, ads, hay kênh khác. Từ tháng 2: dùng **fee t�
 
 | Tuần | Việc cụ thể |
 |------|--------------|
-| **Trước tuần 1** | **Kênh 1:** Công bố thể lệ: đề bài (skill), tiêu chí xếp hạng, Chủ nhật chốt, prize = BGK mua $2.5K share winner. (2) Build trang **Leaderboard tuần**: cập nhật realtime T2–T7; Chủ nhật không cập nhật (đóng băng) đến khi chốt. (3) Quyết định pipeline chấm: BGK tay, LLM rubric, hoặc chỉ lượt tải. (4) Tweet + post announce “Cuộc thi hàng tuần bắt đầu từ [ngày]”. |
-| **Tuần 1** | **Kênh 1:** Cập nhật leaderboard (skill mới trong tuần tự động tham gia, không đăng ký); CN chốt, BGK mua $2.5K share; post kết quả. **Kênh 2:** Publish 2 bài; cross-post. **Kênh 3:** Gửi đề xuất OpenClaw. |
+| **Trước tuần 1** | **Kênh 1:** Công bố thể lệ: đề bài (skill), tiêu chí xếp hạng, Chủ nhật chốt, prize = BGK mua $2K share winner. (2) Build trang **Leaderboard tuần**: cập nhật realtime T2–T7; Chủ nhật không cập nhật (đóng băng) đến khi chốt. (3) Quyết định pipeline chấm: BGK tay, LLM rubric, hoặc chỉ lượt tải. (4) Tweet + post announce “Cuộc thi hàng tuần bắt đầu từ [ngày]”. |
+| **Tuần 1** | **Kênh 1:** Cập nhật leaderboard (skill mới trong tuần tự động tham gia, không đăng ký); CN chốt, BGK mua $2K share; post kết quả. **Kênh 2:** Publish 2 bài; cross-post; $1K boost. **Kênh 3:** Gửi đề xuất OpenClaw. |
 | **Tuần 2–4** | **Kênh 1:** Lặp cuộc thi; CN chốt; theo dõi volume/fee. **Kênh 2:** Thêm 2–4 bài (Yield, Price Alert, Portfolio, Alpha); UTM + metric. **Kênh 3:** Follow-up partnership; nếu có hợp tác thì tweet/docs. |
 | **Sau tuần 4** | **Kênh 1:** Prize tuần 5+ từ fee (flywheel). **Kênh 2 & 3:** Duy trì 4–6 bài/tháng và partnership. |
 
@@ -150,11 +153,11 @@ Không dành budget cho KOL, ads, hay kênh khác. Từ tháng 2: dùng **fee t�
 
 | | Các hướng không chọn (KOL, ads, community chung chung, v.v.) | 3 kênh của chúng ta |
 |---|---------------------------------------------------------------|----------------------|
-| **Kênh 1 (paid)** | KOL, Twitter Ads rải tiền | **Cuộc thi hàng tuần** — 100% $10K = prize 4 tuần (BGK mua share winner); flywheel fee |
+| **Kênh 1 (paid)** | KOL, Twitter Ads rải tiền | **Cuộc thi hàng tuần** — $8K = prize 4 tuần ($2K/tuần, BGK mua share winner); flywheel fee. Blog $1K + OpenClaw $1K |
 | **Kênh 2 (organic)** | "Làm content" không rõ | **Technical blog** — 4–6 bài/tháng, tutorial skill cụ thể, CTA install, metric: views, sign-up, download |
 | **Kênh 3 (organic)** | "Partnership" chung chung | **Partnership OpenClaw** — integration 1-click install, đề xuất cụ thể, metric: install qua flow, referral |
 | **Gắn sản phẩm** | Reach thuần | **Skill + agent + share** trong từng kênh (thi = skill; blog = feature skill; OpenClaw = distribution skill) |
 
 ---
 
-*Phiên bản: 4.2 — Bám Guidebook: ít nhất 3 kênh (Cuộc thi $10K + Blog $0 + Partnership OpenClaw $0), mỗi kênh có action/timeline/cost/metric. Trụ chính vẫn là cuộc thi; 2 kênh organic bổ trợ, không phân bổ ngân sách.*
+*Phiên bản: 4.3 — Phân bổ: $8K cuộc thi ($2K × 4 tuần) + $2K các kênh khác (Blog $1K, OpenClaw $1K). Tổng $10K.*

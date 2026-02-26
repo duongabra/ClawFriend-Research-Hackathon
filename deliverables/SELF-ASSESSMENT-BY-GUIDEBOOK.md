@@ -38,7 +38,7 @@
 
 | Tiêu chí (từ distribution-plan.md + README) | Đáp ứng | Ghi chú |
 |---------------------------------------------|---------|--------|
-| Ngân sách $10.000 tháng đầu | CÓ | Ràng buộc + Phân bổ $2.5K×4 tuần |
+| Ngân sách $10.000 tháng đầu | CÓ | Ràng buộc + Phân bổ $8K cuộc thi ($2K×4) + $2K blog/OpenClaw |
 | Ít nhất 3–5 kênh acquisition | CÓ | 3 kênh: Cuộc thi (paid), Blog (organic), OpenClaw (organic) |
 | Ít nhất 1 organic + 1 paid | CÓ | Paid: Cuộc thi; Organic: Blog + OpenClaw |
 | Mỗi kênh: Tại sao chọn, Action plan, Timeline, Cost, Metric | CÓ | Bảng cơ chế cuộc thi + bảng 2 kênh organic |

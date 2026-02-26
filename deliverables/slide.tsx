@@ -143,9 +143,9 @@ const Slide4 = () => (
         <h3 className="text-2xl font-bold text-amber-400 mb-6 flex items-center gap-2">
           <TrendingUp className="w-6 h-6" /> Các hướng khác: phân bổ ít hoặc chỉ free
         </h3>
-        <p className="text-slate-400 mb-3">Không dồn $10K — <strong className="text-amber-300/90">ít hoặc free</strong>, lý do: KOL/ads trả lớn = reach một lần, không flywheel; cộng đồng tốn tiền ads dễ spam, post free đủ; blog/bounty free vẫn có traffic, trả BNB không phân biệt; creator fee = trả reach, prize + share mới tạo flywheel.</p>
+        <p className="text-slate-400 mb-3">KOL/ads không nhận phần lớn — <strong className="text-amber-300/90">ít hoặc free</strong>, lý do: KOL/ads trả lớn = reach một lần, không flywheel; cộng đồng tốn tiền ads dễ spam, post free đủ; blog/bounty free vẫn có traffic, trả BNB không phân biệt; creator fee = trả reach, prize + share mới tạo flywheel.</p>
         <p className="text-slate-500 text-sm mb-2">Thi hàng tuần: (1) 4 tuần = 4 lần thử, tránh all-in flop. (2) Team tập trung skill giành giải. (3) BGK công bằng — người ngoài tốt vẫn trao giải.</p>
-        <p className="mt-4 text-amber-300/90 text-sm rounded-lg bg-amber-950/30 px-3 py-2">Toàn bộ $10K dồn vào <strong>cuộc thi hàng tuần</strong>. Blog + OpenClaw organic $0.</p>
+        <p className="mt-4 text-amber-300/90 text-sm rounded-lg bg-amber-950/30 px-3 py-2">$8K cuộc thi ($2K × 4 tuần) + $2K Blog + OpenClaw ($1K mỗi kênh). Tổng $10K.</p>
       </div>
 
       <div className="bg-blue-900/20 p-8 rounded-2xl border border-blue-500/50 shadow-[0_0_30px_rgba(59,130,246,0.15)] relative overflow-hidden">
@@ -159,7 +159,7 @@ const Slide4 = () => (
           </p>
         </div>
         <p className="text-xl text-white mb-4 leading-relaxed">
-          100% $10K dồn vào một đòn bẩy duy nhất để tạo Flywheel: <br/>
+          $8K cuộc thi + $2K blog/OpenClaw. Trụ chính Flywheel: <br/>
           <span className="text-blue-300 font-bold text-2xl inline-block mt-2">Cuộc Thi Hàng Tuần</span>
         </p>
         <ul className="space-y-3 text-slate-300 mt-6">
@@ -184,13 +184,13 @@ const Slide5 = () => (
         <div className="flex-1 min-w-0 space-y-4">
           <h3 className="text-2xl font-bold text-yellow-400">Ý tưởng & Phân bổ $10.000</h3>
           <p className="text-xl text-slate-300 leading-relaxed">
-            <strong className="text-white">$2.500 × 4 tuần = $10.000.</strong> Toàn bộ budget là giải thưởng (Prize).<br/><br/>
-            Mỗi Chủ Nhật, BGK dùng <strong>$2.500 mua share của agent thắng</strong> ngay trên bonding curve (on-chain).<br/>
+            <strong className="text-white">$2.000 × 4 tuần = $8.000</strong> (cuộc thi). Còn $2.000 cho Blog $1K + OpenClaw $1K.<br/><br/>
+            Mỗi Chủ Nhật, BGK dùng <strong>$2.000 mua share của agent thắng</strong> ngay trên bonding curve (on-chain).<br/>
             <span className="text-blue-400 text-base mt-2 inline-block">→ Từ tháng 2: Prize lấy từ 5% fee volume. Khi lợi nhuận đủ lớn: trích ra nuôi các kênh khác (blog, partnership, paid).</span>
           </p>
         </div>
         <div className="w-full md:w-1/3 md:shrink-0 bg-slate-900 p-6 rounded-xl border border-slate-700 text-center shadow-inner relative z-10">
-          <div className="text-5xl font-black text-green-400 mb-2">$2.5K</div>
+          <div className="text-5xl font-black text-green-400 mb-2">$2K</div>
           <div className="text-slate-400 uppercase tracking-widest text-sm font-bold">Mua Share / Tuần</div>
         </div>
       </div>
@@ -233,7 +233,7 @@ const Slide6 = () => (
         <ul className="space-y-3 text-slate-300">
           <li>BXH <strong>ĐÓNG BĂNG</strong>. Không có dữ liệu mới.</li>
           <li>Ngăn user đổ xô "chạy nước rút" cuối giờ.</li>
-          <li><strong className="text-indigo-300">23:59 Chốt Snapshot:</strong> BGK công bố và dùng $2.5K mua on-chain share winner.</li>
+          <li><strong className="text-indigo-300">23:59 Chốt Snapshot:</strong> BGK công bố và dùng $2K mua on-chain share winner.</li>
         </ul>
       </div>
     </div>
@@ -394,7 +394,7 @@ const Slide9 = () => (
           {[
             { q: "Đối thủ X đã có 50K user, tại sao mình thắng?", a: "Họ thiếu BSC + Bonding Curve. Mình giải bài toán creator monetization bằng 5% fee share." },
             { q: "Ai thực sự cần skill này?", a: "Nansen đang thu $99-$999/tháng. Whale Alert có 2.5M followers. Demand là có thật." },
-            { q: "$10K tháng đầu có đủ không?", a: "100% dồn vào giải thưởng công khai (mua share winner). Tạo flywheel fee -> prize các tuần sau." },
+            { q: "$10K tháng đầu có đủ không?", a: "$8K prize 4 tuần (mua share winner) + $2K blog/OpenClaw. Từ tuần 5 prize từ fee (flywheel)." },
             { q: "Sao user không dùng ChatGPT/Claude?", a: "AI thường không có real-time on-chain data, không tích hợp wallet trực tiếp để giao dịch ngay lập tức." }
           ].map((qa, i) => (
             <div key={i} className="bg-slate-900/60 p-4 rounded-xl">

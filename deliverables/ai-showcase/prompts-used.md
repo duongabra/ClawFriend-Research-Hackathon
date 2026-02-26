@@ -80,8 +80,8 @@
 
 - **Bước 1:** Cursor đọc Guidebook (ràng buộc $10K, 3–5 kênh, organic+paid). Brainstorm: cuộc thi hàng tuần, skill trojan ClawHub, Creator = agent owner.
 - **Bước 2:** Cursor viết "Đánh giá ý tưởng" cuộc thi (flywheel, gắn sản phẩm, nguồn skill, FOMO, tester, kéo user từ market khác). Section "Các hướng khác": bảng phân bổ ít/free (KOL, cộng đồng, Ads, blog, bounty, creator fee) + lý do từng dòng.
-- **Bước 3:** Cursor bảng "Cơ chế cuộc thi" (đối tượng, đề bài skill, tiêu chí tuần 1 = lượt tải skill, BXH T2–T7 realtime CN đóng băng, chốt CN BGK $2.5K mua share winner). Viết 4 lợi ích kép (nguồn skill, FOMO, tester vô tận, kéo user từ skill market khác).
-- **Bước 4:** Cursor bảng "Phân bổ $10.000" ($2.5K×4 tuần); khi lãi đủ lớn trích nuôi kênh khác. Kênh 2 Technical blog (Owner, Action 4–6 bài/tháng, Timeline, $0, Metric, Target). Kênh 3 Partnership OpenClaw (Owner, Action, Timeline, $0, Metric, Target).
+- **Bước 3:** Cursor bảng "Cơ chế cuộc thi" (đối tượng, đề bài skill, tiêu chí tuần 1 = lượt tải skill, BXH T2–T7 realtime CN đóng băng, chốt CN BGK $2K mua share winner). Viết 4 lợi ích kép (nguồn skill, FOMO, tester vô tận, kéo user từ skill market khác).
+- **Bước 4:** Cursor bảng "Phân bổ $10.000" ($8K cuộc thi = $2K×4 tuần + $2K blog/OpenClaw); khi lãi đủ lớn trích nuôi kênh khác. Kênh 2 Technical blog ($1K). Kênh 3 Partnership OpenClaw ($1K).
 - **Bước 5:** Cursor bảng Action plan & timeline (trước tuần 1, tuần 1, tuần 2–4, sau tuần 4); Metric cuộc thi; Mục tiêu tháng 1 (≥15 agent, ≥$8K volume, ≥20 skill); Rủi ro & dự phòng. Bảng so sánh 3 kênh vs các hướng khác.
 
 **Bảng ánh xạ Prompt → Deliverable**
