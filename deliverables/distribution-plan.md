@@ -27,20 +27,22 @@ Mục tiêu: **Làm thế nào để user biết đến ClawFriend và dùng Ski
 
 ---
 
-## Các hướng khác: đã cũ, thí sinh khác làm rồi, không đột phá
+## Các hướng khác: phân bổ ít ngân sách hoặc chỉ dùng free
 
-Chúng ta **không** tập trung vào các hướng sau — vì **đã cũ**, **nhiều thí sinh khác cũng làm**, và **không tạo đột phá**:
+Các hướng sau **không** nhận phần lớn $10K. Chúng ta **phân bổ ít** hoặc **chỉ free** — lý do rõ ràng như sau:
 
-| Hướng | Nhận xét |
-|-------|----------|
-| **Thuê KOL / micro-influencer** | Cách làm quen thuộc; thí sinh khác cũng đề xuất KOL, thread, video review. Không đột phá. |
+**Tại sao chỉ ít hoặc free?** (1) **KOL / ads:** Trả nhiều = mua reach một lần, không tạo flywheel (user xem xong đi, không gắn skill/share); CPC cao, conversion thấp; thí sinh khác cũng làm → không phân biệt. Ít tiền hoặc barter = thử được mà không đốt $10K. (2) **Cộng đồng (Telegram, Discord):** Tốn tiền mua ads trong group thường hiệu quả thấp, dễ spam; post free vẫn dẫn link, đủ hỗ trợ. (3) **Blog / bounty / referral:** Làm free (blog đã là Kênh 2) vẫn có traffic và install; trả BNB/reward lớn từ $10K = nhiều bài khác cũng đề xuất, không đủ phân biệt, và không gắn trực tiếp prize + fee. (4) **Creator guarantee fee:** Là "trả tiền đổi reach" giống KOL — không phải cơ chế nội tại (user mua share, fee 5%, cuộc thi); $10K dồn prize tạo flywheel rõ hơn.
+
+| Hướng | Cách làm (ít / free) | Lý do chỉ ít hoặc free |
+|-------|----------------------|-------------------------|
+| **KOL / micro-influencer** | Ít tiền hoặc barter (đổi skill/review) | Trả lớn = reach một lần, không flywheel; thí sinh khác cũng làm, không phân biệt. |
 | **Làm cộng đồng** (vào Telegram, Reddit, Discord share link, “community building”) | Đã cũ; ai cũng làm; hiệu quả thấp, dễ thành spam. |
-| **Twitter Ads / Facebook Ads** | Mua reach thuần; CPC cao, conversion thấp; không gắn cơ chế sản phẩm. |
+| **Twitter / Facebook Ads** | Không dùng hoặc test rất ít | CPC cao, conversion thấp; không gắn skill/share; $10K cháy nhanh không tạo vòng lặp. |
 | **Skill trojan horse trên ClawHub**, **bot Telegram free**, **content/blog** | Hữu ích phụ nhưng thí sinh khác cũng có thể làm; không phải trụ chính, không đột phá. |
 | **Bounty “best skill” một lần**, **referral BNB**, **free API**, **embed 1 app**, **white-label cho community** | Các ý này có thể bổ trợ nhưng đã xuất hiện ở nhiều bài; không đủ để phân biệt. |
 | **Creator = agent owner (guarantee fee)** | Gần với KOL/creator; vẫn là “trả tiền đổi reach”, không phải cơ chế nội tại như cuộc thi. |
 
-**Kết luận:** Toàn bộ $10K và **sự tập trung** dồn vào **một thứ duy nhất: cuộc thi hàng tuần**. Các kênh trên không bị “cấm” nhưng **không được phân bổ ngân sách** và không nằm trong kế hoạch chính.
+**Kết luận:** Toàn bộ $10K và **sự tập trung** dồn vào **một thứ duy nhất: cuộc thi hàng tuần**. Các hướng trên có thể làm ở mức **ít tiền hoặc free**, không nằm trong kế hoạch phân bổ chính.
 
 ---
 
@@ -177,9 +179,9 @@ Nếu đạt 3 chỉ tiêu trên: coi tháng 1 **thành công**; tháng 2 chuy�
 
 ---
 
-## So sánh nhanh: 3 kênh vs Các hướng không làm
+## So sánh nhanh: 3 kênh vs Các hướng khác (phân bổ ít / chỉ free)
 
-| | Các hướng không chọn (KOL, ads, community chung chung, v.v.) | 3 kênh của chúng ta |
+| | Các hướng khác — phân bổ ít hoặc chỉ free (KOL ít/barter, cộng đồng free, ads không/ít, blog free, bounty free, creator fee không từ budget) | 3 kênh của chúng ta |
 |---|---------------------------------------------------------------|----------------------|
 | **Kênh 1 (paid)** | KOL, Twitter Ads rải tiền | **Cuộc thi hàng tuần** — 100% $10K = prize 4 tuần (BGK mua share winner); flywheel fee |
 | **Kênh 2 (organic)** | "Làm content" không rõ | **Technical blog** — 4–6 bài/tháng, tutorial skill cụ thể, CTA install, metric: views, sign-up, download |

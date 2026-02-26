@@ -24,28 +24,29 @@ export default function DistributionPage() {
           </div>
         </section>
 
-        {/* Các hướng không chọn — synced with md */}
+        {/* Các hướng khác: phân bổ ít hoặc chỉ free — synced with md */}
         <section className="mb-12">
-          <h2 className="mb-4 flex items-center gap-2 text-xl font-semibold text-red-400">
-            <XCircle className="h-5 w-5" /> Các hướng không chọn
+          <h2 className="mb-4 flex items-center gap-2 text-xl font-semibold text-amber-400">
+            <TrendingUp className="h-5 w-5" /> Các hướng khác: phân bổ ít hoặc chỉ free
           </h2>
-          <div className="rounded-xl border border-red-900/50 bg-red-950/20 p-4">
-            <p className="mb-3 text-sm text-slate-400">Đã cũ, nhiều thí sinh khác làm, không đột phá — không phân bổ ngân sách.</p>
-            <ul className="grid gap-2 text-sm text-slate-300 md:grid-cols-2">
-              {[
-                'Thuê KOL / micro-influencer — cách làm quen thuộc',
-                'Làm cộng đồng (Telegram, Reddit, Discord share link) — dễ thành spam',
-                'Twitter Ads / Facebook Ads — reach thuần, không gắn cơ chế sản phẩm',
-                'Bounty "best skill" 1 lần, referral BNB, free API, white-label',
-                'Creator = agent owner (guarantee fee) — trả tiền đổi reach, không phải cơ chế nội tại',
-              ].map((item, i) => (
-                <li key={i} className="flex items-center gap-2">
-                  <span className="text-red-500">×</span> {item}
-                </li>
-              ))}
+          <div className="rounded-xl border border-amber-900/50 bg-amber-950/20 p-4">
+            <p className="mb-3 text-sm text-slate-400">Không dồn $10K — <strong className="text-amber-300/90">phân bổ ít</strong> hoặc <strong className="text-amber-300/90">chỉ free</strong>, lý do rõ ràng:</p>
+            <ul className="space-y-2 text-sm text-slate-300">
+              <li><strong className="text-amber-300/80">KOL / ads:</strong> Trả lớn = reach một lần, không flywheel; CPC cao; thí sinh khác cũng làm → ít/barter thử được, không đốt $10K.</li>
+              <li><strong className="text-amber-300/80">Cộng đồng:</strong> Tốn tiền ads trong group hiệu quả thấp, dễ spam; post free đủ dẫn link.</li>
+              <li><strong className="text-amber-300/80">Blog / bounty / referral:</strong> Free vẫn có traffic/install; trả BNB lớn không đủ phân biệt, không gắn prize + fee.</li>
+              <li><strong className="text-amber-300/80">Creator guarantee fee:</strong> Trả tiền đổi reach như KOL — không cơ chế nội tại; prize + share tạo flywheel rõ hơn.</li>
             </ul>
+            <div className="mt-4 rounded-lg bg-blue-950/30 border border-blue-800/40 px-3 py-2 text-xs text-blue-200/90 space-y-1">
+              <p className="font-semibold text-blue-300/90">Tại sao cuộc thi hàng tuần (4 tuần) chứ không phải một lần?</p>
+              <ul className="list-disc list-inside space-y-0.5">
+                <li>Không all-in một lần (có thể flop) → 4 tuần = 4 lần thử, học và điều chỉnh.</li>
+                <li>Team dev tập trung làm skill tốt để giành giải cả 4 tuần → giảm rủi ro.</li>
+                <li>BGK chống lưng nhưng không lộ liễu; người ngoài làm tốt vẫn trao giải (công bằng).</li>
+              </ul>
+            </div>
             <p className="mt-4 rounded-lg bg-amber-950/30 border border-amber-800/40 px-3 py-2 text-xs text-amber-300/90">
-              <strong>Kết luận:</strong> Toàn bộ $10K và sự tập trung dồn vào <strong>một thứ duy nhất: cuộc thi hàng tuần</strong>. Hai kênh organic không chia budget; trụ chính là cuộc thi.
+              <strong>Kết luận:</strong> Toàn bộ $10K dồn vào <strong>cuộc thi hàng tuần</strong>. Hai kênh organic $0; các hướng trên làm ở mức ít tiền hoặc free.
             </p>
           </div>
         </section>
@@ -199,14 +200,14 @@ export default function DistributionPage() {
         {/* So sánh nhanh: 3 kênh vs Các hướng không làm */}
         <section className="rounded-2xl border border-slate-600 bg-slate-900/40 p-6">
           <h3 className="mb-4 flex items-center gap-2 font-semibold text-slate-200">
-            <Table2 className="h-5 w-5" /> So sánh nhanh: 3 kênh vs Các hướng không chọn
+            <Table2 className="h-5 w-5" /> So sánh nhanh: 3 kênh vs Các hướng khác (phân bổ ít / chỉ free)
           </h3>
           <div className="overflow-x-auto rounded-xl border border-slate-700/60">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-slate-700 bg-slate-800/80">
                   <th className="px-3 py-2 text-left font-semibold text-slate-200">Kênh</th>
-                  <th className="px-3 py-2 text-left font-semibold text-red-400/90">Không chọn</th>
+                  <th className="px-3 py-2 text-left font-semibold text-amber-400/90">Phân bổ ít / chỉ free</th>
                   <th className="px-3 py-2 text-left font-semibold text-green-400/90">3 kênh của chúng ta</th>
                 </tr>
               </thead>

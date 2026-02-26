@@ -14,12 +14,12 @@
 
 | Deliverable | Điểm | File | Nội dung chính (guidebook) |
 |-------------|------|------|----------------------------|
-| 1. Competitive Landscape | **25** | [deliverables/competitive-landscape.md](./deliverables/competitive-landscape.md) | 5–10 đối thủ; Tên, Link, Mô tả, Số liệu có nguồn, Monetize, Điểm mạnh/yếu, User chọn/không chọn; So sánh; Kết luận: khác ở đâu, thắng/thua |
-| 2. Skill Research | **25** | [deliverables/skill-research.md](./deliverables/skill-research.md) | 5–10 skill; Target user, Problem, Alternative, Bằng chứng demand, Visibility/monetization |
-| 3. Distribution Plan | **40** | [deliverables/distribution-plan.md](./deliverables/distribution-plan.md) | $10K; ít nhất 3–5 kênh; 1 organic + 1 paid; action plan + timeline + metric; intern đọc xong làm được |
+| 1. Competitive Landscape | **25** | [deliverables/competitive-landscape.md](./deliverables/competitive-landscape.md) | 6 đối thủ; Tên, Link, Mô tả, Số liệu có nguồn, Monetize, Điểm mạnh/yếu, User chọn/không chọn; So sánh; TAM/CAGR; Kết luận: khác ở đâu, thắng/thua |
+| 2. Skill Research | **25** | [deliverables/skill-research.md](./deliverables/skill-research.md) | 20 skill (10 chủ đề), 10 đề xuất; Target user, Problem, Alternative, Bằng chứng demand, Visibility/monetization, Tech/API |
+| 3. Distribution Plan | **40** | [deliverables/distribution-plan.md](./deliverables/distribution-plan.md) | $10K; 3 kênh (cuộc thi $10K, blog $0, OpenClaw $0); phân bổ ít/free + lý do; thi hàng tuần 4 tuần; flywheel; target tháng 1 + contingency |
 | 4. Presentation & Q&A | **10** | Web presentation (link dưới) + trả lời BGK | Trình bày 15–20 phút; Q&A 5–8 phút |
-| Data / AI Showcase | — | [deliverables/data/](./deliverables/ai-showcase/README.md), [deliverables/ai-showcase/](./deliverables/ai-showcase/) | Số liệu có nguồn; prompt/workflow dùng AI (README, prompts-used.md) |
-| Data / Số liệu | — | [deliverables/data/key-metrics.md](./deliverables/data/key-metrics.md) | Số liệu chính + nguồn đối chiếu |
+| Data / AI Showcase | — | [deliverables/data/](./deliverables/data/README.md), [deliverables/ai-showcase/](./deliverables/ai-showcase/) | Số liệu có nguồn; prompt/workflow dùng AI (data: key-metrics, README; ai-showcase: README, prompts-used.md) |
+| Data / Số liệu | — | [deliverables/data/key-metrics.md](./deliverables/data/key-metrics.md) | Số liệu chính + nguồn đối chiếu (Competitive, Skill, Distribution) |
 
 ---
 
@@ -34,7 +34,7 @@ Chúng ta phục vụ **cả AI lẫn UI**: ngoài file markdown cho AI chấm, 
 | **Skill Research** | [https://duongabra.github.io/ClawFriend-Research-Hackathon/#/skills](https://duongabra.github.io/ClawFriend-Research-Hackathon/#/skills) |
 | **Distribution Plan** | [https://duongabra.github.io/ClawFriend-Research-Hackathon/#/distribution](https://duongabra.github.io/ClawFriend-Research-Hackathon/#/distribution) |
 
-*Trang gốc `/` là slide; `#/landscape`, `#/skills`, `#/distribution` là 3 trang UI riêng (không render markdown): Competitive Landscape, Skill Research, Distribution Plan.*
+*Trang gốc `/` là slide; `#/landscape`, `#/skills`, `#/distribution` là 3 trang UI riêng (nội dung đồng bộ với file .md): Competitive Landscape, Skill Research, Distribution Plan. Script đọc khi present: [presentation-script.md](./deliverables/presentation-script.md).*
 
 ---
 
@@ -62,6 +62,8 @@ Nghiên cứu & kế hoạch go-to-market cho **Skill Market** của **ClawFrien
     ├── competitive-landscape.md <- Deliverable 1 (25%)
     ├── skill-research.md        <- Deliverable 2
     ├── distribution-plan.md     <- Deliverable 3
+    ├── presentation-script.md   <- Script thuyết trình từng slide (synced với 3 deliverable)
+    ├── SELF-ASSESSMENT-BY-GUIDEBOOK.md <- Tự đánh giá theo barem
     ├── slide.tsx, slide.d.ts    <- Nguồn slide (dùng cho slides-app)
     ├── slides-app/              <- Web UI: slide deck + 3 trang đọc (header chung)
     │   ├── index.html
@@ -112,6 +114,10 @@ Trang đang dùng **Deploy from a branch** thì sẽ hiện README. Để hiện
 
 ---
 
+**Kịch bản slides:** [deliverables/presentation-script.md](./deliverables/presentation-script.md) — script chi tiết từng slide, có giải thích thuật ngữ (glossary).
+
+---
+
 ## AI Pitch Video (trợ lý ảo + voice + slide)
 
 **Video thuyết trình:** [Xem tại Google Drive](https://drive.google.com/file/d/1Tsri5B_mc3VAHdluLXOTcHR20WXvKUNo/view?usp=sharing) (MC.mp4).
@@ -129,6 +135,18 @@ Video ~15 phút: trợ lý ảo (avatar) thay mặt trình bày báo cáo (Compe
 | Ghép video + slide | **CapCut** | Track nền = slide; track trên = clip avatar (góc); export MP4 1080p |
 
 Tài liệu chi tiết: [deliverables/ai-showcase/](./deliverables/ai-showcase/) (video-step-by-step.md, ghép-video-capcut.md, tts-vietnamese-options.md).
+
+---
+
+## Kiểm tra nhanh (checklist cho BGK / AI)
+
+| Mục | Có trong repo |
+|-----|----------------|
+| 3 deliverable markdown (Competitive, Skill, Distribution) | CÓ — deliverables/*.md |
+| Số liệu có nguồn | CÓ — deliverables/data/key-metrics.md + dòng *Nguồn:* trong từng deliverable |
+| Web UI (slide + 3 trang đọc) | CÓ — link GitHub Pages; build từ deliverables/slides-app |
+| Script thuyết trình | CÓ — deliverables/presentation-script.md (+ glossary thuật ngữ) |
+| AI Showcase (prompt, video) | CÓ — deliverables/ai-showcase/ (prompts-used.md, video link Google Drive) |
 
 ---
 

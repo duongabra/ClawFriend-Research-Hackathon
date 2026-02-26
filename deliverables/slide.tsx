@@ -139,19 +139,13 @@ const Slide4 = () => (
     </h2>
     
     <div className="grid grid-cols-2 gap-8 h-full items-start">
-      <div className="bg-slate-900/80 p-8 rounded-2xl border border-red-900/50">
-        <h3 className="text-2xl font-bold text-red-400 mb-6 flex items-center gap-2">
-          <XCircle className="w-6 h-6" /> Các hướng KHÔNG CHỌN
+      <div className="bg-slate-900/80 p-8 rounded-2xl border border-amber-900/50">
+        <h3 className="text-2xl font-bold text-amber-400 mb-6 flex items-center gap-2">
+          <TrendingUp className="w-6 h-6" /> Các hướng khác: phân bổ ít hoặc chỉ free
         </h3>
-        <p className="text-slate-400 mb-4 italic">Không phân bổ ngân sách cho các hướng đã cũ, thiếu đột phá:</p>
-        <ul className="space-y-3 text-slate-300 text-base">
-          <li className="flex gap-3"><span className="text-red-500">×</span> Thuê KOL / micro-influencer — đã cũ, không đột phá</li>
-          <li className="flex gap-3"><span className="text-red-500">×</span> Làm cộng đồng (Telegram, Reddit, Discord share link)</li>
-          <li className="flex gap-3"><span className="text-red-500">×</span> Twitter / Facebook Ads — reach thuần</li>
-          <li className="flex gap-3"><span className="text-red-500">×</span> Bounty 1 lần, referral BNB, free API, white-label</li>
-          <li className="flex gap-3"><span className="text-red-500">×</span> Creator = agent owner (guarantee fee) — không phải cơ chế nội tại</li>
-        </ul>
-        <p className="mt-4 text-amber-300/90 text-sm rounded-lg bg-amber-950/30 px-3 py-2">Toàn bộ $10K dồn vào <strong>một thứ duy nhất: cuộc thi hàng tuần</strong>. Blog + OpenClaw organic $0.</p>
+        <p className="text-slate-400 mb-3">Không dồn $10K — <strong className="text-amber-300/90">ít hoặc free</strong>, lý do: KOL/ads trả lớn = reach một lần, không flywheel; cộng đồng tốn tiền ads dễ spam, post free đủ; blog/bounty free vẫn có traffic, trả BNB không phân biệt; creator fee = trả reach, prize + share mới tạo flywheel.</p>
+        <p className="text-slate-500 text-sm mb-2">Thi hàng tuần: (1) 4 tuần = 4 lần thử, tránh all-in flop. (2) Team tập trung skill giành giải. (3) BGK công bằng — người ngoài tốt vẫn trao giải.</p>
+        <p className="mt-4 text-amber-300/90 text-sm rounded-lg bg-amber-950/30 px-3 py-2">Toàn bộ $10K dồn vào <strong>cuộc thi hàng tuần</strong>. Blog + OpenClaw organic $0.</p>
       </div>
 
       <div className="bg-blue-900/20 p-8 rounded-2xl border border-blue-500/50 shadow-[0_0_30px_rgba(59,130,246,0.15)] relative overflow-hidden">
