@@ -48,8 +48,6 @@ Kính chào Ban Giám khảo, kính chào Lab3 và mọi người.
 
 Hôm nay em trình bày đề tài kế hoạch go-to-market cho Skill Market của **ClawFriend**. ClawFriend là nền tảng AI agent Web3 với identity on-chain, bonding curve và marketplace skill/plugin, chạy trên BSC. Bài làm của em gồm ba phần chính theo Guidebook: Competitive Landscape, Skill Research, và Distribution Plan; cuối cùng là phần AI Showcase.
 
-Trình bày bởi [Tên thí sinh / Team của bạn]. Em xin phép được bắt đầu.
-
 ---
 
 ## Slide 2 — Competitive Landscape (~2 phút)
@@ -80,7 +78,7 @@ Em chuyển sang Distribution Plan.
 
 Mục tiêu: user biết và dùng Skill Market tháng đầu với **10.000 đô**. Ràng buộc: 1 organic + 1 paid; plan cụ thể.
 
-**Phân bổ ít/free có lý do:** KOL/ads — mua reach một lần, không flywheel; CPC cao. Telegram/Discord — post free đủ. Blog/bounty — free (blog là Kênh 2). **10K dồn prize** tạo flywheel rõ hơn. **Cuộc thi hàng tuần** (không all-in một lần): 4 tuần = 4 lần thử, giảm rủi ro; nhiều skill chất lượng; BGK minh bạch.
+**Phân bổ ít/free có lý do:** KOL/ads — mua reach một lần, không flywheel; CPC cao. Telegram/Discord — post free đủ **10K dồn prize** nên làm thế nào để có flywheel rõ hơn. **Cuộc thi hàng tuần** (không all-in một lần): 4 tuần = 4 lần thử, giảm rủi ro; nhiều skill chất lượng; BGK minh bạch.
 
 **Ba kênh:** Kênh 1 paid — Cuộc thi hàng tuần, toàn bộ 10K. Kênh 2 organic — Technical blog 0 đô. Kênh 3 organic — Partnership OpenClaw 0 đô.
 
