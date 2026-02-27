@@ -280,7 +280,7 @@ const Slide4 = () => (
         </h3>
         <div className="bg-slate-950/50 p-4 rounded-xl border border-slate-700/50 mb-6">
           <p className="text-slate-300 text-lg">
-            KOL/ads không nhận phần lớn —{" "}
+            KOL/ads không phân bổ nhiều —{" "}
             <strong className="text-amber-300/90">ít hoặc free</strong>
           </p>
         </div>
@@ -331,7 +331,7 @@ const Slide5 = () => (
           </h3>
           <p className="text-slate-400 text-base leading-relaxed">
             Cuộc thi hàng tuần trên Skill Market của ClawFriend: thí sinh đăng skill
-            lên marketplace, xếp hạng theo tiêu chí (vd lượt tải, BGK chấm), mỗi
+            lên marketplace, xếp hạng theo tiêu chí (lượt tải, BGK chấm), mỗi
             tuần một winner nhận prize qua BGK mua share on-chain rồi burn.
           </p>
           <p className="text-xl text-slate-300 leading-relaxed">
@@ -342,7 +342,7 @@ const Slide5 = () => (
             curve (on-chain).
             <br />
             <span className="text-blue-400 text-base mt-2 inline-block">
-              → Từ tháng 2: Prize lấy từ 5% fee volume giao dịch.
+              → Từ tháng 2: Prize tự nuôi được nó không cần chi thêm
             </span>
           </p>
         </div>
@@ -408,7 +408,7 @@ const Slide6 = () => (
         <p className="text-slate-400 text-xs mb-2">Ngày quyết định của BGK — mọi quyết định cuối cùng thuộc về BGK.</p>
         <ul className="space-y-3 text-slate-300">
           <li>BXH <strong>ĐÓNG BĂNG</strong>. Chỉ dùng số liệu T2–T7 đã thu.</li>
-          <li>Ngăn user đổ xô "chạy nước rút" cuối giờ.</li>
+          {/* <li>Ngăn user đổ xô "chạy nước rút" cuối giờ.</li> */}
           <li><strong className="text-indigo-300">23:59 Chốt:</strong> BGK quyết định winner, công bố và dùng $2K mua on-chain share winner.</li>
         </ul>
       </div>
