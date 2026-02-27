@@ -16,7 +16,7 @@
 |-------------|------|------|----------------------------|
 | 1. Competitive Landscape | **25** | [deliverables/competitive-landscape.md](./deliverables/competitive-landscape.md) | 6 đối thủ; Tên, Link, Mô tả, Số liệu có nguồn, Monetize, Điểm mạnh/yếu, User chọn/không chọn; So sánh; TAM/CAGR; Kết luận: khác ở đâu, thắng/thua |
 | 2. Skill Research | **25** | [deliverables/skill-research.md](./deliverables/skill-research.md) | 20 skill (10 chủ đề), 10 đề xuất; Target user, Problem, Alternative, Bằng chứng demand, Visibility/monetization, Tech/API |
-| 3. Distribution Plan | **40** | [deliverables/distribution-plan.md](./deliverables/distribution-plan.md) | $10K; 3 kênh (cuộc thi $10K, blog $0, OpenClaw $0); phân bổ ít/free + lý do; thi hàng tuần 4 tuần; flywheel; target tháng 1 + contingency |
+| 3. Distribution Plan | **40** | [deliverables/distribution-plan.md](./deliverables/distribution-plan.md) | $10K = $8K cuộc thi + $1K blog + $1K OpenClaw; 3 kênh; phân bổ ít/free + lý do; thi hàng tuần 4 tuần; flywheel; target tháng 1 + contingency |
 | 4. Presentation & Q&A | **10** | Web presentation (link dưới) + trả lời BGK | Trình bày 15–20 phút; Q&A 5–8 phút |
 | Data / AI Showcase | — | [deliverables/data/](./deliverables/data/README.md), [deliverables/ai-showcase/](./deliverables/ai-showcase/) | Số liệu có nguồn; prompt/workflow dùng AI (data: key-metrics, README; ai-showcase: README, prompts-used.md) |
 | Data / Số liệu | — | [deliverables/data/key-metrics.md](./deliverables/data/key-metrics.md) | Số liệu chính + nguồn đối chiếu (Competitive, Skill, Distribution) |
